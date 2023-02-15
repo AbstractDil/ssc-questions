@@ -91,37 +91,25 @@
 
 
         // generate date using format dd-mm-yyyy
-
-         
-        
         
             let date = "10-02-2023";
+
             // set part number
             let part = "Part-2";
-          
-        
-        
-        
-        
+
             // set the title
         
             let title = document.getElementById("title");
-
-
-           let newTitle =  title.innerHTML = "SSC CHSL (Held On 26 May 2022 Shift 1)";
-
+            
+            let newTitle =  title.innerHTML = "SSC CHSL (Held On 26 May 2022 Shift 1)";
+            
             document.title = title.innerHTML;
-
-         
 
             // generate the link using the title
         
             let generateLink = document.getElementById("generateLink");
             generateLink.href = `${date}/${part}/` + title.innerHTML + ".pdf";
-        
-           
-        
-        
+         
             // create a counter variable
         
            let a = 0;
@@ -156,11 +144,24 @@
         
             content.appendChild(img);
         
-           }
-            
+        }
+         
+        
+     
+       </script>
+          
+        
+        
+        
+        
+
+
+         
+        
            
         
-          </script>
+        
+        
 
 
 
