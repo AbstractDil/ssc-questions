@@ -8,25 +8,96 @@
     <title>
         SSC GS MOCK TEST
     </title>
+    <style>
+        #preLoader {
+       
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #fff;
+       z-index: 9999;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+   </style>
+   
+   <script>
+       window.onload = function () {
+         document.getElementById('preLoader').style.transition = "all 2s ease-in-out";
+         document.getElementById('preLoader').style.opacity = "0";
+         document.getElementById('preLoader').style.visibility = "hidden";
+       }
+     </script>
 </head>
 <body class="bg-dark text-white">
+
+        <!-- Preloader start -->
+
+<div id="preLoader">
+    <div class="spinner-grow spinner-grow-sm text-primary mx-1" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow spinner-grow-sm text-danger mx-1" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow spinner-grow-sm text-warning mx-1" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>
+
+<!-- Preloader end -->
     <div class="px-4 py-5 my-5 text-center">
-        
+        7
         <h1 class="display-5 fw-bold text-warning">SSC GS MOCK TEST</h1>
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-8 mx-auto">
           <p class="lead mb-4">Here are the links :- </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <a href="National-Water-Ways.html" class=" px-4 gap-3">
-                        National-Water-Ways
-                    </a>
-                </li>
-                
-              </ul>
+              <!-- Auto Generated Content From Javascript -->
+
+              <div id="myContent"></div>
+
+          
           </div>
         </div>
       </div>
+
+
+      <script>
+         var myContent = document.getElementById("myContent");
+
+var myData = [
+    {
+        "S.No.": "",
+        "Topic": "SSC CHSL Tier-I Test-7",
+        "Link": "16-02-2023.html"
+    },
+    {
+        "S.No.": "1",
+        "Topic": "National Water Ways",
+        "Link": "National-Water-Ways.html"
+    }
+   
+    
+];
+
+var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
+
+    let a=0;
+
+for (var i = 0; i < myData.length; i++) {
+    ++a;
+    myTable += "<tr><td>" + a + "</td><td>" + myData[i]["Topic"] + "</td><td><a href='" + myData[i]["Link"] + "' class='btn btn-primary btn-sm'>Click Here</a></td></tr>";
+}
+
+myTable += "</tbody></table>";
+
+myContent.innerHTML = myTable;
+
+      </script>
+
 </body>
 </html>
