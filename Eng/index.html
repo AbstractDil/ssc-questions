@@ -8,41 +8,107 @@
     <title>
         SSC ENGLISH MOCK TEST
     </title>
+    <style>
+        #preLoader {
+       
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #fff;
+       z-index: 9999;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+   </style>
+   
+   <script>
+       window.onload = function () {
+         document.getElementById('preLoader').style.transition = "all 2s ease-in-out";
+         document.getElementById('preLoader').style.opacity = "0";
+         document.getElementById('preLoader').style.visibility = "hidden";
+       }
+     </script>
 </head>
 <body class="bg-dark text-white">
+
+
+
+    <!-- Preloader start -->
+
+<div id="preLoader">
+    <div class="spinner-grow spinner-grow-sm text-primary mx-1" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow spinner-grow-sm text-danger mx-1" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow spinner-grow-sm text-warning mx-1" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>
+
+<!-- Preloader end -->
+
     <div class="px-4 py-5 my-5 text-center">
         
         <h1 class="display-5 fw-bold text-warning">SSC ENGLISH MOCK TEST</h1>
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-8 mx-auto">
           <p class="lead mb-4">Here are the links :- </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
-            <ul class="list-group list-group-flush">
+            <!-- Auto Generated Content From Javascript -->
 
-                <li class="list-group-item">
-                    <a href="14-02-2023.html" class=" px-4 gap-3">
-                     Key Points Of SSC CGL Tier-II Mock Test-7
-                    </a>
-                </li>
-                
-                <li class="list-group-item">
-                    <a href="10-02-2023.html" class=" px-4 gap-3">
-                     Key Points Of SSC CHSL MOCK TEST (Held On: 24 May 2022 Shift 3)
-                    </a>
-                </li>
+            <div id="myContent"></div>
 
-                <li class="list-group-item">
-                    <a href="10-02-2023-Part-2.html" class=" px-4 gap-3">
-                     Key Points Of SSC CHSL MOCK TEST (Held On: 26 May 2022 Shift 1)
-                    </a>
-                </li>
-
-                
-
-                
-              </ul>
           </div>
         </div>
       </div>
+
+
+      <script>
+
+        var myContent = document.getElementById("myContent");
+
+        var myData = [
+            {
+                "S.No.": "1",
+                "Topic": "Key Points Of SSC CGL Tier-II Mock Test-7",
+                "Link": "14-02-2023.html"
+            },
+            {
+                "S.No.": "2",
+                "Topic": "Key Points Of SSC CHSL MOCK TEST (Held On: 24 May 2022 Shift 3)",
+                "Link": "10-02-2023.html"
+            },
+            {
+                "S.No.": "3",
+                "Topic": "Key Points Of SSC CHSL MOCK TEST (Held On: 26 May 2022 Shift 1)",
+                "Link": "10-02-2023-Part-2.html"
+            }
+        ];
+
+        var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
+
+            let a=0;
+
+        for (var i = 0; i < myData.length; i++) {
+            ++a;
+            myTable += "<tr><td>" + a + "</td><td>" + myData[i]["Topic"] + "</td><td><a href='" + myData[i]["Link"] + "' class='btn btn-primary btn-sm'>Click Here</a></td></tr>";
+        }
+
+        myTable += "</tbody></table>";
+
+        myContent.innerHTML = myTable;
+
+       
+
+
+
+      </script>
+
+
 </body>
 </html>
