@@ -59,11 +59,11 @@
 
         </h1>
 
-        <div class="alert alert-primary d-print-none" role="alert">
+        <div class=" d-print-none">
 
-            Click here to  
+           
             <!-- Link is automatic generation using javascript -->
-            <a  class="alert-link" id="generateLink">Download</a> Pdf.
+            <button  class="btn btn-success btn-sm" id="generateLink" onclick="window.print();" > Click here to  Print</button>.
           </div>
 
 
@@ -100,7 +100,7 @@
     // generate the link using the title
 
     let generateLink = document.getElementById("generateLink");
-    generateLink.href = `${date}/${part}/` + title.innerHTML + ".pdf";
+   // generateLink.href = `${date}/${part}/` + title.innerHTML + ".pdf";
 
    
 
