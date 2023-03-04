@@ -117,10 +117,17 @@
      // increment the counter
 
      ++a;
-       //console.log(a);
+      console.log(a);
 
     // get the content div
     let content = document.getElementById("content");
+
+    // create image number
+
+    let imageNumber = document.createElement("h3");
+    imageNumber.innerHTML = `Question No. ` + a;
+    imageNumber.className = "text-danger my-1 border border-danger p-2" ;
+    content.appendChild(imageNumber);
 
     // create a new image element
     let img = document.createElement("img");
