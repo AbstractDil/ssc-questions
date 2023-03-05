@@ -6,4 +6,4 @@
 
 # Website Link :-
 
-https://abstractdil.github.io/SSC-MOCK-TEST---Staff-Selection-Commision-/
+https://abstractdil.github.io/ssc-questions/
