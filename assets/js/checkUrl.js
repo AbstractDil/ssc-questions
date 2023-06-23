@@ -34,7 +34,17 @@ if(window.location.href.indexOf('?') == -1) {
     if(isOrg != 'MHBC' || isPoweredBy != 'nandysagar.in') {
         
         alert('You have entered wrong url.');
-        window.location.href = 'error_url.html';
+        
+        // show alert using html page 
+
+        document.getElementById('title').style.display = 'none';
+        document.getElementById('content').style.display = 'none';
+        document.getElementById('ErrorMsg').innerHTML = '<center><h1>Error 404: Page Not Found<br></h1><p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br><a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p> </center>';
+       
+
+        // document.write('<center><h1>Error 404: Page Not Found<br></h1><p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br><a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p> </center>');
+
+
        
     
     }
