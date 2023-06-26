@@ -1,6 +1,6 @@
 
 #preLoader {
-
+ 
 position: fixed;
 top: 0;
 left: 0;
@@ -13,6 +13,13 @@ justify-content: center;
 align-items: center;
 }
 
+.spinner-grow{
+
+width: 5rem !important;
+height: 5rem !important;
+       
+}
+
 .my-2{
 margin: 2rem 0;
 }
@@ -23,6 +30,8 @@ left: 0px;
 top: 0px;
 z-index:9999 !important;
 }
+
+
 
 
 body:before {
