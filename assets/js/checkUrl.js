@@ -48,11 +48,6 @@ if(window.location.href.indexOf('?') == -1) {
        
     
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+   
