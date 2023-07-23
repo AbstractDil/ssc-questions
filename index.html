@@ -1,47 +1,158 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>
-        SSC MOCK TEST
-    </title>
-</head>
-<body class="bg-dark text-white">
-    <div class="px-4 py-5 my-5 text-center">
-        
-        <h1 class="display-5 fw-bold text-warning">SSC MOCK TEST</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Here are the links :- </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <a href="Eng/index.html" class=" px-4 gap-3">English</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="Reasoning/index.html" class=" px-4 gap-3">Reasoning</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="Math/index.html" class=" px-4 gap-3">Mathematics</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="Computer/index.html" class=" px-4 gap-3">Computer</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="GS/index.html" class=" px-4 gap-3">General Knowledge</a>
-                </li>
-              </ul>
+    <script src="../assets/js/checkUrl.js" type="text/javascript"></script>
+ 
+    <title></title>
+    <style>
+      .card {
+        width: 18rem !important;
+      }
+      .card-subtitle {
+        font-size: 0.8rem;
+      }
+
+      .card:hover {
+        box-shadow: 0 0 11px rgba(248, 232, 86, 0.973);
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-warning" id="pageTitle"></h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Here are the links :-</p>
+
+        <div class="container">
+          <div class="row"  id="mainContent">
+           
+              <!-- Generate Using Javascript -->
+            
           </div>
         </div>
-
-
-        <footer>
-            <p class="mt-5 mb-3 text-muted">Developed By <a class="text-success text-decoration-none" href="https://nandysagar.in/">Sagar Nandy</a></p>
-        </footer>
-
       </div>
-</body>
+
+      <footer>
+        <p class="mt-5 mb-3 text-muted">
+          Developed By
+          <a
+            class="text-success text-decoration-none"
+            href="https://nandysagar.in/"
+            >Sagar Nandy</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script>
+
+
+        // Generate Page Title Using Javascript
+
+        var pageTitle = document.getElementById("pageTitle");
+
+        pageTitle.innerHTML = "SSC MOCK TEST";
+
+        // Set page title using javascript
+
+        document.title = "SSC MOCK TEST";
+
+      // Generate content Using Javascript
+
+      var mainContent = document.getElementById("mainContent");
+
+      var cardContent = [
+        {
+          title: "English",
+          subTitle: "Mock Test Analysis",
+          link1: "Go ",
+          url: "Eng/index.html",
+        },
+        {
+          title: "Reasoning",
+          subTitle: "Mock Test Analysis",
+          link1: "Go",
+          url: "Reasoning/index.html",
+        },
+        {
+          title: "Mathematics",
+          subTitle: "Mock Test Analysis",
+          link1: "Go",
+          url: "Math/index.html",
+        },
+        {
+          title: "General Knowledge",
+          subTitle: "Mock Test Analysis",
+          link1: "Go",
+          url: "GS/index.html",
+        },
+        {
+          title: "Computer",
+          subTitle: "Mock Test Analysis",
+          link1: "Go",
+          url: "Computer/index.html",
+        },
+      ];
+
+      // generate 4 cards using for loop
+
+      for (var i = 0; i <= 4; i++) {
+        var gridItem = document.createElement("div");
+        gridItem.setAttribute("class", "col-sm-6 my-3 mb-sm-0");
+
+        var card = document.createElement("div");
+        card.setAttribute("class", "card");
+
+        var cardBody = document.createElement("div");
+        cardBody.setAttribute("class", "card-body");
+
+        var cardTitle = document.createElement("h5");
+        cardTitle.setAttribute("class", "card-title");
+
+        var cardSubTitle = document.createElement("h6");
+        cardSubTitle.setAttribute(
+          "class",
+          "card-subtitle mb-3 text-body-secondary mt-1"
+        );
+      
+
+        var cardLink1 = document.createElement("a");
+        cardLink1.setAttribute("class", "btn btn-sm btn-warning");
+        cardLink1.setAttribute("href", "#");
+        
+        cardBody.appendChild(cardTitle);
+        cardBody.appendChild(cardSubTitle);
+        cardBody.appendChild(cardLink1);
+       
+
+        card.appendChild(cardBody);
+
+        gridItem.appendChild(card);
+
+        mainContent.appendChild(gridItem);
+
+
+
+       
+
+        cardTitle.innerHTML = cardContent[i].title;
+
+        cardSubTitle.innerHTML = cardContent[i].subTitle;
+
+        cardLink1.innerHTML = cardContent[i].link1;
+
+        cardLink1.setAttribute("href", cardContent[i].url);
+      }
+
+      // show card content in card
+    </script>
+  </body>
 </html>
