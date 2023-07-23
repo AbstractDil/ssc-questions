@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,6 +66,9 @@
 
           </div>
         </div>
+        <a href="javascript:void(0);"  class="btn btn-primary btn-sm px-4" 
+          onclick="window.history.back();"
+          >Go Back</a>
       </div>
 
 
@@ -74,7 +76,7 @@
 
         var myContent = document.getElementById("myContent");
 
-        var myData = [
+        /* var myData = [
 
         {
 
@@ -118,18 +120,53 @@
             }
         ];
 
-        var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
+*/
+       
+
+
+/*
+         var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
+
+             let a=0;
+
+         for (var i = 0; i < myData.length; i++) {
+             ++a;
+             myTable += "<tr><td>" + a + "</td><td>" + myData[i]["Topic"] + "</td><td><a href='" + myData[i]["Link"] + "' class='btn btn-primary btn-sm'>Click Here</a></td></tr>";
+         }
+
+         myTable += "</tbody></table>";
+
+         myContent.innerHTML = myTable;
+
+*/
+         // fetch data from data.json file using async and await
+
+
+
+
+          async function getData() {
+            const response = await fetch("data.json");
+            const data = await response.json();
+            return data;
+          }
+
+          getData().then((data) => {
+           //console.log(data);
+
+            var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
 
             let a=0;
 
-        for (var i = 0; i < myData.length; i++) {
-            ++a;
-            myTable += "<tr><td>" + a + "</td><td>" + myData[i]["Topic"] + "</td><td><a href='" + myData[i]["Link"] + "' class='btn btn-primary btn-sm'>Click Here</a></td></tr>";
-        }
+            for (var i = 0; i < data.length; i++) {
+                ++a;
+                myTable += "<tr><td>" + a + "</td><td>" + data[i]["exam_name"] + "</td><td><a href='mock-test-analysis.html?OrgID=MHBC&PoweredBy=nandysagar.in&ExamID=" + data[i]["exam_id"] + "' class='btn btn-warning btn-sm'>View</a></td></tr>";
+            }
 
-        myTable += "</tbody></table>";
+            myTable += "</tbody></table>";
 
-        myContent.innerHTML = myTable;
+            myContent.innerHTML = myTable;
+
+          });
 
        
 
