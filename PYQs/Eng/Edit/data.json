@@ -1,0 +1,37 @@
+[
+
+
+    {
+        "exam_id": "2308311924",
+        "exam_name": "SSC CHSL 2021 Tier-I (Held On : 01 June 2022 Shift 2) English Paper",
+        "exam_date": "31-08-2023",
+        "exam_analysis_directory": "Part-1",
+        "total_questions": "26"
+    },
+
+     {
+        "exam_id": "2307261912",
+        "exam_name": "SSC CHSL 2021 Tier-I (Held On : 01 June 2022 Shift 1) English Paper",
+        "exam_date": "26-07-2023",
+        "exam_analysis_directory": "Part-1",
+        "total_questions": "29"
+    },
+
+    {
+        "exam_id": "2307241547",
+        "exam_name": "SSC CHSL 2021 Tier-I (Held On : 24 May 2022 Shift 3) English Paper",
+        "exam_date": "24-07-2023",
+        "exam_analysis_directory": "Part-1",
+        "total_questions": "22"
+    },
+
+    {
+        "exam_id": "2311145000",
+        "exam_name": "SSC CGL 2022 Tier 1 Eng Vocab",
+        "exam_date": "SSC-CGL-2022",
+        "exam_analysis_directory": "T-1",
+        "total_questions": "9"
+    }
+
+  
+]
