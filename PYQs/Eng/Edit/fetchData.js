@@ -5,6 +5,8 @@
 *
 */
 
+
+
 // get exam_id, exam_name, exam_date, exam_analysis_directory, total_questions from data.json file and store in an array
 
 $.getJSON("data.json", function(data) {
