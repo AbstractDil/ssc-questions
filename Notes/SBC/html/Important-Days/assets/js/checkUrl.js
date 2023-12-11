@@ -1,10 +1,13 @@
+// check if pdfVersion is set 
+
+
 
 // Add OrgID and PoweredBy in the url automatically
 
 if(window.location.href.indexOf('?') == -1) {
 
     var url = window.location.href;
-    var newUrl = url + '?OrgID=SBC&PoweredBy=nandysagar.in';
+    var newUrl = url + '?OrgID=SBC&PoweredBy=nandysagar.in&PdfVersion='+ pdfVersion + '&isModified='+ isModified;
     window.history.pushState('data', 'Title', newUrl);
     console.log(newUrl);
     }
@@ -34,6 +37,7 @@ if(window.location.href.indexOf('?') == -1) {
     if(isOrg != 'SBC' || isPoweredBy != 'nandysagar.in') {
         window.location.href = 'error_url.html';
     }
+    
     
     
     
