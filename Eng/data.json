@@ -1,6 +1,15 @@
 [
 
     {
+        "exam_id": "2312271805",
+        "exam_name": "SSC CGL (Held On 13 Dec 2022 Shift 3) English Paper",
+        "exam_date": "27-12-2023",
+        "exam_analysis_directory": "Part-2",
+        "total_questions": "22"
+
+    },
+
+    {
         "exam_id": "2312271753",
         "exam_name": "SSC CHSL (Held On 9 March 2023 Shift 3) English Paper",
         "exam_date": "27-12-2023",
