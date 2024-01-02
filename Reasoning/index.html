@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +22,8 @@
        align-items: center;
      }
    </style>
+
+   <script src="../assets/js/checkUrl.js" type="text/javascript"></script>
    
    <script>
        window.onload = function () {
@@ -34,7 +35,9 @@
 </head>
 <body class="bg-dark text-white">
 
-        <!-- Preloader start -->
+
+
+    <!-- Preloader start -->
 
 <div id="preLoader">
     <div class="spinner-grow spinner-grow-sm text-primary mx-1" role="status">
@@ -49,6 +52,7 @@
 </div>
 
 <!-- Preloader end -->
+
     <div class="px-4 py-5 my-5 text-center">
         
         <h1 class="display-5 fw-bold text-warning">SSC REASONING MOCK TEST</h1>
@@ -56,46 +60,120 @@
           <p class="lead mb-4">Here are the links :- </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
-              <!-- Auto Generated Content From Javascript -->
+            <!-- Auto Generated Content From Javascript -->
 
-              <div id="myContent" ></div>
+            <div id="myContent"></div>
 
-          
           </div>
         </div>
+        <a href="javascript:void(0);"  class="btn btn-primary btn-sm px-4" 
+          onclick="window.history.back();"
+          >Go Back</a>
       </div>
 
 
       <script>
-         var myContent = document.getElementById("myContent");
 
-var myData = [
+        var myContent = document.getElementById("myContent");
 
-    {
+        /* var myData = [
+
+        {
+
+          "S.No.": "",
+        "Topic": "SSC CGL 2021 Tier-I (Held On : 11 April 2022 Shift 3) English Paper",
+        "Link": "18-06-2023-part-1.html"  
+
+        },
+
+{
         "S.No.": "",
-        "Topic": "Number Series PYQs", 
-        "Link": "NumberSeries.html"
-    },
-   
+        "Topic": "SSC CGL Tier-I Test-04 ",
+        "Link": "ssc-cgl-full-test-04-tier-1-eng.html"  
+  },
 
-   
-    
-];
+        {
+                  
+                  "Topic": "SSC CGL Full Test-11 Tier-1 English Paper",
+                  "Link": "07-03-2023.html" 
+        },
 
-var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
+          {
+                
+                "Topic": "SSC CHSL Tier-1 2021 (Held on: June 10, 2022 Shift-2) English Paper",
+                "Link": "07-03-2023-part-1.html"
+            },
+            {
+               
+                "Topic": "Key Points Of SSC CGL Tier-II Mock Test-7",
+                "Link": "14-02-2023.html"
+            },
+            {
+               
+                "Topic": "Key Points Of SSC CHSL MOCK TEST (Held On: 24 May 2022 Shift 3)",
+                "Link": "10-02-2023.html"
+            },
+            {
+               
+                "Topic": "Key Points Of SSC CHSL MOCK TEST (Held On: 26 May 2022 Shift 1)",
+                "Link": "10-02-2023-Part-2.html"
+            }
+        ];
 
-    let a=0;
+*/
+       
 
-for (var i = 0; i < myData.length; i++) {
-    ++a;
-    myTable += "<tr><td>" + a + "</td><td>" + myData[i]["Topic"] + "</td><td><a href='" + myData[i]["Link"] + "' class='btn btn-primary btn-sm'>Click Here</a></td></tr>";
-}
 
-myTable += "</tbody></table>";
+/*
+         var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
 
-myContent.innerHTML = myTable;
+             let a=0;
+
+         for (var i = 0; i < myData.length; i++) {
+             ++a;
+             myTable += "<tr><td>" + a + "</td><td>" + myData[i]["Topic"] + "</td><td><a href='" + myData[i]["Link"] + "' class='btn btn-primary btn-sm'>Click Here</a></td></tr>";
+         }
+
+         myTable += "</tbody></table>";
+
+         myContent.innerHTML = myTable;
+
+*/
+         // fetch data from data.json file using async and await
+
+
+
+
+          async function getData() {
+            const response = await fetch("data.json");
+            const data = await response.json();
+            return data;
+          }
+
+          getData().then((data) => {
+           //console.log(data);
+
+            var myTable = "<table class='table'><thead><tr><th scope='col'>S.No.</th><th scope='col'>Topic</th><th scope='col'>Link</th></tr></thead><tbody>";
+
+            let a=0;
+
+            for (var i = 0; i < data.length; i++) {
+                ++a;
+                myTable += "<tr><td>" + a + "</td><td>" + data[i]["exam_name"] + "</td><td><a href='mock-test-analysis.html?OrgID=MHBC&PoweredBy=nandysagar.in&ExamID=" + data[i]["exam_id"] + "' class='btn btn-warning btn-sm'>View</a></td></tr>";
+            }
+
+            myTable += "</tbody></table>";
+
+            myContent.innerHTML = myTable;
+
+          });
+
+       
+
+
 
       </script>
+
 
 </body>
 </html>
