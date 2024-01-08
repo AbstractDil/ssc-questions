@@ -1,4 +1,31 @@
 [
+    
+    {
+        "exam_id": "2401082230",
+        "exam_name": "SSC CGL (Held On 12 April 2022 Shift 3) English Paper",
+        "exam_date": "08-01-2024",
+        "exam_analysis_directory": "SSC-CGL-12-April-2022-S-3",
+        "total_questions": "13"
+
+    },
+    
+    {
+        "exam_id": "2401082229",
+        "exam_name": "SSC CGL (Held On 12 Dec 2022 Shift 3) English Paper",
+        "exam_date": "08-01-2024",
+        "exam_analysis_directory": "SSC-CGL-12-Dec-2022-S-3",
+        "total_questions": "16"
+
+    },
+    {
+        "exam_id": "2401082228",
+        "exam_name": "SSC CGL (Held On 12 Dec 2022 Shift 4) English Paper",
+        "exam_date": "08-01-2024",
+        "exam_analysis_directory": "SSC-CGL-12-Dec-2022-S-4",
+        "total_questions": "13"
+
+    },
+    
     {
         "exam_id": "2401041954",
         "exam_name": "SSC CGL (Held On 4 June 2019 Shift 1) English Paper",
