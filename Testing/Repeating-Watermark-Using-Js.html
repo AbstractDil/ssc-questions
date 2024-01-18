@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repeating Text Watermark</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Prevent scrollbars due to the positioned watermarks */
+    }
+
+    .watermark {
+      position: absolute;
+      opacity: 0.3;
+      font-size: 24px;
+      color: rgb(161, 154, 154);
+      transform: rotate(-45deg);
+      pointer-events: none; /* Allow interaction with underlying elements */
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  function createWatermark(text) {
+    // Get the body element
+    var body = document.body;
+
+    // Get the dimensions of the viewport
+    var viewportWidth = window.innerWidth;
+    var viewportHeight = window.innerHeight;
+
+    // Create multiple watermark elements and position them
+    for (var i = 0; i < 10; i++) {
+      var watermark = document.createElement('div');
+      watermark.className = 'watermark';
+      watermark.textContent = text;
+
+      // Randomly position the watermark within the viewport
+      var posX = Math.random() * viewportWidth;
+      var posY = Math.random() * viewportHeight;
+
+      watermark.style.left = posX + 'px';
+      watermark.style.top = posY + 'px';
+
+      body.appendChild(watermark);
+    }
+  }
+
+  // Call the function with the desired watermark text
+  createWatermark('Your Watermark Text');
+</script>
+
+</body>
+</html>
