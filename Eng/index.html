@@ -159,7 +159,7 @@
 
             for (var i = 0; i < data.length; i++) {
                 ++a;
-                myTable += "<tr><td>" + a + "</td><td>" + data[i]["exam_name"] + "</td><td><a href='mock-test-analysis.html?OrgID=MHBC&PoweredBy=nandysagar.in&ExamID=" + data[i]["exam_id"] + "' class='btn btn-warning btn-sm'>View</a></td></tr>";
+                myTable += "<tr><td>" + a + "</td><td>" + data[i]["exam_name"] + "</td><td><a href='mock-test-analysis.html?ExamID=" + data[i]["exam_id"] + "&OrgID=MHBC&PoweredBy=nandysagar.in' class='btn btn-warning btn-sm'>View</a></td></tr>";
             }
 
             myTable += "</tbody></table>";
