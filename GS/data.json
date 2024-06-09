@@ -1,5 +1,11 @@
 [
-    
+    {
+        "exam_id": "2406090948",
+        "exam_name": "SSC CGL 2023 Tier-I (Held On : 14 July 2023 Shift 2) GA Paper",
+        "exam_date": "09-06-2024",
+        "exam_analysis_directory": "SSC-CGL-14-July-2023-S-2",
+        "total_questions": "35"
+    },
 
     {
         "exam_id": "2308311924",
@@ -43,4 +49,6 @@
         "exam_analysis_directory": "Part-1",
         "total_questions": "20"
     }
+   
+
 ]

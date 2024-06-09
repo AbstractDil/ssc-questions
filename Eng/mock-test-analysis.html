@@ -47,11 +47,8 @@
         </h4>
           <!-- show content here  -->
           
-<div class="panel panel-default" id="watermark">
-    <div class="panel-body">
-     <div id="content"></div>
-    </div>
-</div>
+
+            <div id="content"></div>
             <div id="ErrorMsg"></div>
 
           
@@ -95,7 +92,7 @@ $.getJSON("data.json", function(data) {
     $.each(data, function(key, value) {
         exam_data.push(value);
     });
-   // console.log(exam_data);
+    // console.log(exam_data);
 
 
     // get ExamID parameter value from url
@@ -105,16 +102,6 @@ $.getJSON("data.json", function(data) {
 
     var examID = url.searchParams.get("ExamID");
 
-    // Body Watermark 
-
-    function watermark(text) {
-    //var body = document.getElementsByTagName('body')[0];
-    var contentBody = document.getElementById('watermark');
-    var bg = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='100px' >" +
-    "<text transform='translate(20, 100) rotate(-45)' fill='rgb(161,154,154)' font-size='20'> " + text + "</text></svg>\")";
-    contentBody.style.backgroundImage = bg; 
-}
-
     if(!examID) {
         alert('You have entered wrong url.');
         // show alert using html page 
@@ -123,7 +110,7 @@ $.getJSON("data.json", function(data) {
         document.getElementById('ErrorMsg').innerHTML = '<center><h1>Error 404: Page Not Found<br></h1><p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br><a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p> </center>';
     }
 
-   // console.log(examID);
+    console.log(examID);
 
 /*
     var url = window.location.href;
@@ -135,7 +122,7 @@ $.getJSON("data.json", function(data) {
     // check examID length and pattern is only number
 
     if(examID.length != 10 || isNaN(examID) || examID == null ) {
-        alert('Exam ID is not valid.');
+        alert('You have entered wrong url.');
            // show alert using html page 
            document.getElementById('title').style.display = 'none';
         document.getElementById('content').style.display = 'none';
@@ -150,9 +137,7 @@ $.getJSON("data.json", function(data) {
     var examID_exist = exam_data.some(function(el) {
         return el.exam_id === examID;
     });
-   // console.log(examID_exist);
-
-
+   //  console.log(examID_exist);
 
     if(examID_exist == false) {
         alert('You have entered wrong url.');
@@ -166,40 +151,19 @@ $.getJSON("data.json", function(data) {
 
 
     // fetch exam name,date, exam analysis, total questions using examID
-    var exam_id = exam_data.find(x=> x.exam_id === examID).exam_id;  
+        
     var exam_name = exam_data.find(x => x.exam_id === examID).exam_name;
     var exam_date = exam_data.find(x => x.exam_id === examID).exam_date;
     var exam_analysis_directory = exam_data.find(x => x.exam_id === examID).exam_analysis_directory;
     var total_questions = exam_data.find(x => x.exam_id === examID).total_questions;
 
-    console.log(examID);
-
-    watermark(examID);
-
-   // console.log(exam_name);
-   // console.log(exam_date);
-   // console.log(exam_analysis_directory);
-   // console.log(total_questions);
+   //  console.log(exam_name);
+   //  console.log(exam_date);
+   //  console.log(exam_analysis_directory);
+   //  console.log(total_questions);
 
 
-// Get the body element
-var body = document.body;
 
-// Create a style element
-var styleElement = document.createElement('style');
-
-// Set the content property for the body:before pseudo-element
-var cssCode = "body:before { content: '" + examID + "'; }";
-
-
-// Append the style element to the head of the document
-document.head.appendChild(styleElement);
-
-// Access the styleSheet property of the style element
-var styleSheet = styleElement.sheet;
-
-// Add the CSS code to the style sheet
-styleSheet.insertRule(cssCode, 0);
 
 
 // set the title
@@ -219,7 +183,7 @@ for (let i = 0; i < total_questions; i++) {
  // increment the counter
 
  ++a;
- // console.log(a);
+  // console.log(a);
 
 // get the content div
 let content = document.getElementById("content");
@@ -240,21 +204,14 @@ if(a != 0){
     
     img.src = `${exam_date}/${exam_analysis_directory}/` + a + ".png";
 }
-// Create a div element with the class "text-center"
-var divElement = document.createElement('div');
-divElement.classList.add('text-center');
 
-// Create an image element with the classes "img-fluid img-thumbnail"
 
 img.className = "img-fluid img-thumbnail";
 
-// Append the image to the div
-divElement.appendChild(img);
 
-// Append the div to the content (assuming content is already defined)
+// add the image to the content div
 
-content.appendChild(divElement);
-
+content.appendChild(img);
 
 
 }
@@ -262,8 +219,6 @@ content.appendChild(divElement);
   
 }
 );
-
-
 
 
 </script>
