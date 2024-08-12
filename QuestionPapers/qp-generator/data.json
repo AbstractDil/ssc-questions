@@ -1,0 +1,18 @@
+[
+   
+
+    {
+        "exam_id": "2408121244",
+        "exam_name": "RBE SSC CGL 2024 Live Test - 11 Aug, 2024",
+        "exam_date": "12-08-2024",
+        "exam_db": "_db/rbe-cgl-live-test-11082024.json"
+    },
+
+    {
+        "exam_id": "2308311924",
+        "exam_name": "Demo Exam",
+        "exam_date": "12-08-2024",
+        "exam_db": "_db/rbe-cgl-live-test-11082024.json"
+    }
+   
+]
