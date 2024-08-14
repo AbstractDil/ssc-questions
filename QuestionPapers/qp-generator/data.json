@@ -1,6 +1,12 @@
 [
    
     {
+        "exam_id": "2408141739",
+        "exam_name": "SSC CGL 2023 Number System",
+        "exam_date": "14-08-2024",
+        "exam_db": "/db/ssc-cgl-2023-number-system.json"
+    },
+    {
         "exam_id": "2408141717",
         "exam_name": "SSC CGL 2023 Number Series",
         "exam_date": "14-08-2024",
