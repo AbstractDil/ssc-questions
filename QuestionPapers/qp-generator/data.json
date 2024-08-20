@@ -1,30 +1,37 @@
 [
+
+    {
+        "exam_id": "2408202312",
+        "exam_name": "SSC CGL 2023 Time, Speed and Distance",
+        "exam_date": "14-08-2024",
+        "exam_db": "assets/db/TSD-SSC-CGL-2023-Part-1.json"
+    },
    
     {
         "exam_id": "2408141739",
         "exam_name": "SSC CGL 2023 Number System",
         "exam_date": "14-08-2024",
-        "exam_db": "/db/ssc-cgl-2023-number-system.json"
+        "exam_db": "assets/db/ssc-cgl-2023-number-system.json"
     },
     {
         "exam_id": "2408141717",
         "exam_name": "SSC CGL 2023 Number Series",
         "exam_date": "14-08-2024",
-        "exam_db": "/db/ssc-cgl-2023-reasoning-number-series.json"
+        "exam_db": "assets/db/ssc-cgl-2023-reasoning-number-series.json"
     },
 
     {
         "exam_id": "2408121244",
         "exam_name": "RBE SSC CGL 2024 Live Test - 11 Aug, 2024",
         "exam_date": "12-08-2024",
-        "exam_db": "/db/rbe-cgl-live-test-11082024.json"
+        "exam_db": "assets/db/rbe-cgl-live-test-11082024.json"
     },
 
     {
         "exam_id": "2308311924",
         "exam_name": "Demo Exam",
         "exam_date": "12-08-2024",
-        "exam_db": "/db/rbe-cgl-live-test-11082024.json"
+        "exam_db": "assets/db/rbe-cgl-live-test-11082024.json"
     }
    
 ]
