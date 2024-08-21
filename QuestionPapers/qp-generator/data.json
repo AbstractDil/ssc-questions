@@ -1,6 +1,18 @@
 [
 
     {
+        "exam_id": "2408211032",
+        "exam_name": "SSC CGL 2023 All Police and Thief Questions ",
+        "exam_date": "14-08-2024",
+        "exam_db": "assets/db/police-thief-ssc-cgl-2023.json"
+    },
+    {
+        "exam_id": "2408211028",
+        "exam_name": "SSC CGL 2023 All Race Questions ",
+        "exam_date": "14-08-2024",
+        "exam_db": "assets/db/Race-TSD-SSC-CGL-2023-Part-2.json"
+    },
+    {
         "exam_id": "2408202312",
         "exam_name": "SSC CGL 2023 Time, Speed and Distance Part-1",
         "exam_date": "14-08-2024",
