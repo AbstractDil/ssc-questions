@@ -1,6 +1,12 @@
 [
 
     {
+        "exam_id": "2408252221",
+        "exam_name": "SSC CPO 2023 All Chemistry Question  ",
+        "exam_date": "14-08-2024",
+        "exam_db": "assets/db/SSC-CPO-2023-Chemistry.json"
+    },
+    {
         "exam_id": "2408252205",
         "exam_name": "SSC CGL 2023 All Chemistry Question Part-2 ",
         "exam_date": "14-08-2024",
