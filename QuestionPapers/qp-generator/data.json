@@ -1,6 +1,19 @@
 [
 
     {
+        "exam_id": "2408252205",
+        "exam_name": "SSC CGL 2023 All Chemistry Question Part-2 ",
+        "exam_date": "14-08-2024",
+        "exam_db": "assets/db/SSC-CGL-2023-Chemistry-Part-2.json"
+    },
+    {
+        "exam_id": "2408252203",
+        "exam_name": "SSC CGL 2023 All Chemistry Question Part-1 ",
+        "exam_date": "14-08-2024",
+        "exam_db": "assets/db/SSC-CGL-2023-Chemistry-Part-1.json"
+    },
+
+    {
         "exam_id": "2408211032",
         "exam_name": "SSC CGL 2023 All Police and Thief Questions ",
         "exam_date": "14-08-2024",
