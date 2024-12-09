@@ -1,4 +1,10 @@
 [
+    {
+        "exam_id": "2412091913",
+        "exam_name": "SSC CGL 2024 All History Question Part-1 ",
+        "exam_date": "09-12-2024",
+        "exam_db": "assets/db/2024/cgl/history/cgl-2024-tier-1-history-part-1.json"
+    },
 
     {
         "exam_id": "2408252221",
