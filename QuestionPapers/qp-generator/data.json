@@ -1,5 +1,11 @@
 [
     {
+        "exam_id": "2502021736",
+        "exam_name": "RBE SSC CGL 2025 Live Mock Feb 02,2025",
+        "exam_date": "02-02-2025",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/02022025_Part_1.json"
+    },
+    {
         "exam_id": "2412091913",
         "exam_name": "SSC CGL 2024 All History Question Part-1 ",
         "exam_date": "09-12-2024",
