@@ -9,6 +9,60 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <style>
+       
+       .theme-toggle {
+        /* position: absolute; */
+        /* left: 20px; */
+        /* top: 20px; */
+        margin-top: 10px;
+    }
+
+    .print-button {
+        /* position: absolute; */
+        /* right: 20px; */
+        /* top: 20px; */
+        margin-top: 10px;
+    }
+
+    /* Light Theme Styles */
+    .light-theme {
+        background-color: #ffffff;
+        color: #000;
+    }
+
+    .light-theme .rightAns {
+        color: green;
+    }
+
+    .light-theme .qpnltbl td,
+    .light-theme .qrtbl td,
+    .light-theme .menu-tbl td {
+        border: 1px solid #ccc;
+    }
+
+    .light-theme .option img {
+        filter: invert(0);
+    }
+
+    /* Dark Theme Styles */
+    .dark-theme {
+        background-color: #41403e;
+        color: #fff;
+    }
+
+    .dark-theme .rightAns {
+        color: rgb(8, 202, 8);
+    }
+
+    .dark-theme .qpnltbl td,
+    .dark-theme .qrtbl td,
+    .dark-theme .menu-tbl td {
+        border: 1px solid #ccc;
+    }
+
+    /* .dark-theme .option img {
+        filter: invert(1); 
+    } */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -68,7 +122,7 @@
         }
 
         .rightAns {
-            color: green;
+            color: rgb(8, 202, 8);
         }
 
         .wrngAns {
@@ -147,6 +201,14 @@
 
     </div>
 
+    
+        <!-- print -->
+        <div class="container hidden-print">
+            <button class="btn btn-default theme-toggle" id="toggleTheme"> <i class="glyphicon glyphicon-adjust"></i> Change Theme</button>
+            <button class="btn btn-warning print-button" onclick="window.print();">
+                <i class="glyphicon glyphicon-print"></i> Print</button>
+        </div>
+        <!-- print ends -->
     <div class="container">
 
         <h3 class="text-center" id="title" style="margin-bottom:30px;">Questions and Solutions</h1>
@@ -157,29 +219,6 @@
             </div>
             <div id="ErrorMsg"></div>
     </div>
-
-    <!-- print -->
-
-
-    <div class="container" id="printSection">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-
-                <div class=" hidden-print text-center" style="margin-top: 10px; margin-bottom: 10px;">
-
-
-                    <!-- Link is automatic generation using javascript -->
-                    <button class="btn btn-warning" id="generateLink" onclick="window.print();">
-                        <i class="bi bi-printer-fill"></i> Click here to Print</button>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- print ends -->
 
     <!-- jQuery -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
@@ -358,6 +397,25 @@
             });
         });
     </script>
+
+<script>
+    // Theme toggle
+    let currentTheme = 'dark';
+    document.body.classList.add('dark-theme');
+
+    document.getElementById('toggleTheme').addEventListener('click', function () {
+        if (currentTheme === 'dark') {
+            document.body.classList.remove('dark-theme');
+            document.body.classList.add('light-theme');
+            currentTheme = 'light';
+        } else {
+            document.body.classList.remove('light-theme');
+            document.body.classList.add('dark-theme');
+            currentTheme = 'dark';
+        }
+    });
+</script>
+
 </body>
 
 </html>
