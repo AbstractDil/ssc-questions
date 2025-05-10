@@ -1,7 +1,20 @@
 [
     {
+        "exam_id": "2505101029",
+        "exam_name": "Parmar SSC Live Mock 17",
+        "exam_date": "10-05-2025",
+        "exam_db": "assets/db/Parmar-Test-Series/pts-17.json"
+    },
+
+    {
+        "exam_id": "2505101016",
+        "exam_name": "RBE SSC CGL 2025 Live Mock May 10,2025",
+        "exam_date": "10-05-2025",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/10052025.json"
+    },
+    {
         "exam_id": "2505041103",
-        "exam_name": "Parmar SSC Live Mock 15 May,2025",
+        "exam_name": "Parmar SSC Live Mock 15 ",
         "exam_date": "04-05-2025",
         "exam_db": "assets/db/Parmar-Test-Series/pts-15.json"
     },
@@ -13,7 +26,7 @@
     },
     {
         "exam_id": "2504201311",
-        "exam_name": "Parmar SSC Live Mock 10 April,2025",
+        "exam_name": "Parmar SSC Live Mock 10 ",
         "exam_date": "20-04-2025",
         "exam_db": "assets/db/Parmar-Test-Series/pts-10.json"
     },
@@ -25,7 +38,7 @@
     },
     {
         "exam_id": "2504051407",
-        "exam_name": "Parmar SSC Live Mock 2 April,2025",
+        "exam_name": "Parmar SSC Live Mock 2 ",
         "exam_date": "05-04-2025",
         "exam_db": "assets/db/Parmar-Test-Series/pts-4.json"
     },
