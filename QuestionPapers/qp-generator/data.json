@@ -1,5 +1,17 @@
 [
     {
+        "exam_id": "2505180935",
+        "exam_name": "Parmar SSC Live Mock 19",
+        "exam_date": "18-05-2025",
+        "exam_db": "assets/db/Parmar-Test-Series/pts-19.json"
+    },
+    {
+        "exam_id": "2505180936",
+        "exam_name": "RBE SSC CGL 2025 Live Mock May 18,2025",
+        "exam_date": "18-05-2025",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/18052025.json"
+    },
+    {
         "exam_id": "2505161519",
         "exam_name": "RBE NTPC 2025 Live Mock May 16,2025",
         "exam_date": "16-05-2025",
