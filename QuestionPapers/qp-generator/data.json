@@ -1,5 +1,11 @@
 [
     {
+        "exam_id": "2505222201",
+        "exam_name": "RBE NTPC 2025 Live Mock May 22,2025",
+        "exam_date": "22-05-2025",
+        "exam_db": "assets/db/RBE-NTPC-Live-Mock-2025/22052025.json"
+    },
+    {
         "exam_id": "2505191557",
         "exam_name": "RBE NTPC 2025 Live Mock May 19,2025",
         "exam_date": "19-05-2025",
