@@ -204,9 +204,15 @@
     
         <!-- print -->
         <div class="container hidden-print">
-            <button class="btn btn-default theme-toggle" id="toggleTheme"> <i class="glyphicon glyphicon-adjust"></i> Change Theme</button>
-            <button class="btn btn-warning print-button" onclick="window.print();">
-                <i class="glyphicon glyphicon-print"></i> Print</button>
+            <button class="btn btn-default btn-sm theme-toggle" id="toggleTheme"> <i class="glyphicon glyphicon-adjust"></i> Change Theme
+            </button>
+            <button class="btn btn-warning  btn-sm print-button" onclick="generatePDF();">
+                <i class="glyphicon glyphicon-print"></i> Print
+            </button>
+            <!-- Button for download pdf -->
+            <button class="btn btn-success btn-sm print-button" onclick="downloadPDF();">
+                <i class="glyphicon glyphicon-save"></i> Download PDF
+            </button>
         </div>
         <!-- print ends -->
     <div class="container">
@@ -399,6 +405,48 @@
     </script>
 
 <script>
+
+ // Function to generate PDF
+ 
+ function generatePDF() {
+    // Original title
+    const originalTitle = document.title;
+
+    // Desired title (replace spaces with dashes)
+    //const newTitle = originalTitle.replace(/\s+/g, '-');
+    const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+
+    // Temporarily change the title
+    document.title = newTitle;
+
+    // Wait a bit for title to update, then print
+    setTimeout(() => {
+      window.print();
+
+      // Restore the original title
+      document.title = originalTitle;
+    }, 100);
+  }
+
+    // Function to download PDF
+
+    function downloadPDF(){
+
+         // Original title
+            const originalTitle = document.title;
+
+        // Desired title (replace spaces with dashes)
+        //const newTitle = originalTitle.replace(/\s+/g, '-');
+        const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+
+        // Construct the PDF file path
+        const pdfUrl = `pdf/${newTitle}.pdf`;
+
+        // Open the generated URL in a new tab
+        window.open(pdfUrl, '_blank');
+
+    }
+
     // Theme toggle
     let currentTheme = 'dark';
     document.body.classList.add('dark-theme');
