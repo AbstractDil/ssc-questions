@@ -1,6 +1,26 @@
 [
 
     {
+        "exam_id": "2506211241",
+        "exam_name": "RBE SSC CGL 2025 Live Mock June 21,2025",
+        "exam_date": "21-06-2025",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/21062025.json"
+    },
+    {
+        "exam_id": "2506211145",
+        "exam_name": "Parmar SSC Live Mock 27",
+        "exam_date": "21-06-2025",
+        "exam_db": "assets/db/Parmar-Test-Series/pts-27.json"
+    },
+
+    {
+        "exam_id": "2506211242",
+        "exam_name": "Parmar SSC Live Mock 28",
+        "exam_date": "21-06-2025",
+        "exam_db": "assets/db/Parmar-Test-Series/pts-28.json"
+    },
+
+    {
         "exam_id": "2506052236",
         "exam_name": "RBE NTPC 2025 Live Mock June 05,2025",
         "exam_date": "05-06-2025",
