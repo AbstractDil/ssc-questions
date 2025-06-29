@@ -1,4 +1,10 @@
 [
+    {
+        "exam_id": "2506291955",
+        "exam_name": "Parmar SSC  Mega Live Mock 30",
+        "exam_date": "29-06-2025",
+        "exam_db": "assets/db/Parmar-Test-Series/pts-30.json"
+    },
 
     {
         "exam_id": "2506211241",

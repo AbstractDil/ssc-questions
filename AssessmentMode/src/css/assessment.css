@@ -1,0 +1,587 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-size: 12px !important; */
+    user-select: none;
+  
+    -webkit-user-select: none;
+  
+    -webkit-touch-callout: none;
+  
+    -moz-user-select: none;
+  
+    -ms-user-select: none;
+  
+    -khtml-user-select: none;
+  }
+  
+  .actual-exam-ui .left-box {
+  position:fixed;
+  left: 0;
+  top:49px;
+  bottom: 0;
+  right: 0;
+  margin-right: 320px;
+  z-index: 1;
+  }
+  
+  .actual-exam-ui .u-mob-sidebar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 48px;
+  bottom: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  }
+  
+  .actual-exam-ui .sidenav {
+  position:fixed;
+  right: 0px !important;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  border-left: 1px solid #ddd;
+  background: #fff;
+  z-index: 41;
+  /* height: calc(100vh - 60px); */
+  }
+  
+  
+  #welcomeScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .question-text, .radio {
+    font-size: 14px !important;
+  }
+  /* For larger screens */
+  @media (min-width: 992px) { /* Adjust breakpoint as needed */
+    .question-text, .radio {
+      font-size: 16px !important;
+    }
+  }
+  .radio {
+    display: flex;
+    align-items: center;
+  }
+  .option-label {
+    margin-right: 10px;
+  }
+  .option-text {
+    flex-grow: 1;
+  }
+  
+  .navbar-toggle {
+   /* background-color: #5bc0de !important; */ /* btn-info background color */
+   background-color:transparent !important;  /* btn-info background color */
+    border: none;
+    color:#fff;
+    /* padding: 8px 10px !important; */
+  }
+  
+  /* Ensure the color remains the same when the button is clicked */
+  .navbar-toggle:focus,
+  .navbar-toggle:active,
+  .navbar-toggle:hover {
+    background-color:transparent !important;  /* btn-info background color */
+    border: none !important;
+    outline: none !important; /* Remove the default outline */
+    box-shadow: none !important; /* Remove any box-shadow */
+  }
+  
+  @media (max-width: 767px) {
+   
+    /* Show the timer button in place of navbar-toggle for mobile */
+    .navbar-header .show-timer {
+      display: block !important;
+      margin: 8px 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Hide the mobile timer button for larger screens */
+    .navbar-header .show-timer {
+      display: none;
+    }
+  
+   
+  }
+  
+  
+  /* .actual-exam-ui .marks-action {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 16px;
+  background: #d9edf7;
+  -webkit-box-shadow: 0 -1px 2px #9ecee5;
+  box-shadow: 0 -1px 2px #9ecee5; 
+  } */
+  
+  .actual-exam-ui .question-no-panel{
+    position: absolute; 
+   left: 0;
+    right: 0;
+    top:20rem;
+    bottom: 92px;
+    padding:15px;
+  }
+  
+  .actual-exam-ui .test-qpip-holder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  }
+  
+  .actual-exam-ui .question-holder{
+  position: absolute;
+    left: 0;
+    right: 0;
+    top:74px;
+    bottom:24px;
+  }
+  
+  /* .question-text p, .radio p{
+    font-size: 16px !important;
+  } */
+  
+  #QuestionPool > div:not(#Q1) {
+    display: none;
+  }
+  
+  .user-img{
+    width: 60px !important;
+  }
+  .btn-default{
+      background-color: #555;
+      color: #fff;
+    }
+  button{
+    outline: none !important;
+    background : transparent;
+    border: none !important;
+  }
+  .navbar{
+    background-color: #fff;
+  }
+  
+  .show-timer{
+    float: right !important;
+    /* margin-right:310px; */
+    pointer-events: none;
+    font-weight: 700;
+  }
+  .panel{
+  border-radius: 0 !important;
+  }
+  
+  .panel-body ul{
+  text-decoration: none;
+  margin-left: 20px;
+  }
+  
+  .questionNumber .not-visited{
+    float: left;
+    background-color: #a8a5a5;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 8px 5px;
+    width:40px; 
+    height:40px;
+    position: relative;
+    font-size: 12px !important;
+  }
+  
+  
+  .answered {
+    background-color: #5cb85c !important;
+  border-radius:10px !important;
+  }
+  
+  
+  .not-answered {
+  background-color: rgb(218, 3, 39) !important;
+  border-radius:10px !important;
+  }
+  
+  
+  .visited-but-not-answered{
+    border-radius:10px !important;
+  }
+  
+  .marked {
+    background-color: #8c11c5 !important;
+  border-radius:10px !important;
+  }
+  
+  .marked-answered{
+  background-color: #8c11c5 !important;
+  border-radius:10px !important;
+  
+  }
+  
+  .marked-answered::after {
+    content: '\2714'; /* Unicode for tick mark */
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    font-size:12px;
+    color: white;
+    background-color: #5cb85c;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px; /* Ensures the tick is centered vertically */
+  }
+  
+  .navbar .navbar-header a, .navbar .navbar-header a :hover{
+    color: black;
+  }
+  
+  .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  
+  
+      background-color: #1e94a3 !important;
+      color: #fff;
+      padding: 6px 16px !important;
+      margin-top: 3px;
+      margin-bottom: 0px !important;
+      font-weight: 700;
+  
+  }
+  
+  .nav ul li a:hover{
+    background-color: #1e94a3 !important;
+  
+  }
+  
+      /* Sidebar User details  */
+  
+      .user-details{
+        
+        margin: 10px 0px 0px 0px !important;
+  
+      }
+  
+      hr{
+        border-bottom:2px solid #ddd;
+        width: auto;
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
+  
+      /* .sidenav {
+        position:fixed;
+        top:5.2rem;
+        right: 0px;
+        height: calc(100vh - 60px);
+        width: 320px;
+        background-color: #fbfcfe;
+        box-shadow: -1px 0 3px 0 rgb(25 63 85 / 20%);
+        transition: all 0.5s;
+        -webkit-transition: all 0.25s;
+        overflow-y: auto;
+  
+      } */
+  
+      /* Scrollbar Style */
+  
+     
+      .float-left{
+        float: left;
+      }
+  
+      .float-right{
+        float: right;
+      }
+  
+      .float-center{
+        float: center;
+      }
+  
+      .mx-5{
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+  
+      .mx-2{
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+      }
+  
+      .text-center{
+        text-align : center;
+      }
+  
+    /* Buttons Starts  */
+      .save-next-btn{
+        float: right;
+        margin-right:320px;
+      }
+  
+      .mark-for-review-btn{
+        background-color: #6f0585 !important;
+        color: #fff;
+      }
+  
+    /* Buttons Ends  */
+     
+  
+      .footer{
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 10px 13px;
+        border-top: 1px solid #ddd;
+        /* z-index: -1000; */
+        /* box-shadow: 0px 0px 5px 0px #bebcbc; */
+  
+      }
+  
+      .footer-one{
+        position:fixed;
+        text-align:center;
+        /* float: left;
+        width:100%;
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+        height: 100%; */
+        bottom: 0;
+  
+        
+        /* position: relative;
+        float: left;
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        margin: 0 0 8px; */
+      }
+  
+     
+      .submit-btn{
+        margin:8px 0 8px 0;
+        text-transform: uppercase;
+      }
+      .collapsed {
+        right: 0;
+      }
+  
+      .sidebar-toggle {
+        position: fixed;
+        top:12px;
+        right: 20px;
+        z-index: 1000;
+      }
+  
+      .mob-clear-btn{
+        display: none;
+      }
+      .mob-mark-for-review-btn{
+        display: none;
+      }
+     
+      
+  textarea:disabled {
+  background-color: white !important;
+  resize: none !important;
+  border: 1px solid black !important;
+  cursor: default !important;
+  }
+  
+  
+  /* disable select in disable textarea */
+  
+  textarea:disabled::selection {
+  background: transparent;
+  }
+  
+  
+  
+  textarea {
+  background-color: white !important;
+  resize: none !important;
+  border: 1px solid black !important;
+  cursor: default !important;
+  font-size: 14px !important;
+  
+  
+  }
+  
+  /* Set textarea  select border colour to black */
+  
+  textarea:focus {
+  border-color: black !important;
+  box-shadow: none !important;
+  }
+  
+  /* Set button box shadow none */
+  
+  button:focus {
+  box-shadow: none !important;
+  }
+  
+  /* Scrollbar  */
+  
+  ::-webkit-scrollbar {
+  width: 10px;
+  
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #acaaaa;
+  /* border-radius: 5px; */
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #747373;
+  }
+  
+  
+  /* Scrollbar ends */
+  
+  .toggle-sidenav{
+    display: none; /* by default */
+  }
+  
+      
+  
+      @media(max-width: 768px){
+  
+        .actual-exam-ui .left-box {
+          margin-right: 0px;
+        }
+  
+        .sidenav{
+          /* height: calc(100vh - 116px); */
+          height: 100%;
+          width: 0px !important;
+          transition: width 0.1s ease-in-out; /* Add transition */
+        }
+  
+        .sidenav-active{
+          width: 320px !important;
+          overflow-y: scroll !important;
+        }
+  
+            /* Toggle button styles */
+      .toggle-sidenav {
+        display: block;
+        position: fixed;
+        bottom:62px;
+        right: 16px;
+        z-index: 999;
+        transition: right 0.1s ease-in-out;
+      }
+  
+      .sidenav-active + .toggle-sidenav {
+        right: calc(320px + 5px);
+      }
+  
+        .submit-btn{
+          margin-top: 0px !important;
+        }
+  
+       .navbar-header a{
+        white-space: nowrap;
+        width:75%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+  
+       }
+  
+        .nav-pills li a{
+        white-space: nowrap;
+        width:68px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+  
+       }
+  
+       .show-timer{
+        float: right;
+        margin-right:0px !important;
+        background-color: rgb(218, 3, 39);
+        color: white;
+        padding: 5px 15px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 5px;
+  
+  
+      }
+  
+      /* .float-right{
+        text-align: center;
+        margin-right:0px !important;
+        margin-top: 5px;
+  
+      } */
+  
+      .mark-for-review-btn{
+        display: none;
+        text-align: center;
+        margin-right:0px !important;
+        margin-bottom: 7px;
+        
+  
+      }
+  
+      .mob-clear-btn{
+        display: block;
+        margin-right:0px !important;
+        margin-bottom: 7px;
+  
+      }
+  
+      .clear-btn{
+        display: none;
+      }
+  
+      .mob-mark-for-review-btn{
+        display: block;
+        margin-right:0px !important;
+        margin-bottom: 7px;
+        background-color: #6f0585 !important;
+        color: #fff;
+  
+      }
+  
+      .mob-previous-btn-text{
+        display:block;
+      }
+     
+      .save-next-btn{
+        float: right;
+        margin-right:0px;
+      }
+  
+  
+    }
