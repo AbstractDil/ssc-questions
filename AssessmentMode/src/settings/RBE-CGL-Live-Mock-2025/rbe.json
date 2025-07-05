@@ -1,0 +1,17 @@
+[
+  {
+    "exam_settings": {
+      "total_questions": "50",
+      "sections": {
+        "sec_1": {
+          "sec_name": "Logical Reasoning",
+          "sec_total_questions": "25"
+        },
+        "sec_2": {
+          "sec_name": "Quantitative Aptitude",
+          "sec_total_questions": "25"
+        }
+      }
+    }
+  }
+]
