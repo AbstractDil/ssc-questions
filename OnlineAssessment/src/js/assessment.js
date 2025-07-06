@@ -3,9 +3,13 @@ const imoesApp = Vue.createApp({
         return {
             apiPrimaryURL: "https://abstractdil.github.io/ssc-questions/QuestionPapers/qp-generator/",
             apiSecondaryURL: "https://abstractdil.github.io/ssc-questions/QuestionPapers/qp-generator/data.json",
+            isSidenavVisible: false, 
             appHeader: {
                 examName: "CBT - MathHub Online Examination System",
             },
+            isLoading: true,
+            isFullScreen: false, // Track fullscreen state
+            isReattempt: true, // Default to true for re-attempt
             exam_module: null,
             exam_question_url: null,
             examId: null,
@@ -20,6 +24,9 @@ const imoesApp = Vue.createApp({
            // Optional for radio/checkbox response
           
            userAnswers: [],
+           submittedAnswers: {},
+           showSolution: false,
+
         }
     },
 
@@ -46,11 +53,74 @@ const imoesApp = Vue.createApp({
         set(val) {
           this.userAnswers.splice(this.currentQuestionIndex, 1, val);
         }
+      },
+        // Get current section data (like name, range)
+      currentSection() {
+        return this.exam_module?.sections?.[this.currentSectionKey]||null;
+      },
+
+      // Generate question numbers for palette
+      currentSectionQuestions() {
+        if (!this.currentSection?.ques_no) return [];
+      
+        const [start, end] = this.currentSection.ques_no.split('-').map(Number);
+        const numbers = [];
+        for (let i = start; i <= end; i++) numbers.push(i);
+        return numbers;
+      },
+
+      sectionName() {
+        return this.currentSection?.sec_name || '';
+      },
+      isAnswerSubmitted() {
+        return !!this.submittedAnswers[this.currentQuestionIndex];
+      },
+      currentAnswer() {
+        return this.submittedAnswers[this.currentQuestionIndex] || {};
       }
     },
     
 
     methods: {
+      toggleNav() {
+        this.isSidenavVisible = !this.isSidenavVisible;
+      },
+      toggleFullScreen() {
+        const elem = document.documentElement;
+      
+        if (!document.fullscreenElement) {
+          elem.requestFullscreen?.();
+          elem.webkitRequestFullscreen?.();
+          elem.mozRequestFullScreen?.();
+          elem.msRequestFullscreen?.();
+          this.isFullScreen = true;
+        } else {
+          document.exitFullscreen?.();
+          document.webkitExitFullscreen?.();
+          document.mozCancelFullScreen?.();
+          document.msExitFullscreen?.();
+          this.isFullScreen = false;
+        }
+      },
+
+      toggleSolution() {
+        this.showSolution = !this.showSolution;
+      },
+      
+      
+
+      handleAnswerSubmit(questionIndex, selectedOption) {
+        this.showSolution = false; // reset for new question
+
+        const correctAnswer = this.questionList[questionIndex].answer;
+    
+        // Lock the question
+        this.submittedAnswers[questionIndex] = {
+          selected: selectedOption,
+          correct: parseInt(correctAnswer),
+        };
+      },
+
         validateExamIdFormat(examId) {
             const regex = /^[0-9]{10}$/; // 10-digit number
             return regex.test(examId);
@@ -176,12 +246,16 @@ const imoesApp = Vue.createApp({
 
         async fetchExamQuestions() {
             try {
+              this.isLoading = true;
               const response = await axios.get(this.exam_question_url);
               this.questionList = response.data;
           
               this.setCurrentSectionByIndex(0); // Initialize with first question
             } catch (error) {
               console.error('Error loading questions:', error);
+            }
+            finally {
+              this.isLoading = false; // Hide loader
             }
           },
 
@@ -226,31 +300,151 @@ const imoesApp = Vue.createApp({
             }
           },
           
+          switchSection(key) {
+            this.currentSectionKey = key;
+            this.currentSection = this.exam_module.sections[key];
+          
+            const range = this.currentSection.ques_no.split('-').map(Number);
+            this.currentQuestionIndex = range[0] - 1;
+          },
+          
+          goToQuestion(index) {
+            this.currentQuestionIndex = index;
+          },
+
+          getExamIdFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            this.examId = urlParams.get('ExamId');
+          
+            // Default to true if re-attempt param is not present
+            const reattempt = urlParams.get('re-attempt');
+            //this.isReattempt = reattempt !== 'false';  // default is true
+
+            if (reattempt === 'false') {
+              Swal.fire({
+                icon: 'warning',
+                title: 'Re-attempt Mode is OFF',
+                text: 'Do you want to turn ON re-attempt mode?',
+                confirmButtonText: 'OK',
+                allowOutsideClick: false
+              }).then(() => {
+                this.isReattempt = true;
+                this.updateReattemptInURL(); 
+              });
+            } else {
+              this.isReattempt = true;
+              this.updateReattemptInURL(); 
+            }
+          },
           
 
-        getExamIdFromURL() {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get('ExamId');
+          updateReattemptInURL() {
+            const url = new URL(window.location.href);
+            url.searchParams.set('re-attempt', this.isReattempt ? 'true' : 'false');
+            window.history.replaceState({}, '', url);
+
+          },
+
+          preventDefault(e) {
+            e.preventDefault();
+          },
+        
+          blockKeys(e) {
+            // F12
+            if (e.keyCode === 123) {
+              console.log('F12 disabled.');
+              e.preventDefault();
+          }
+           // Ctrl+Shift+I
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+            console.log('Ctrl+Shift+I disabled.');
+            e.preventDefault();
+          }
+
+          // Ctrl+Shift+C
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
+            console.log('Ctrl+Shift+C disabled.');
+            e.preventDefault();
+          }
+
+          // Ctrl+Shift+J
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+            console.log('Ctrl+Shift+J disabled.');
+            e.preventDefault();
+          }
+
+              // Ctrl+U
+        if (e.ctrlKey && e.keyCode === 85) {
+          console.log('Ctrl+U disabled.');
+          e.preventDefault();
         }
+
+        // Ctrl+Shift+U
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 85) {
+          console.log('Ctrl+Shift+U disabled.');
+          e.preventDefault();
+        }
+
+        // Ctrl+P
+    if (e.ctrlKey && e.keyCode === 80) {
+      console.log('Ctrl+P disabled.');
+      e.preventDefault();
+    }
+  }
+          
     },
     mounted() {
-        const examId = this.getExamIdFromURL();
-        this.examId = examId;
+      this.getExamIdFromURL();
     
-        if (this.validateExamIdFormat(examId)) {
-            this.fetchAndValidateExamId(examId);
+      if (this.validateExamIdFormat(this.examId)) {
+        this.fetchAndValidateExamId(this.examId);
+      } else {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Invalid Format',
+          text: 'The provided Exam ID is not in a valid format.',
+          confirmButtonText: 'OK'
+        });
+      }
+
+      // Disable cut, copy, paste
+  document.body.addEventListener('cut', this.preventDefault);
+  document.body.addEventListener('copy', this.preventDefault);
+  document.body.addEventListener('paste', this.preventDefault);
+
+  // Disable right-click
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    console.log('Right click disabled.');
+  });
+
+  // Disable specific key combinations
+  document.addEventListener('keydown', this.blockKeys);
+
+  // Optionally disable scroll (mouse wheel)
+  document.addEventListener('wheel', this.preventDefault, { passive: true });
+    },
+
+    watch: {
+      isReattempt(newVal) {
+        if (!newVal) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'Re-attempt is turned OFF',
+            text: 'You will not be able to answer questions. Do you want to re-enable re-attempt mode?',
+            confirmButtonText: 'Yes, Enable',
+            allowOutsideClick: false
+          }).then(() => {
+            this.isReattempt = true;
+            this.updateReattemptInURL();
+          });
         } else {
-            this.examValid = false;
-            this.validationMessage = "Invalid Exam ID format";
-    
-            Swal.fire({
-                icon: 'warning',
-                title: 'Invalid Format',
-                text: 'The provided Exam ID is not in a valid format.',
-                confirmButtonText: 'OK'
-            });
+          this.updateReattemptInURL();
         }
-    }
+      }
+    },
+    
+    
     
 });
 
