@@ -456,7 +456,9 @@
         // get exam ID from url
         var url = new URL(window.location.href);
         var examID = url.searchParams.get("ExamID");
-        var assessmentUrl = `assessment.html?ExamID=${examID}`;
+        var assessmentUrl = `../../OnlineAssessment/index.html?ExamId=${examID}`;
+        // Open the assessment URL in a new tab
+        window.open(assessmentUrl, '_blank');
     }
 
     // Theme toggle
