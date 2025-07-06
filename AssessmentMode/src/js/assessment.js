@@ -18,27 +18,38 @@ const imoesApp = Vue.createApp({
             // Derived question data
             currentQuestion: null,
            // Optional for radio/checkbox response
-           selectedOption: null
+          
+           userAnswers: [],
         }
     },
 
+    
     computed: {
-        currentQuestionData() {
-          return this.questionList[this.currentQuestionIndex] || null;
-        },
-        currentOptions() {
-            if (!this.currentQuestionData) return [];
-            const options = [];
-            for (let i = 1; i <= 10; i++) {
-              const key = `option_${i}`;
-              if (this.currentQuestionData[key] && this.currentQuestionData[key].trim()) {
-                options.push({ index: i, content: this.currentQuestionData[key] });
-              }
-            }
-            return options;
-          }
+      currentQuestionData() {
+        return this.questionList[this.currentQuestionIndex] || null;
       },
-      
+      currentOptions() {
+        if (!this.currentQuestionData) return [];
+        const options = [];
+        for (let i = 1; i <= 10; i++) {
+          const key = `option_${i}`;
+          if (this.currentQuestionData[key]?.trim()) {
+            options.push({ index: i, content: this.currentQuestionData[key] });
+          }
+        }
+        return options;
+      },
+      selectedOption: {
+        get() {
+          return this.userAnswers[this.currentQuestionIndex] ?? null;
+        },
+        set(val) {
+          this.userAnswers.splice(this.currentQuestionIndex, 1, val);
+        }
+      }
+    },
+    
+
     methods: {
         validateExamIdFormat(examId) {
             const regex = /^[0-9]{10}$/; // 10-digit number
@@ -61,20 +72,22 @@ const imoesApp = Vue.createApp({
                     this.validationMessage = "Valid Exam ID";
                     this.appHeader.examName = exam.exam_name || "CBT - MathHub Online Examination System";
 
-                    // ✅ Set the page title
+                    // Set the page title
                     document.title = `${this.appHeader.examName} - Powered By MathHub Online Examination System`;
         
+                     /*
                     Swal.fire({
                         icon: 'success',
                         title: 'Exam ID Validated',
                         html: `<strong>${exam.exam_name}</strong><br>Date: ${exam.exam_date}`,
                         confirmButtonText: 'Start Test'
                     });
+                    */
 
-                     // ✅ Fetch exam module first
+                     //  Fetch exam module first
                     await this.fetchExamModuleDetails(examId);
 
-                    // ✅ Then fetch questions
+                    //  Then fetch questions
                     this.fetchExamQuestions();
         
                 } else {
@@ -122,6 +135,7 @@ const imoesApp = Vue.createApp({
                     console.log("Exam Module Loaded:", this.exam_module);
         
                     // Optional: You can show a SweetAlert or update the UI here
+                    /*
                     Swal.fire({
                         icon: 'info',
                         title: 'Module Loaded',
@@ -133,6 +147,7 @@ const imoesApp = Vue.createApp({
                         `,
                         confirmButtonText: 'Continue'
                     });
+                    */
         
                 } else {
                     console.warn("No module settings found for this Exam ID");

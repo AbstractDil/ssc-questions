@@ -173,7 +173,8 @@
     
           <!-- Options -->
           <div class="question-options">
-            <div class="radio"
+            <div
+              class="radio"
               v-for="option in currentOptions"
               :key="option.index"
               class="mb-2"
@@ -181,10 +182,9 @@
               <label :for="'option' + option.index" class="d-block">
                 <input
                   type="radio"
-                  :id="'option' + option.index"
                   :value="option.index"
-                  v-model="selectedOption"
-                  name="questionOption"
+                  v-model="userAnswers[currentQuestionIndex]"
+                  :name="'q' + currentQuestionIndex"
                   class="me-2"
                 />
                 <span v-html="option.content"></span>
@@ -192,6 +192,8 @@
             </div>
           </div>
           
+          
+      
     
         </div>
       </div>

@@ -65,7 +65,7 @@
   }
   
   .question-text, .radio {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   /* For larger screens */
   @media (min-width: 992px) { /* Adjust breakpoint as needed */
@@ -150,11 +150,17 @@
   }
   
   .actual-exam-ui .question-holder{
-  position: absolute;
+   position: absolute;
     left: 0;
     right: 0;
     top:74px;
     bottom:24px;
+  }
+
+  .actual-exam-ui .question-holder .question-text ol{
+    padding-left: 20px;
+    margin-left: 0px;
+    /* list-style-type: decimal !important; */
   }
   
   /* .question-text p, .radio p{
