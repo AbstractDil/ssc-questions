@@ -207,11 +207,15 @@
             <button class="btn btn-default btn-sm theme-toggle" id="toggleTheme"> <i class="glyphicon glyphicon-adjust"></i> Change Theme
             </button>
             <button class="btn btn-warning  btn-sm print-button" onclick="generatePDF();">
-                <i class="glyphicon glyphicon-print"></i> Print
+            Print
             </button>
             <!-- Button for download pdf -->
             <button class="btn btn-success btn-sm print-button" onclick="downloadPDF();">
-                <i class="glyphicon glyphicon-save"></i> Download PDF
+             Download PDF
+            </button>
+            <!-- Button for reattempt test -->
+            <button class="btn btn-primary btn-sm print-button" onclick="reAttempt();">
+                 Reattempt Test
             </button>
         </div>
         <!-- print ends -->
@@ -445,6 +449,14 @@
         // Open the generated URL in a new tab
         window.open(pdfUrl, '_blank');
 
+    }
+
+
+    function reAttempt(){
+        // get exam ID from url
+        var url = new URL(window.location.href);
+        var examID = url.searchParams.get("ExamID");
+        var assessmentUrl = `assessment.html?ExamID=${examID}`;
     }
 
     // Theme toggle
