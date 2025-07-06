@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Error - iMOES</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="min-h-screen bg-base-200 flex items-center justify-center">
+  <div id="app" class="text-center p-6 max-w-md w-full"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const errorCodeParam = params.get('errorCode');
+
+    const errorDetails = [
+      { errorCode: "400", errorMessage: "Invalid Request Parameters" },
+      { errorCode: "404", errorMessage: "Page Not Found" },
+      { errorCode: "500", errorMessage: "Internal Server Error. Please try again later." },
+      { errorCode: "503", errorMessage: "Service Temporarily Unavailable" },
+      { errorCode: "504", errorMessage: "Gateway Timeout. Please try again later." },
+      { errorCode: "101", errorMessage: "Invalid Exam ID. Please check the ID and try again." },
+      { errorCode: "102", errorMessage: "Failed to load questions for the exam. Please try again later." },
+      { errorCode: "103", errorMessage: "Failed to load exam module. Please try again later." },
+    ];
+
+    const defaultError = {
+      errorCode: "Unknown",
+      errorMessage: "Invalid or missing error code.",
+    };
+
+    const error = errorDetails.find(e => e.errorCode === errorCodeParam) || defaultError;
+
+    document.querySelector("#app").innerHTML = `
+      <div class="card bg-base-100 shadow-xl p-6 text-center">
+        <div class="text-error text-6xl font-bold">${error.errorCode}</div>
+        <h2 class="text-xl font-semibold mt-2">${error.errorMessage}</h2>
+        <p class="text-sm text-gray-500 mt-1">Something went wrong.</p>
+        <a href="index.html" class="btn btn-primary mt-4">Go Back Home</a>
+      </div>
+    `;
+  </script>
+</body>
+</html>

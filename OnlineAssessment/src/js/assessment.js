@@ -7,7 +7,7 @@ const imoesApp = Vue.createApp({
             appHeader: {
                 examName: "CBT - MathHub Online Examination System",
             },
-            isLoading: true,
+            isLoading: false,
             isFullScreen: false, // Track fullscreen state
             isReattempt: true, // Default to true for re-attempt
             exam_module: null,
@@ -128,7 +128,8 @@ const imoesApp = Vue.createApp({
         
         // Check if the examId exists in the data.json file
         async fetchAndValidateExamId(examId) {
-            try {
+          try {
+              this.isLoading = true; // Show loader while validating
                 const response = await axios.get(this.apiSecondaryURL);
                 const data = response.data;
         
@@ -163,6 +164,7 @@ const imoesApp = Vue.createApp({
                 } else {
                     this.examValid = false;
                     this.validationMessage = "Invalid Exam ID";
+                    window.location.href="error.html?errorCode=101"; // Redirect to error page
         
                     Swal.fire({
                         icon: 'error',
@@ -183,12 +185,16 @@ const imoesApp = Vue.createApp({
                     confirmButtonText: 'OK'
                 });
             }
+            finally{
+                this.isLoading = false; // Hide loader after validation
+            }
         },
 
         // Fetch exam module 
 
         async fetchExamModuleDetails(examId) {
-            try {
+          try {
+              this.isLoading = true; // Show loader while fetching module
                 const response = await axios.get('src/module.json');
                 const moduleData = response.data;
         
@@ -239,6 +245,11 @@ const imoesApp = Vue.createApp({
                     text: 'Could not load module settings. Please check your files.',
                     confirmButtonText: 'OK'
                 });
+
+                window.location.href="error.html?errorCode=103"; // Redirect to error page
+            }
+            finally {
+                this.isLoading = false; // Hide loader after fetching module
             }
         },
         
@@ -253,6 +264,7 @@ const imoesApp = Vue.createApp({
               this.setCurrentSectionByIndex(0); // Initialize with first question
             } catch (error) {
               console.error('Error loading questions:', error);
+              window.location.href="error.html?errorCode=102"; // Redirect to error page
             }
             finally {
               this.isLoading = false; // Hide loader
@@ -405,6 +417,7 @@ const imoesApp = Vue.createApp({
           text: 'The provided Exam ID is not in a valid format.',
           confirmButtonText: 'OK'
         });
+        window.location.href="error.html?errorCode=101"; // Redirect to error page
       }
 
       // Disable cut, copy, paste
