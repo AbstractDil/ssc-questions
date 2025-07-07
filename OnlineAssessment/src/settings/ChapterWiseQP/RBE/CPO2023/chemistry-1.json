@@ -1,0 +1,14 @@
+[
+    {
+      "exam_settings": {
+        "total_questions": "35",
+        "sections": {
+          "sec_1": {
+            "sec_name": "Chemistry",
+            "sec_total_questions": "35",
+            "ques_no": "1-35"
+          }
+        }
+      }
+    }
+  ]

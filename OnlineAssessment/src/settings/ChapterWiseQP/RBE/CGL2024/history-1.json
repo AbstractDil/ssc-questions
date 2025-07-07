@@ -1,0 +1,14 @@
+[
+    {
+      "exam_settings": {
+        "total_questions": "51",
+        "sections": {
+          "sec_1": {
+            "sec_name": "History",
+            "sec_total_questions": "51",
+            "ques_no": "1-51"
+          }
+        }
+      }
+    }
+  ]

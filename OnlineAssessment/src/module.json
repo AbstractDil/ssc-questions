@@ -6,5 +6,163 @@
     {
         "exam_id": "2506211241",
         "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
-      }
+    },
+    {
+        "exam_id": "2506211145",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2506211242",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2506052236",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2506031836",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2506012342",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2505311957",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505291741",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505272001",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505251843",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2505251810",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2505241756",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505222201",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505191557",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505180935",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2505180936",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2505161519",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505142225",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
+    },
+    {
+        "exam_id": "2505101029",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2505101016",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2505041103",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2504271355",
+        "exam_date": "27-04-2025",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2504201311",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2504062150",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2504051407",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+    },
+    {
+        "exam_id": "2503292151",
+        "exam_settings": "settings/PTS-Live-Mock-CGL-2025/pts.json"
+       
+    },
+    {
+        "exam_id": "2502162311",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2502092102",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2502021736",
+        "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
+        "exam_id": "2412091913",
+        "exam_settings": "settings/ChapterWiseQP/RBE/CGL2024/history-1.json"
+    },
+    {
+        "exam_id": "2408252221",
+        "exam_settings": "settings/ChapterWiseQP/RBE/CPO2023/chemistry-1.json"
+    },
+    {
+        "exam_id": "2408252205",
+        "exam_settings": "settings/ChapterWiseQP/RBE/CGL2023/chemistry-1.json"
+    },
+    {
+        "exam_id": "2408252203",
+        "exam_settings": "settings/ChapterWiseQP/RBE/CGL2023/chemistry-1.json"
+    },
+    {
+        "exam_id": "2408211032",
+        "exam_settings": "assets/db/police-thief-ssc-cgl-2023.json"
+    },
+    {
+        "exam_id": "2408211028",
+        "exam_settings": "assets/db/Race-TSD-SSC-CGL-2023-Part-2.json"
+    },
+    {
+        "exam_id": "2408202312",
+        "exam_settings": "assets/db/TSD-SSC-CGL-2023-Part-1.json"
+    },
+    {
+        "exam_id": "2408141739",
+        "exam_settings": "assets/db/ssc-cgl-2023-number-system.json"
+    },
+    {
+        "exam_id": "2408141717",
+        "exam_settings": "assets/db/ssc-cgl-2023-reasoning-number-series.json"
+    },
+    {
+        "exam_id": "2408121244",
+        "exam_settings": "assets/db/rbe-cgl-live-test-11082024.json"
+    },
+    {
+        "exam_id": "2308311924",
+        "exam_settings": "assets/db/rbe-cgl-live-test-11082024.json"
+    }
 ]
