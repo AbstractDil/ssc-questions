@@ -1,5 +1,11 @@
 [
     {
+        "exam_id": "2507260955",
+        "exam_name": "RBE SSC CGL 2025 Live Mock July 26,2025",
+        "exam_date": "26-07-2025",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/26072025.json"
+    },
+    {
         "exam_id": "2507071831",
         "exam_name": "RBE SSC CGL 2025 Live Mock July 07,2025",
         "exam_date": "07-07-2025",
