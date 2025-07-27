@@ -4,22 +4,22 @@
       "total_questions": "100",
       "sections": {
         "sec_1": {
-          "sec_name": "English Language",
+          "sec_name": "Part-A",
           "sec_total_questions": "25",
           "ques_no": "1-25"
         },
         "sec_2": {
-          "sec_name": "Logical Reasoning",
+          "sec_name": "Part-B",
           "sec_total_questions": "25",
           "ques_no": "26-50"
         },
         "sec_3": {
-          "sec_name": "Quantitative Aptitude",
+          "sec_name": "Part-C",
           "sec_total_questions": "25",
           "ques_no": "51-75"
         },
         "sec_4": {
-          "sec_name": "General Awareness",
+          "sec_name": "Part-D",
           "sec_total_questions": "25",
           "ques_no": "76-100"
         }
