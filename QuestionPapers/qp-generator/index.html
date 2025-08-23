@@ -9,58 +9,57 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <style>
-       
-       .theme-toggle {
-        /* position: absolute; */
-        /* left: 20px; */
-        /* top: 20px; */
-        margin-top: 10px;
-    }
+        .theme-toggle {
+            /* position: absolute; */
+            /* left: 20px; */
+            /* top: 20px; */
+            margin-top: 10px;
+        }
 
-    .print-button {
-        /* position: absolute; */
-        /* right: 20px; */
-        /* top: 20px; */
-        margin-top: 10px;
-    }
+        .print-button {
+            /* position: absolute; */
+            /* right: 20px; */
+            /* top: 20px; */
+            margin-top: 10px;
+        }
 
-    /* Light Theme Styles */
-    .light-theme {
-        background-color: #ffffff;
-        color: #000;
-    }
+        /* Light Theme Styles */
+        .light-theme {
+            background-color: #ffffff;
+            color: #000;
+        }
 
-    .light-theme .rightAns {
-        color: green;
-    }
+        .light-theme .rightAns {
+            color: green;
+        }
 
-    .light-theme .qpnltbl td,
-    .light-theme .qrtbl td,
-    .light-theme .menu-tbl td {
-        border: 1px solid #ccc;
-    }
+        .light-theme .qpnltbl td,
+        .light-theme .qrtbl td,
+        .light-theme .menu-tbl td {
+            border: 1px solid #ccc;
+        }
 
-    .light-theme .option img {
-        filter: invert(0);
-    }
+        .light-theme .option img {
+            filter: invert(0);
+        }
 
-    /* Dark Theme Styles */
-    .dark-theme {
-        background-color: #41403e;
-        color: #fff;
-    }
+        /* Dark Theme Styles */
+        .dark-theme {
+            background-color: #41403e;
+            color: #fff;
+        }
 
-    .dark-theme .rightAns {
-        color: rgb(8, 202, 8);
-    }
+        .dark-theme .rightAns {
+            color: rgb(8, 202, 8);
+        }
 
-    .dark-theme .qpnltbl td,
-    .dark-theme .qrtbl td,
-    .dark-theme .menu-tbl td {
-        border: 1px solid #ccc;
-    }
+        .dark-theme .qpnltbl td,
+        .dark-theme .qrtbl td,
+        .dark-theme .menu-tbl td {
+            border: 1px solid #ccc;
+        }
 
-    /* .dark-theme .option img {
+        /* .dark-theme .option img {
         filter: invert(1); 
     } */
         table {
@@ -176,6 +175,39 @@
             height: 5rem !important;
 
         }
+
+        .watermark-container {
+            position: relative;
+        }
+
+        .watermark-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            /* adjust spacing */
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 9999;
+            /* higher than content */
+
+        }
+
+        @media print {
+            .watermark-layer {
+                -webkit-print-color-adjust: exact !important;
+                /* Chrome / Safari */
+                print-color-adjust: exact !important;
+                /* Firefox */
+                background-image: inherit !important;
+                background-repeat: repeat !important;
+                opacity: 0.2 !important;
+                /* reduce for print readability */
+            }
+        }
     </style>
 
     <script>
@@ -201,24 +233,25 @@
 
     </div>
 
-    
-        <!-- print -->
-        <div class="container hidden-print">
-            <button class="btn btn-default btn-sm theme-toggle" id="toggleTheme"> <i class="glyphicon glyphicon-adjust"></i> Change Theme
-            </button>
-            <button class="btn btn-warning  btn-sm print-button" onclick="generatePDF();">
-             <span class="glyphicon glyphicon-print"></span>    Print
-            </button>
-            <!-- Button for download pdf -->
-            <button class="btn btn-success btn-sm print-button" onclick="downloadPDF();">
-             <span class="glyphicon glyphicon-download"></span> Download PDF
-            </button>
-            <!-- Button for reattempt test -->
-            <button class="btn btn-primary btn-sm print-button" onclick="reAttempt();">
-                 Reattempt Test
-            </button>
-        </div>
-        <!-- print ends -->
+
+    <!-- print -->
+    <div class="container hidden-print">
+        <button class="btn btn-default btn-sm theme-toggle" id="toggleTheme"> <i class="glyphicon glyphicon-adjust"></i>
+            Change Theme
+        </button>
+        <button class="btn btn-warning  btn-sm print-button" onclick="generatePDF();">
+            <span class="glyphicon glyphicon-print"></span> Print
+        </button>
+        <!-- Button for download pdf -->
+        <button class="btn btn-success btn-sm print-button" onclick="downloadPDF();">
+            <span class="glyphicon glyphicon-download"></span> Download PDF
+        </button>
+        <!-- Button for reattempt test -->
+        <button class="btn btn-primary btn-sm print-button" onclick="reAttempt();">
+            Reattempt Test
+        </button>
+    </div>
+    <!-- print ends -->
     <div class="container">
 
         <h3 class="text-center" id="title" style="margin-bottom:30px;">Questions and Solutions</h1>
@@ -238,245 +271,215 @@
     <!-- Bootstrap 3 JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Fetch Questions Paper -->
     <script>
-
-
-        // get exam_id, exam_name, exam_date, exam_analysis_directory, total_questions from data.json file and store in an array
-
         $.getJSON("data.json", function (data) {
             var exam_data = [];
             $.each(data, function (key, value) {
                 exam_data.push(value);
             });
-            // console.log(exam_data);
-
-
-            // get ExamID parameter value from url
-
 
             var url = new URL(window.location.href);
-
             var examID = url.searchParams.get("ExamID");
 
-            if (!examID) {
-                alert('You have entered wrong url.');
-                // show alert using html page 
+            if (!examID || examID.length != 10 || isNaN(examID)) {
                 document.getElementById('title').style.display = 'none';
                 document.getElementById('content').style.display = 'none';
-                document.getElementById('ErrorMsg').innerHTML = '<center><h1>Error 404: Page Not Found<br></h1><p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br><a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p> </center>';
+                document.getElementById('ErrorMsg').innerHTML =
+                    `<center><h1>Error 404: Page Not Found<br></h1>
+               <p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>
+               You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br>
+               <a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p></center>`;
+                return;
             }
 
-            console.log(examID);
-
-            /*
-                var url = window.location.href;
-                 var examID = url.split('?')[1].split('&')[0].split('=')[1];
-                 console.log(examID);
-            */
-
-
-            // check examID length and pattern is only number
-
-            if (examID.length != 10 || isNaN(examID) || examID == null) {
-                alert('You have entered wrong url.');
-                // show alert using html page 
+            var examID_exist = exam_data.some(el => el.exam_id === examID);
+            if (!examID_exist) {
                 document.getElementById('title').style.display = 'none';
                 document.getElementById('content').style.display = 'none';
-                document.getElementById('ErrorMsg').innerHTML = '<center><h1>Error 404: Page Not Found<br></h1><p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br><a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p> </center>';
+                document.getElementById('ErrorMsg').innerHTML =
+                    `<center><h1>Error 404: Page Not Found<br></h1>
+               <p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>
+               You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br>
+               <a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p></center>`;
+                return;
             }
 
+            var exam_info = exam_data.find(x => x.exam_id === examID);
+            var exam_name = exam_info.exam_name;
+            var exam_date = exam_info.exam_date;
+            var exam_db = exam_info.exam_db;
 
-            // first check examID is exist in data.json file or not
-
-
-
-            var examID_exist = exam_data.some(function (el) {
-                return el.exam_id === examID;
-            });
-            //  console.log(examID_exist);
-
-            if (examID_exist == false) {
-                alert('You have entered wrong url.');
-                // show alert using html page 
-
-                document.getElementById('title').style.display = 'none';
-                document.getElementById('content').style.display = 'none';
-                document.getElementById('ErrorMsg').innerHTML = '<center><h1>Error 404: Page Not Found<br></h1><p>You have entered a wrong URL. Or, the page you are looking for is not available.<br><br>You may contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com </a><br><br><a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p> </center>';
+            // ✅ generate watermark once
+            function createWatermarkStyle(id) {
+                const svg = `
+              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                      font-size="24" fill="rgba(64, 64, 64, 0.5)" transform="rotate(-45 100 100)">
+                  ${id}
+                </text>
+              </svg>`;
+                const encoded = encodeURIComponent(svg.trim());
+                return `url("data:image/svg+xml,${encoded}")`;
             }
 
+            // set title
+            document.getElementById("title").innerHTML = exam_name;
+            document.title = exam_name;
 
+            // ✅ fetch questions
+            $.getJSON(exam_db, function (data) {
+                var container = $("#question-container");
 
-            // fetch exam name,date, exam analysis, total questions using examID
+                $.each(data, function (index, item) {
+                    var correctOption = parseInt(item.answer);
+            const watermarkBG = createWatermarkStyle(examID);
 
-            var exam_name = exam_data.find(x => x.exam_id === examID).exam_name;
-            var exam_date = exam_data.find(x => x.exam_id === examID).exam_date;
-            var exam_db = exam_data.find(x => x.exam_id === examID).exam_db;
-
-
-            console.log(exam_name);
-            console.log(exam_date);
-            console.log(exam_db);
-            //console.log(total_questions);
-
-
-            // set the title
-
-            let title = document.getElementById("title");
-            title.innerHTML = exam_name;
-
-            document.title = title.innerHTML;
-
-
-
-
-            $(document).ready(function () {
-                $.getJSON(exam_db, function (data) {
-                    var container = $("#question-container");
-                    $.each(data, function (index, item) {
-                        var correctOption = parseInt(item.answer);
-                        var questionPanel = `
-                        <table class="qpnltbl ">
-                            <tbody>
-                                <tr>
-                                    <td class="rw">
-                                        <table class="qrtbl">
-                                            <tbody>
-                                                <tr>
-                                                    <td width="7%" class="bold" valign="top">Q. ${index + 1}</td>
-                                                    <td class="bold" valign="top" style="text-align: left;">
-                                                        ${item.question}
-                                                        <div class="option">
-                                                            <div style="margin-right:10px;display: flex; align-items: center;" 
-                                                                class="${correctOption === 1 ? 'rightAns' : 'wrngAns'}">
-                                                                <p> <span style="margin-right:3px;">a)</span>  ${item.option_1}</p>
-                                                            </div>
-                                                            <img src="${correctOption === 1 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}" alt="${correctOption === 1 ? 'Correct' : 'InCorrect'}">
+                    var questionPanel = `
+                  <div class="watermark-container">
+                    <div class="watermark-layer"></div>
+                    <table class="qpnltbl">
+                        <tbody>
+                            <tr>
+                                <td class="rw">
+                                    <table class="qrtbl">
+                                        <tbody>
+                                            <tr>
+                                                <td width="7%" class="bold" valign="top">Q. ${index + 1}</td>
+                                                <td class="bold" valign="top" style="text-align: left;">
+                                                    ${item.question}
+                                                    <div class="option">
+                                                        <div style="margin-right:10px;display:flex;align-items:center;"
+                                                             class="${correctOption === 1 ? 'rightAns' : 'wrngAns'}">
+                                                            <p><span style="margin-right:3px;">a)</span> ${item.option_1}</p>
                                                         </div>
-                                                        <div class="option">
-                                                            <div style="margin-right: 10px;display: flex; align-items: center;" 
-                                                                class="${correctOption === 2 ? 'rightAns' : 'wrngAns'}">
-                                                                <p> <span style="margin-right:3px;">b)</span>  ${item.option_2}</p>
-                                                            </div>
-                                                            <img src="${correctOption === 2 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}" alt="${correctOption === 2 ? 'Correct' : 'InCorrect'}">
+                                                        <img src="${correctOption === 1 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}">
+                                                    </div>
+                                                    <div class="option">
+                                                        <div style="margin-right:10px;display:flex;align-items:center;"
+                                                             class="${correctOption === 2 ? 'rightAns' : 'wrngAns'}">
+                                                            <p><span style="margin-right:3px;">b)</span> ${item.option_2}</p>
                                                         </div>
-                                                        <div class="option">
-                                                            <div style="margin-right: 10px;display: flex; align-items: center;" 
-                                                                class="${correctOption === 3 ? 'rightAns' : 'wrngAns'}">
-                                                                <p><span style="margin-right:3px;">c)</span> ${item.option_3}</p>
-                                                            </div>
-                                                            <img src="${correctOption === 3 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}" alt="${correctOption === 3 ? 'Correct' : 'InCorrect'}">
+                                                        <img src="${correctOption === 2 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}">
+                                                    </div>
+                                                    <div class="option">
+                                                        <div style="margin-right:10px;display:flex;align-items:center;"
+                                                             class="${correctOption === 3 ? 'rightAns' : 'wrngAns'}">
+                                                            <p><span style="margin-right:3px;">c)</span> ${item.option_3}</p>
                                                         </div>
-                                                        <div class="option">
-                                                            <div style="margin-right: 10px;display: flex; align-items: center;" 
-                                                                class="${correctOption === 4 ? 'rightAns' : 'wrngAns'}">
-                                                                <p><span style="margin-right:3px;">d)</span> ${item.option_4}</p>
-                                                            </div>
-                                                            <img src="${correctOption === 4 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}" alt="${correctOption === 4 ? 'Correct' : 'InCorrect'}">
+                                                        <img src="${correctOption === 3 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}">
+                                                    </div>
+                                                    <div class="option">
+                                                        <div style="margin-right:10px;display:flex;align-items:center;"
+                                                             class="${correctOption === 4 ? 'rightAns' : 'wrngAns'}">
+                                                            <p><span style="margin-right:3px;">d)</span> ${item.option_4}</p>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <b>Explanation:</b>
-                                                    </td>
-                                                    <td style="padding-left:20px;">
-                                                        <div class="solution">
-                                                            ${item.solution_text}
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    `;
-                        container.append(questionPanel);
-                    });
+                                                        <img src="${correctOption === 4 ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Explanation:</b></td>
+                                                <td style="padding-left:20px;">
+                                                    <div class="solution">${item.solution_text}</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>`;
 
-                    // Add 'img-thumbnail' class to all <img> elements inside .solution
-                    $('.solution img').each(function () {
-                        //if ($(this).css('vertical-align') !== 'middle') {
-                        $(this).addClass('img-thumbnail');
-                        // }
-                    });
-                }).fail(function (jqXHR, textStatus, errorThrown) {
-                    console.error('Error fetching data:', textStatus, errorThrown);
+                    container.append(questionPanel);
+
+                    // ✅ Apply watermark to each layer
+                    $(".watermark-layer").last().css("background-image", watermarkBG);
                 });
+
+                // add 'img-thumbnail' to solution images
+                $('.solution img').each(function () {
+                    $(this).addClass('img-thumbnail');
+                });
+
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.error('Error fetching exam questions:', textStatus, errorThrown);
             });
         });
     </script>
 
-<script>
 
- // Function to generate PDF
- 
- function generatePDF() {
-    // Original title
-    const originalTitle = document.title;
 
-    // Desired title (replace spaces with dashes)
-    //const newTitle = originalTitle.replace(/\s+/g, '-');
-    const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+    <!-- Functional Scripts -->
+    <script>
+        // Function to generate PDF
 
-    // Temporarily change the title
-    document.title = newTitle;
-
-    // Wait a bit for title to update, then print
-    setTimeout(() => {
-      window.print();
-
-      // Restore the original title
-      document.title = originalTitle;
-    }, 100);
-  }
-
-    // Function to download PDF
-
-    function downloadPDF(){
-
-         // Original title
+        function generatePDF() {
+            // Original title
             const originalTitle = document.title;
 
-        // Desired title (replace spaces with dashes)
-        //const newTitle = originalTitle.replace(/\s+/g, '-');
-        const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+            // Desired title (replace spaces with dashes)
+            //const newTitle = originalTitle.replace(/\s+/g, '-');
+            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
 
-        // Construct the PDF file path
-        const pdfUrl = `pdf/${newTitle}.pdf`;
+            // Temporarily change the title
+            document.title = newTitle;
 
-        // Open the generated URL in a new tab
-        window.open(pdfUrl, '_blank');
+            // Wait a bit for title to update, then print
+            setTimeout(() => {
+                window.print();
 
-    }
-
-
-    function reAttempt(){
-        // get exam ID from url
-        var url = new URL(window.location.href);
-        var examID = url.searchParams.get("ExamID");
-        var assessmentUrl = `../../OnlineAssessment/index.html?ExamId=${examID}`;
-        // Open the assessment URL in a new tab
-        window.open(assessmentUrl, '_blank');
-    }
-
-    // Theme toggle
-    let currentTheme = 'dark';
-    document.body.classList.add('dark-theme');
-
-    document.getElementById('toggleTheme').addEventListener('click', function () {
-        if (currentTheme === 'dark') {
-            document.body.classList.remove('dark-theme');
-            document.body.classList.add('light-theme');
-            currentTheme = 'light';
-        } else {
-            document.body.classList.remove('light-theme');
-            document.body.classList.add('dark-theme');
-            currentTheme = 'dark';
+                // Restore the original title
+                document.title = originalTitle;
+            }, 100);
         }
-    });
-</script>
+
+        // Function to download PDF
+
+        function downloadPDF() {
+
+            // Original title
+            const originalTitle = document.title;
+
+            // Desired title (replace spaces with dashes)
+            //const newTitle = originalTitle.replace(/\s+/g, '-');
+            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+
+            // Construct the PDF file path
+            const pdfUrl = `pdf/${newTitle}.pdf`;
+
+            // Open the generated URL in a new tab
+            window.open(pdfUrl, '_blank');
+
+        }
+
+
+        function reAttempt() {
+            // get exam ID from url
+            var url = new URL(window.location.href);
+            var examID = url.searchParams.get("ExamID");
+            var assessmentUrl = `../../OnlineAssessment/index.html?ExamId=${examID}`;
+            // Open the assessment URL in a new tab
+            window.open(assessmentUrl, '_blank');
+        }
+
+        // Theme toggle
+        let currentTheme = 'dark';
+        document.body.classList.add('dark-theme');
+
+        document.getElementById('toggleTheme').addEventListener('click', function () {
+            if (currentTheme === 'dark') {
+                document.body.classList.remove('dark-theme');
+                document.body.classList.add('light-theme');
+                currentTheme = 'light';
+            } else {
+                document.body.classList.remove('light-theme');
+                document.body.classList.add('dark-theme');
+                currentTheme = 'dark';
+            }
+        });
+    </script>
 
 </body>
 
