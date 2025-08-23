@@ -1,5 +1,11 @@
 [
     {
+        "exam_id": "2508231047",
+        "exam_name": "RBE SSC CGL 2025 Extra Paid Mock-1 August 23,2025",
+        "exam_date": "23-08-2025",
+        "exam_db": "assets/db/RBE-CGL-Paid-Mock-2025-Eduquity/rbe-paid-cgl-edutype-1-23082025.json"
+    },
+    {
         "exam_id": "2508170323",
         "exam_name": "RBE SSC CGL 2025 Live Mock-29 August 17,2025",
         "exam_date": "17-08-2025",
