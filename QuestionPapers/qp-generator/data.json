@@ -1,5 +1,17 @@
 [
     {
+        "exam_id": "2508311920",
+        "exam_name": "RBE SSC CGL 2025 Live Mock-31 August 31,2025",
+        "exam_date": "31-08-2025",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/rbe-31.json"
+    },
+    {
+        "exam_id": "2508311919",
+        "exam_name": "RBE SSC CGL 2025 Live Mock-30 August 31,2025",
+        "exam_date": "31-08-2025",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/rbe-30.json"
+    },
+    {
         "exam_id": "2508231047",
         "exam_name": "RBE SSC CGL 2025 Extra Paid Mock-1 August 23,2025",
         "exam_date": "23-08-2025",
