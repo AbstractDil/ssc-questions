@@ -1,5 +1,11 @@
 [
     {
+        "exam_id": "2510051632",
+        "exam_name": "RBE NTPC Graduate Level Tier-2 Live Mock October 05,2025",
+        "exam_date": "05-10-2025",
+        "exam_db": "assets/db/RBE-NTPC-Live-Mock-2025/rbe-ntpc-graduate-t2-05102025.json"
+    },
+    {
         "exam_id": "2509072329",
         "exam_name": "RBE SSC CGL 2025 Live Mock-32 September 07,2025",
         "exam_date": "07-09-2025",
