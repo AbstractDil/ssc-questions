@@ -1,5 +1,9 @@
 [
     {
+        "exam_id": "2510051632",
+        "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-sectional-1.json"
+    },
+    {
         "exam_id": "2509072329",
         "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
     }, 
