@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title will generate automatically -->
+    <title>Questions and Answers</title>
+    <!-- Bootstrap 3 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Vue JS 3  -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header Component Starts Here -->
+      <header>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                @click="isNavCollapsed = !isNavCollapsed"
+                :aria-expanded="!isNavCollapsed"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand text-uppercase" :href="brandUrl" target="_blank">
+                <img
+                  :src="brandLogo"
+                  alt="Brand Logo"
+                  height="36"
+                />
+                {{ brandName }}</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li><a type="button" class="btn btn-success btn-sm">Download PDF</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </header>
+      <!-- Header Component Ends Here -->
+
+      <!-- Main Content Component -->
+      <main></main>
+      <!-- Main Content Component Ends Here -->
+
+      <!-- Footer Component Starts Here -->
+      <footer></footer>
+      <!-- Footer Component Ends Here -->
+    </div>
+
+    <!-- Page Loader Starts Here -->
+    <!-- <div class="page-loader">
+        <div class="loader"></div>
+    </div> -->
+    <!-- Page Loader Ends Here -->
+
+    <!-- app.js starts here -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
