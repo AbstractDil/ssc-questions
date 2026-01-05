@@ -1,5 +1,11 @@
 [
       {
+        "exam_id": "2601051254",
+        "exam_name": "RBE SSC CGL Tier-2 Live Mock January 05,2026",
+        "exam_date": "05-01-2026",
+        "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/rbe-cgl-t2-05012026.json"
+    },
+      {
         "exam_id": "2512172318",
         "exam_name": "RBE SSC CGL Tier-2 Live Mock December 17,2025",
         "exam_date": "17-12-2025",
