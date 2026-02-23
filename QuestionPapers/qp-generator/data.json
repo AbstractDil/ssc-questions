@@ -1,4 +1,10 @@
 [
+    {
+        "exam_id": "2602231059",
+        "exam_name": "RBE NTPC 2026 Live Mock Feb 23,2026",
+        "exam_date": "23-02-2026",
+        "exam_db": "assets/db/RBE-NTPC-Live-Mock-2025/23022026.json"
+    },
       {
         "exam_id": "2601051254",
         "exam_name": "RBE SSC CGL Tier-2 Live Mock January 05,2026",
