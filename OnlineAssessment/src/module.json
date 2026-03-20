@@ -1,5 +1,10 @@
 [
-     {
+    
+    {
+         "exam_id": "2603202011",
+         "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+    },
+    {
         "exam_id": "2602231059",
         "exam_settings": "settings/RBE-NTPC-Live-Test-2025-Graduate-Level/ntpc-1.json"
     },
