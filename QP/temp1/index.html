@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Paper</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <style>
+        body {
+            background: #fff;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .option {
+            margin-left: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h3 id="exam-name"></h3>
+        <p id="exam-date"></p>
+    </div>
+
+    <div id="questions-container"></div>
+
+    <div class="text-center mt-4 no-print">
+        <button class="btn btn-primary" onclick="window.print()">Download PDF</button>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

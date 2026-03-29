@@ -1,0 +1,14 @@
+[
+  {
+    "exam_id": "2603291928",
+    "exam_name": "SSC CGL Mock Test",
+    "exam_date": "29 March 2026",
+    "exam_db_file": "db/2603291928.html"
+  },
+  {
+    "exam_id": "2603291957",
+    "exam_name": "SSC CGL Mock Test - 2",
+    "exam_date": "29 March 2026",
+    "exam_db_file": "db/2603291957.html"
+  }
+]

@@ -1,0 +1,906 @@
+{
+  "state": 200,
+  "msg": "success",
+  "questions": [
+    {
+      "qid": "1327813",
+      "question": "</span></p><p>The angles of a cyclic quadrilateral are in the ratio 1 : 2 : 2&nbsp;: 5. What is the measure of the greatest angle?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>180°&lt;\\/p&gt;\\r\\n",
+        "</p><p>72°&lt;\\/p&gt;\\r\\n",
+        "</p><p>108°&lt;\\/p&gt;\\r\\n",
+        "</p><p>144°&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327811",
+      "question": "</p><p>Two triangles are similar with sides in the ratio 4 : 5. What is the ratio of their areas?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>4:5&lt;\\/p&gt;\\r\\n",
+        "</p><p>5:4&lt;\\/p&gt;\\r\\n",
+        "</p><p>16:25&lt;\\/p&gt;\\r\\n",
+        "</p><p>25:16&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327808",
+      "question": "</p><p>What is the central angle of a sector with an arc length of 15&nbsp;cm in a circle of radius 5 cm?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>6 radians&lt;\\/p&gt;\\r\\n",
+        "</p><p>3 radians&lt;\\/p&gt;\\r\\n",
+        "</p><p>2 radians&lt;\\/p&gt;\\r\\n",
+        "</p><p>4 radians&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327807",
+      "question": "</p><p>The line y = x -&nbsp;6&nbsp;passes through which of the following points?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>(7, 1)&lt;\\/p&gt;\\r\\n",
+        "</p><p>(6, 1)&lt;\\/p&gt;\\r\\n",
+        "</p><p>(8, 3)&lt;\\/p&gt;\\r\\n",
+        "</p><p>(4, 2)&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327804",
+      "question": "</sup></p><p>A car starts from point X&nbsp;on a circular track and an SUV starts from point Y, which is 750 meters ahead of X&nbsp;in the direction of motion. The car's speed is 17&nbsp;m\\/s and the SUV's speed is 12&nbsp;m\\/s. The circumference of the track is 120&nbsp;km. How much distance will the car have traveled when it first overtakes the SUV?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>900 m&lt;\\/p&gt;\\r\\n",
+        "</p><p>1550 m&lt;\\/p&gt;\\r\\n",
+        "</p><p>2500 m&lt;\\/p&gt;\\r\\n",
+        "</p><p>2550 m&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327802",
+      "question": "</span></p><p>A 96-litre solution contains acid and water in the ratio 5:3. Some quantity of this solution is removed and replaced with pure acid. If the final ratio of acid to water becomes 11:5, how many litres of solution were replaced?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>12 litres&lt;\\/p&gt;\\r\\n",
+        "</p><p>16 litres&lt;\\/p&gt;\\r\\n",
+        "</p><p>20 litres&lt;\\/p&gt;\\r\\n",
+        "</p><p>24&nbsp;litres&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327801",
+      "question": "</p><p>A, B, and C can complete a job in 24, 36, and 72 days, respectively. A works every day, while B and C join A every fourth day. How long will it take to finish the task?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>19.5 days&lt;\\/p&gt;\\r\\n",
+        "</p><p>19&nbsp;days&lt;\\/p&gt;\\r\\n",
+        "</p><p>18.5&nbsp;days&lt;\\/p&gt;\\r\\n",
+        "</p><p>18&nbsp;days&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327800",
+      "question": "</p><p>The ratio of boys to girls in a school is 8:5. If 20 more girls join the school, the new ratio of boys to girls becomes 3:2. What is the total number of students in the school initially?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>750&lt;\\/p&gt;\\r\\n",
+        "</p><p>780&lt;\\/p&gt;\\r\\n",
+        "</p><p>800&lt;\\/p&gt;\\r\\n",
+        "</p><p>820&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327799",
+      "question": "</p><p>A candy shop owner buys three kinds of candies: red, blue, and green. Red candies are purchased at 3 for \\u20b912, blue candies at 4 for \\u20b920, and green candies at 5 for \\u20b925. He mixes them in the ratio 1:1:2. He sells all the mixed candies at 2 for \\u20b912. What is his approximate gain or loss percentage?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Profit of 24%&lt;\\/p&gt;\\r\\n",
+        "</p><p>Profit of 26.32%&lt;\\/p&gt;\\r\\n",
+        "</p><p>Loss of 24.22%&lt;\\/p&gt;\\r\\n",
+        "</p><p>Loss of 26.32%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327798",
+      "question": "</p><p>Find the compound interest on \\u20b98,000 at 10% per annum for 3 years 6 months, compounded annually.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>\\u20b93,000&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b93,100&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b93,180.40&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b93,280.40&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327797",
+      "question": "</p><p>A company placed an order for 18 high-end laptops and some quantity of standard desktops. The price of a high-end laptop was 4 times that of a standard desktop. Due to a mistake, the number of laptops and desktops was interchanged in the delivery. This caused the total bill to increase by 100%. What was the ratio of the number of high-end laptops to standard desktops in the original order?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>1:2&lt;\\/p&gt;\\r\\n",
+        "</p><p>2:1&lt;\\/p&gt;\\r\\n",
+        "</p><p>5:2&lt;\\/p&gt;\\r\\n",
+        "</p><p>2:7&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327796",
+      "question": "</p><p>The price of petrol shot up by 5%. Before the hike, the price was Rs. 80 per litre. A man travels 3200 km every month and his car gives a mileage of 20 km per litre. What is the increase in the monthly expenditure&nbsp;on the man's travel due to the hike in the petrol prices?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>\\u20b9622&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b9640&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b9645&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b9742&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327795",
+      "question": "</p><p>In a team of 120 employees, the average monthly sales per employee is 1.5 lakh. If 60 junior employees average 1.2 lakh each, what is the average monthly sales figure (in lakh) for the senior employees?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>\\u20b91.6&nbsp;lakh&lt;\\/p&gt;\\r\\n",
+        "</p><p>1.8 lakh&lt;\\/p&gt;\\r\\n",
+        "</p><p>2.8 lakh&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b92.9&nbsp;lakh&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327794",
+      "question": "</p><p>M and N contribute to a business investment in the ratio 3:8. They earn a profit of \\u20b966,000. M is a working partner and receives 10% of the profit extra. What is M's total share?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>\\u20b922,800&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b928,000&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b938,500&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b936,000&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327793",
+      "question": "</p><p>P and Q invest \\u20b945,000 and \\u20b980,000 respectively in a business. What is Q's share in a profit of \\u20b9120,000?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>\\u20b975,000&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b976,800&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b978,000&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b982,400&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327791",
+      "question": "</span></p><p>The number of yellow, purple, and orange marbles in a bag is in the ratio 2 : 3 : 5. If 16 yellow marbles, 18 purple marbles, and an unknown number of orange marbles are added to the bag, the ratio of yellow, purple, and orange marbles becomes 4 : 5 : 7. Find the number of orange marbles added.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>20&lt;\\/p&gt;\\r\\n",
+        "</p><p>22&lt;\\/p&gt;\\r\\n",
+        "</p><p>27&lt;\\/p&gt;\\r\\n",
+        "</p><p>29&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327839",
+      "question": "</p><p>How many meaningful four-letter English words can be formed using the first, second, third, and fifth letters of the word \"PROVERB\" (when counted from left to right), using each letter only once in each word?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>2&lt;\\/p&gt;\\r\\n",
+        "</p><p>3&lt;\\/p&gt;\\r\\n",
+        "</p><p>5&lt;\\/p&gt;\\r\\n",
+        "</p><p>1&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327838",
+      "question": "</p><p>If the sum of 38 and 20 is multiplied by 8, what is the result?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>364&lt;\\/p&gt;\\r\\n",
+        "</p><p>464&lt;\\/p&gt;\\r\\n",
+        "</p><p>460&lt;\\/p&gt;\\r\\n",
+        "</p><p>416&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327836",
+      "question": "</p><p>Two numbers are in ratio 9&nbsp;: 8, and their sum is 136. Find the numbers.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>69, 79&lt;\\/p&gt;\\r\\n",
+        "</p><p>72, 64&lt;\\/p&gt;\\r\\n",
+        "</p><p>72, 66&lt;\\/p&gt;\\r\\n",
+        "</p><p>70, 64&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327835",
+      "question": "</p><p>A man says, \"This woman's son's brother is my son.\" How is the man related to the woman?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Husband&lt;\\/p&gt;\\r\\n",
+        "</p><p>Son&lt;\\/p&gt;\\r\\n",
+        "</p><p>Father&lt;\\/p&gt;\\r\\n",
+        "</p><p>Son-in-law&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327834",
+      "question": "</p><p>Pointing to a girl, a woman says, 'She is the daughter of my mother's only son.' How is the girl related to the woman?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Niece&lt;\\/p&gt;\\r\\n",
+        "</p><p>Daughter&lt;\\/p&gt;\\r\\n",
+        "</p><p>Cousin&lt;\\/p&gt;\\r\\n",
+        "</p><p>Sister&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327833",
+      "question": "</p><p>If 7 $ 3 = 55 and 6 $ 2 = 40, what is 8 $ 3?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>70&lt;\\/p&gt;\\r\\n",
+        "</p><p>72&lt;\\/p&gt;\\r\\n",
+        "</p><p>75&lt;\\/p&gt;\\r\\n",
+        "</p><p>74&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327832",
+      "question": "</p><p>In a certain code language, each letter is assigned a unique digit. Based on the given codes for specific words, determine the code for the target word using the same logic. NOISE is coded as 25491 and SAT as 986, how is STONE coded?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>96521&lt;\\/p&gt;\\r\\n",
+        "</p><p>96653&lt;\\/p&gt;\\r\\n",
+        "</p><p>97345&lt;\\/p&gt;\\r\\n",
+        "</p><p>96271&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327831",
+      "question": "</p><p>Find the number that breaks the pattern: 3, 6, 11, 18, 29, 42, 58&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>6&lt;\\/p&gt;\\r\\n",
+        "</p><p>11&lt;\\/p&gt;\\r\\n",
+        "</p><p>42&lt;\\/p&gt;\\r\\n",
+        "</p><p>58&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327830",
+      "question": "</p><p>One number is not like the others: 1331, 2197, 4913, 5832&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>1331&lt;\\/p&gt;\\r\\n",
+        "</p><p>4913&lt;\\/p&gt;\\r\\n",
+        "</p><p>5832&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>2197&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327829",
+      "question": "</p><p>If P is the son of Q, and Q is the sister of R, how is P related to R?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Father&lt;\\/p&gt;\\r\\n",
+        "</p><p>Uncle&lt;\\/p&gt;\\r\\n",
+        "</p><p>Brother&lt;\\/p&gt;\\r\\n",
+        "</p><p>Nephew&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327828",
+      "question": "</p><p>Find the odd one out from the given alternatives:&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>TYR&lt;\\/p&gt;\\r\\n",
+        "</p><p>GLE&lt;\\/p&gt;\\r\\n",
+        "</p><p>VAT&lt;\\/p&gt;\\r\\n",
+        "</p><p>DNA&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327827",
+      "question": "</p><p>In each of the following questions, the second word is formed by rearranging the letters of the first word according to a specific pattern. Identify that pattern and apply the same to the third word to find the correct answer from the given alternatives.&lt;\\/p&gt;\\r\\n\\r\\n</p><p>NUMERICAL: EMUNRLACI :: ALGORITHM : ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>pGLARMHTI&lt;\\/p&gt;\\r\\n",
+        "</p><p>OGLARMHIT&lt;\\/p&gt;\\r\\n",
+        "</p><p>OGLRAMHTI&lt;\\/p&gt;\\r\\n",
+        "</p><p>OGLARMHTI&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327826",
+      "question": "</p><p>In a row of 52 magazines, magazine A is 15th from left and magazine B is 20th from right. How many magazines lie between them?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>17&lt;\\/p&gt;\\r\\n",
+        "</p><p>15&lt;\\/p&gt;\\r\\n",
+        "</p><p>13&lt;\\/p&gt;\\r\\n",
+        "</p><p>18&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327825",
+      "question": "</p><p>Find the best option that best completes the analogy.&lt;\\/p&gt;\\r\\n\\r\\n</p><p>NRP : PTR :: XYZ: ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>ZAB&lt;\\/p&gt;\\r\\n",
+        "</p><p>ZBC&lt;\\/p&gt;\\r\\n",
+        "</p><p>ZAC&lt;\\/p&gt;\\r\\n",
+        "</p><p>AAZ&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327824",
+      "question": "</p><p>Each of the letters in the word STAMINA is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is first from the left and the one that is fourth from the right in the new letter-cluster formed?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>20&lt;\\/p&gt;\\r\\n",
+        "</p><p>15&lt;\\/p&gt;\\r\\n",
+        "</p><p>13&lt;\\/p&gt;\\r\\n",
+        "</p><p>11&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327823",
+      "question": "</p><p>Which of the following addresses are identical to each other:&nbsp;&lt;\\/p&gt;\\r\\n\\r\\n</p><p>1. Sanjeev Chauhan 3\\/5, Lotus Enclave, North West Delhi, 208012&nbsp;&lt;\\/p&gt;\\r\\n\\r\\n</p><p>2. Sanjeev Chauhan 3-5, Lotus Enclave, North West Delhi, 208012&nbsp;&lt;\\/p&gt;\\r\\n\\r\\n</p><p>3. Sanjeev Chauhan 3-5, Lotus Enclave, North West Delhi, 208112&nbsp;&lt;\\/p&gt;\\r\\n\\r\\n</p><p>4. Sanjeev Chauhan 3-5, Lotus Enclave, North West Delhi, 208012&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>1 and 2&lt;\\/p&gt;\\r\\n",
+        "</p><p>2 and 3&lt;\\/p&gt;\\r\\n",
+        "</p><p>2 and 4&lt;\\/p&gt;\\r\\n",
+        "</p><p>3 and 4&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327822",
+      "question": "</p><p><strong>Instruction&lt;\\/strong&gt;: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The discovery of exoplanets in habitable zones around distant stars has provided exciting prospects for the search for extraterrestrial life, yet the vast distances and technological limitations pose significant obstacles to direct exploration.&lt;\\/p&gt;\\r\\n\\r\\n</strong></p><p><strong><strong>Assumptions&lt;\\/strong&gt;:&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></p><p><strong><strong>I. Exoplanets located in habitable zones may have the potential to support life.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></p><p><strong><strong>II. Current technology is insufficient to directly explore exoplanets in habitable zones.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></p><p><strong><strong>III. Direct exploration of exoplanets will be unnecessary if we detect signs of life remotely.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Only I and II are implicit&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Only II and III are implicit&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Only I is implicit&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>All assumptions are implicit&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327821",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Read the following statement carefully and identify the conclusion that follows.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong><strong>Statement:&lt;\\/strong&gt; Most farmers in the region depend on monsoon rains for irrigation.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong><strong>Conclusions:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>I. The region does not have proper irrigation infrastructure.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>II. A weak monsoon may reduce agricultural output.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Only Conclusion I follows&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Only Conclusion II follows&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Both I and II follow&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Neither I nor II follows&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327820",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>What will come at the place of question mark? 3, 13, 31, 57, 91, ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>133&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>135&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>141&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>151&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327819",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Complete the series: 149, 182, 218, 257, ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>299&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>248&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>301&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>297&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327818",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Which of the following alternatives will replace the question mark?&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>Atom, Molecule, Cell,&nbsp;&nbsp;Tissue, ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Organ&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Proton&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>System&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Gene&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327817",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>DAG, FDK, ?, JJS, LMW&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>HHO&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>IFL&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>HKO&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>HGO&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327816",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>CGL, GLP, LQU, RVA, ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>YAS&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>YAG&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>YAH&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>YVG&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327815",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>In the following question, select the related word from the given alternatives&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>Autonomy : Liberty :: Fairness : ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Legitimacy&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Neutrality&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Equality&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Inclusion&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327764",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Rearrange the following sentences to form a coherent paragraph:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>1. A key strategy is to change from fossil fuels to renewable energy sources, including solar, wind, water, and geothermal power.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>2. The world community must significantly reduce its reliance on carbon-intensive energy production in order to eradicate the worst consequences of climate change.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>3. This change improves air quality, generates new economic opportunities, and reduces greenhouse gas emissions.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>4. Additionally, policies that encourage energy efficiency in transportation and buildings can also reduce total energy use.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>2, 1, 3, 4&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>1, 2, 4, 3&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>4, 1, 3, 2&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>2, 3, 4, 1&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327763",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Rearrange the following sentences in correct order to make a logical passage:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>1. Therefore, successful communication depends on far more than language alone.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>2. Non-verbal signals — like gestures, tone, and expressions — can convey more meaning than the verbal message itself.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>3. Communication is an intricate process that involves sharing thoughts, emotions, and information among people.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong>4. Often, it is the nuanced cues that reveal the genuine intent or reception of a message.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>3-2-1-4&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>2-4-3-1&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>1-4-2-3&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>3-4-1-2&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327762",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech.&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>The professor&nbsp;said that silence must be maintained in the class.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>",
+        "</strong></strong></strong></p><p><strong><strong><strong>",
+        "</strong></strong></strong></p><p><strong><strong><strong>",
+        "</strong></strong></strong></p><p><strong><strong><strong>"
+      ]
+    },
+    {
+      "qid": "1327761",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech.&lt;\\/strong&gt;<br \\=\"\">\\r\\nRehana&nbsp;said, \"I saw him last night.\"&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Rehana said she had seen him the previous night.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Rehana said she has seen him last night.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Rehana said she was seeing him last night.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Rehana said she had saw him the previous night.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327760",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Choose the most suitable option to replace the highlighted part of the sentence:&lt;\\/strong&gt;<br \\=\"\">\\r\\nThe manager <strong>asked to Shreyash&nbsp;to submit the report.&lt;\\/strong&gt;<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></strong></p><p><strong><strong><strong>asked Shreyash that submit the report&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>requested Shreyash to submit report&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>asked Shreyash to submit the report&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>told to Shreyash submit report&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327759",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Choose the most suitable option to replace the highlighted part of the sentence:&lt;\\/strong&gt;<br \\=\"\">\\r\\nNo sooner had I reached the station <strong>when&nbsp;the train departed.&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></strong></p><p><strong><strong><strong>than the train departed&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>then the train departed&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>when the train had departed&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>than did the train depart&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327758",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>According to the author, what factors decide if social media strengthens or weakens democracy?&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Political advertisements&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>How platforms are funded&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Societal intent and ethical usage&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Popularity of influencers&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327757",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>What remedy does the author propose to curb the misuse of social media in democratic systems?&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Enhanced meme culture&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Legalizing all content&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Algorithmic transparency and media literacy&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Global censorship policies&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327756",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Which factor, as mentioned in the passage, helps social media elevate marginalized voices?&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Editorial boards&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Gatekeeping journalism&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Viral reach and grassroots mobilization&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Institutional press&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327755",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Why is social media described as both beneficial and harmful in democratic contexts?&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Its affordability&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Its visual design&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Its ability to spread both truth and misinformation&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Its international reach&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327754",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>What key democratic role does social media play, according to the passage?&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Promoting entertainment&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Replacing newspapers&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Facilitating free flow of information&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Organizing trade unions&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327753",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Convert the sentence provided below from its passive voice structure to an active voice structure:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>The package was delivered to the house this morning.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>The house delivers the package this morning.&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Someone delivered&nbsp;the package to the house this morning.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The house has delivered the package this morning.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The package delivers itself to the house this morning.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327752",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Select the sentence containing the homonym of the highlighted word:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>The king's <strong>gules&lt;\\/strong&gt; dominated the family coat of arms.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>The tapestry featured gules and argent prominently.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The chef prepared a sauce of deep gules and cumin.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The gules border signified martial lineage.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The herald explained the symbolism of gules to listners.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327751",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Change the following from active to passive:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>You can seldom access archived manuscripts without clearance.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Archived manuscripts may seldom being accessed without clearance.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Archived manuscripts might seldom be accessed without clearance.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Archived manuscripts can seldom be accessed without clearance.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Archived manuscripts is seldom able to be accessed without clearance.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327750",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Find the part of the sentence that contains an error:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>The absence of backward compatibility in the framework (1)\\/ is a lesser concern compared to the presumption (2)\\/ that every supporting institution will, without enforcement, (3)\\/ adheres to the central directive as outlined. (4)&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>(1)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>(2)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>(3)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>(4)&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327749",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Find the part of the sentence that contains an error:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>Much of what appears to be coordination (1)\\/ between regulatory authorities and private participants&nbsp;(2)\\/ are, in fact, coincidental overlaps (3)\\/ resulting from divergent mandates. (4)&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>(1)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>(2)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>(3)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>(4)&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327748",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Select the correct option:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>Only a complete transformation can __________ the deeply rooted bureaucratic inertia.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>persuade&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>dislodge&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>dissuasion&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>disillusion&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327747",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Select the correct option:&lt;\\/strong&gt;<br \\=\"\">\\r\\nFinal approval is expected __________ the board convenes next Friday.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>at which&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>on which&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>when&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Where upon&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327746",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Select the correct option:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></p><p><strong><strong><strong>The co-authors did not expect the backlash, _________ did the principal investigator&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>nor&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>or&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>and&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>nor did&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327745",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Choose the correct one-word substitute for:&lt;\\/strong&gt;<br \\=\"\">\\r\\n'A person who abstains from all forms of indulgence'.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Ascetic&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Agnostic&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Hedonist&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Sybarite&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327744",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Spot the correct spelling of a drug-effect psychology field.&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Psychopharmacology&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Psychopharmochology&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Psychophermeocology&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Psychipharmocology&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327743",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Identify the misspelt word&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Supersede&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Perseverance&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Priviledge&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Assassinate&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327742",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Select the most appropriate antonym of the given word.&lt;\\/strong&gt;<br \\=\"\">\\r\\nPuissant&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Feeble&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Formidable&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Vigorous&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Potent&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327741",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Choose the correct meaning of idiom:&lt;\\/strong&gt;<br \\=\"\">\\r\\nMove heaven and earth&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>To wander aimlessly without purpose&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>To attempt the impossible with all efforts&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>To surrender before an obstacle&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>To ignore problems deliberately&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327740",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Select the most appropriate synonym of the given word:&lt;\\/strong&gt;<br \\=\"\">\\r\\nABNEGATE&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Accede&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Indulge&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Renounce&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Assert&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327789",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Which physical quantity allows a satellite to stay in its orbit without the need for continuous propulsion?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Mass&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Gravitational pull&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Orbital velocity&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Atmospheric drag&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327788",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>A seaside town decides to construct protective sea barriers and raise the height of buildings to cope with increasing sea levels. This type of action is an example of which climate change strategy?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Emission Reduction&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Renewable Energy Development&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Technological Intervention&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Climate Adaptation Measures&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327787",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Schedule VII of the Indian Constitution deals with which of the following?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Distribution of legislative powers between Union and States&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Powers of the Judiciary&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Conduct of Elections in India&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Financial relations between Centre and States&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327786",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Which of the following best describes the nature of light industries?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>They primarily manufacture heavy machinery and steel products.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>They require large amounts of raw materials and capital investment.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>They produce consumer goods using less raw material and energy.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>They are exclusively based in rural and agricultural areas.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327785",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>As per the Global Cities Index 2025 released by Oxford Economics, which two cities have maintained their leading positions at the top of the ranking?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Tokyo and Beijing&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>London and New York&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Tokyo and Singapore&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Dubai and Shanghai&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327784",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Read the following statements and choose the correct option based on them:&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><p><strong><strong><strong><strong>Assertion (A):&lt;\\/strong&gt; The UDAN scheme enhances regional air connectivity.<br \\=\"\">\\r\\n<strong>Reason (R):&lt;\\/strong&gt; It offers financial support to airlines through viability gap funding.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Both A and R are true, and R is the correct explanation of A&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Both A and R are true, but R is not the correct explanation of A&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>A is true, but R is false&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>A is false, but R is true&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327783",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>What is the eligible age range for farmers to register under the Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>18 to 40 years&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>21 to 55 years&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>18 to 60 years&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>25 to 50 years&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327782",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>According to the Bharatiya Nagarik Suraksha Sanhita (BNSS), what is the maximum total duration for which an individual can be kept in police custody, including all remand extensions approved by a magistrate?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>30 days&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>15 days&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>90 days&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>None of the above&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327781",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>If the Earth’s radius decreases by 1% but its mass remains constant, how would this change affect the gravitational acceleration (g) at its surface?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>It would increase by about 2%&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>It would decrease by about 2%&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>It would remain unchanged&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>It would increase by about 1%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327780",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Which of the following statements correctly describe the provisions of Article 270 of the Indian Constitution?&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><ol><strong><strong><strong>\\r\\n\\t<li>\\r\\n\\t<p>Article 270 deals with the distribution of certain taxes between the Union and the States, including the proceeds of GST.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>Following the 101st Constitutional Amendment, Article 270 was amended to include the sharing of revenue from Union taxes as well as GST.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>The GST Compensation Cess is also divided between the Union and the States under Article 270.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n&lt;\\/ol&gt;\\r\\n",
+      "options": [
+        "<p>1 and 3 only&lt;\\/p&gt;\\r\\n",
+        "</p><p>1 only&lt;\\/p&gt;\\r\\n",
+        "</p><p>1 and&nbsp;2 only&lt;\\/p&gt;\\r\\n",
+        "</p><p>2 and&nbsp;3 only&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327779",
+      "question": "</p><p>What is the primary function of lysosomes in a cell?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Protein synthesis&lt;\\/p&gt;\\r\\n",
+        "</p><p>Energy production&lt;\\/p&gt;\\r\\n",
+        "</p><p>Digestion and removal of waste materials&lt;\\/p&gt;\\r\\n",
+        "</p><p>Storage of genetic information&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327778",
+      "question": "</p><p>Which of the following most accurately represents the main goal of using generative design in aerospace systems engineering?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>To automate routine manufacturing processes&lt;\\/p&gt;\\r\\n",
+        "</p><p>To generate optimized and lightweight designs that meet performance and safety requirements&lt;\\/p&gt;\\r\\n",
+        "</p><p>To replace human designers entirely with artificial intelligence&lt;\\/p&gt;\\r\\n",
+        "</p><p>To reduce the need for simulation and testing in design development&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327777",
+      "question": "</p><p>Read the statements carefully and choose the correct option:&lt;\\/p&gt;\\r\\n\\r\\n</p><p><strong>Assertion (A):&lt;\\/strong&gt; A population explosion happens when the death rate drops sharply while the birth rate continues to stay high.<br \\=\"\">\\r\\n<strong>Reason (R):&lt;\\/strong&gt; Social and reproductive behaviors adapt immediately in response to advancements in healthcare.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>Both A and R are true, and R is the correct explanation of A&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Both A and R are true, but R is not the correct explanation&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>A is true, but R is false&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>A is false, but R is true&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327776",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Which of the following best defines population density?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>The total number of people living in a country&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The number of people living per unit area of land&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The rate at which a population grows annually&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>The ratio of birth rate to death rate&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327775",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Which type of landslide is characterized by the backward rotational movement of the displaced material?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Rock fall&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Debris flow&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Rotational slump&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Translational slide&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327774",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Which Indian political leader spoke at a special session in 2025 on “Environment, COP-30, and Global Health”?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></p><p><strong><strong><strong>Narendra Modi&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Amit Shah&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>Bhupender Yadav&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>S. Jaishankar&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327773",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong>Consider the following statements regarding \"The Adventures of Kakababu, Volume 1\" written by Sunil Gangopadhyay:&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></p><ol><strong><strong><strong>\\r\\n\\t<li>\\r\\n\\t<p>It is a classic Bengali adventure story featuring the detective Kakababu, blending elements of mystery and culture.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>It serves as a political satire on India’s governance after independence.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>It is an autobiographical account based on the author’s experiences as a freedom fighter in Bengal.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n&lt;\\/ol&gt;\\r\\n\\r\\n</p><p>Which of the above statements is\\/are correct?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Only statement 1 is correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>Only statement 2 is correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>Statements 2 and 3 are correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>1, 2 and 3 are correct&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327772",
+      "question": "</p><p>Under the SLKIC vertical of Khelo India, _____ Kendriya Vidyalayas have been adopted in partnership with KVS.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>2&lt;\\/p&gt;\\r\\n",
+        "</p><p>4&lt;\\/p&gt;\\r\\n",
+        "</p><p>5&lt;\\/p&gt;\\r\\n",
+        "</p><p>3&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327771",
+      "question": "</p><p>Consider the following statements about India’s water-sharing agreements with neighbouring countries:&lt;\\/p&gt;\\r\\n\\r\\n</p><ol>\\r\\n\\t<li>\\r\\n\\t<p>The Mahakali Treaty between India and Nepal, signed in 1996, provides for the joint development and management of the Mahakali River, including the construction of the Pancheshwar Multipurpose Project.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>The Ganga Water Treaty with Bangladesh, signed in 1996, stipulates the sharing of Ganga waters at Farakka for the entire year.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n&lt;\\/ol&gt;\\r\\n\\r\\n</p><p>Which of the above statements is\\/are correct?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Only 1 is correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>Only 2 is correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>Both 1 and 2 are correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>Neither 1 nor 2 are correct&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327770",
+      "question": "</p><p>The Regulating Act of 1773 mainly brought administrative reforms in which two key areas of the East India Company’s governance?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Trade and agriculture&lt;\\/p&gt;\\r\\n",
+        "</p><p>Civil administration and military organization&lt;\\/p&gt;\\r\\n",
+        "</p><p>Political governance in India and control by the British government in England&lt;\\/p&gt;\\r\\n",
+        "</p><p>Taxation policy and judicial system&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327769",
+      "question": "</p><p>Which tournament saw Mary Kom win her most recent international gold medal?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Asian Games 2014, Incheon&lt;\\/p&gt;\\r\\n",
+        "</p><p>President’s Cup, Labuan Bajo, 2019&lt;\\/p&gt;\\r\\n",
+        "</p><p>Commonwealth Games 2018, Gold Coast&lt;\\/p&gt;\\r\\n",
+        "</p><p>AIBA Women’s World Boxing Championships 2018, New Delhi&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327768",
+      "question": "</p><p>Consider the following statements regarding the phases of the long jump:&lt;\\/p&gt;\\r\\n\\r\\n</p><ol>\\r\\n\\t<li>\\r\\n\\t<p>Before take-off, the athlete gains maximum speed and momentum by sprinting along the runway.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>At the moment of take-off, the athlete uses the weaker leg to push off in order to maintain stability.&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n&lt;\\/ol&gt;\\r\\n\\r\\n</p><p>Which of the statements given above is\\/are correct?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Only 1 is correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>Only 2 is correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>1 and 2 are correct&lt;\\/p&gt;\\r\\n",
+        "</p><p>Neither 1 nor 2 are correct&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327767",
+      "question": "</p><p>Which of the following options best represents the historical evolution of Indian classical music?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>From Carnatic to Hindustani traditions&lt;\\/p&gt;\\r\\n",
+        "</p><p>From folk music to modern film music&lt;\\/p&gt;\\r\\n",
+        "</p><p>From Vedic chants to Hindustani and Carnatic classical styles&lt;\\/p&gt;\\r\\n",
+        "</p><p>From devotional bhajans to Western fusion&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327766",
+      "question": "</p><p>Which ancient Indian ruler is best known for establishing a highly centralized administrative system?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Ashoka&lt;\\/p&gt;\\r\\n",
+        "</p><p>Samudragupta&lt;\\/p&gt;\\r\\n",
+        "</p><p>Chandragupta Maurya&lt;\\/p&gt;\\r\\n",
+        "</p><p>Harshavardhana&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1327765",
+      "question": "</p><p>Read the following statements and choose the correct option:&lt;\\/p&gt;\\r\\n\\r\\n</p><p>Assertion (A): Humayun’s Tomb was the first grand Mughal garden tomb and served as a direct architectural inspiration for the Taj Mahal.<br \\=\"\">\\r\\nReason (R): It introduced the charbagh (four-part garden) layout and the double-dome design that later became defining features of Mughal architecture.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Both A and R are true, and R is the correct explanation of A.&lt;\\/p&gt;\\r\\n",
+        "</p><p>Both A and R are true, but R is not the correct explanation of A.&lt;\\/p&gt;\\r\\n",
+        "</p><p>A is true, but R is false.&lt;\\/p&gt;\\r\\n",
+        "</p><p>A is false, but R is true.&lt;\\/p&gt;\\r\\n"
+      ]
+    }
+  ]
+}

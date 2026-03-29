@@ -1,0 +1,956 @@
+{
+  "state": 200,
+  "msg": "success",
+  "questions": [
+    {
+      "qid": "1399273",
+      "question": "</span></p><p style=\"\\&quot;text-align:justify\\&quot;\">The cost of a washing machine is 25% less than the cost of a TV. If the cost of the washing machine increases by 30% and that of the TV decreases by 19%, then what is the percentage change in the total cost of 8 washing machines and 4 TVs?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Increase by 11.2%&lt;\\/p&gt;\\r\\n",
+        "</p><p>Decrease by 13%&lt;\\/p&gt;\\r\\n",
+        "</p><p>Decrease by 6%&lt;\\/p&gt;\\r\\n",
+        "</p><p>Increase by 10.4%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399250",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">A dealer sells two dryers at the rate of \\u20b972,000 per dryer. On one, he earns a profit of 8% and on the other he loses 25%. What is his loss percentage in the whole transaction?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>11.47%&lt;\\/p&gt;\\r\\n",
+        "</p><p>12.31%&lt;\\/p&gt;\\r\\n",
+        "</p><p>15.46%&lt;\\/p&gt;\\r\\n",
+        "</p><p>10.83%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399251",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">In quadrilateral PQRS, the bisectors of ∠R and ∠S meet at the point T (inside the quadrilateral) and ∠STR = 27.5°. If the ratio of ∠P to ∠Q is 4 : 7, then what is the difference between the measures of ∠Q and ∠P?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>10°&lt;\\/p&gt;\\r\\n",
+        "</p><p>12°&lt;\\/p&gt;\\r\\n",
+        "</p><p>9°&lt;\\/p&gt;\\r\\n",
+        "</p><p>15°&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399252",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">A dealer buys two articles X and Y for \\u20b91,500 each. He marks each of them at the same price. He sells X by giving two successive discounts of 25% and 44% and still earns \\u20b9279 as profit. If he sells Y at a single discount of 58%, then what is the profit percentage on Y?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>17%&lt;\\/p&gt;\\r\\n",
+        "</p><p>17.6%&lt;\\/p&gt;\\r\\n",
+        "</p><p>18.6%&lt;\\/p&gt;\\r\\n",
+        "</p><p>18%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399253",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">In triangle ABC, D,E, and F are the midpoints of sides BC, CA, and AB, respectively. The medians AD, BE, and CF meet at point G. What is the ratio of the length of the median to the distance from the vertex to the centroid?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>3 : 2&lt;\\/p&gt;\\r\\n",
+        "</p><p>4 : 5&lt;\\/p&gt;\\r\\n",
+        "</p><p>5 : 7&lt;\\/p&gt;\\r\\n",
+        "</p><p>2 : 3&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399254",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">Creating a frustum, a right circular cone is sliced parallel to its base,. The height of the original cone is 35 cm , and the cut is made 14 cm from the vertex. What is the ratio of the volumes of the frustum to that of the entire cone?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>117:125&lt;\\/p&gt;\\r\\n",
+        "</p><p>49:64&lt;\\/p&gt;\\r\\n",
+        "</p><p>16:25&lt;\\/p&gt;\\r\\n",
+        "</p><p>121:125&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399255",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">Three pipes P, Q, and R can fill a tank in 38, 44, and 28 minutes respectively. Initially, the tank is empty. Pipe P is opened at 9:41 AM, and pipe Q is opened 8 minutes later. How many minutes after opening pipe Q should pipe R be opened so that the tank is exactly full by 10:00 AM?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>7 minute&lt;\\/p&gt;\\r\\n",
+        "</p><p>11 minute&lt;\\/p&gt;\\r\\n",
+        "</p><p>6 minute&lt;\\/p&gt;\\r\\n",
+        "</p><p>4 minute&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399257",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">Ananya runs a clothing store and has a marked price of \\u20b912,000 for a winter coat. She offers two successive discounts: 12% and 18%. Ananya wants to know what single equivalent discount would result in the same final selling price as the two successive discounts. What is the single equivalent discount Ananya should offer to achieve the same final price as the two successive discounts?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>26.45%&lt;\\/p&gt;\\r\\n",
+        "</p><p>27.84%&lt;\\/p&gt;\\r\\n",
+        "</p><p>27.34%&lt;\\/p&gt;\\r\\n",
+        "</p><p>25%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399258",
+      "question": "</p><p>If sin(\\u20613x - 10)°= cos(\\u2061x + 20)°, then x=&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>25°&lt;\\/p&gt;\\r\\n",
+        "</p><p>30°&lt;\\/p&gt;\\r\\n",
+        "</p><p>20°&lt;\\/p&gt;\\r\\n",
+        "</p><p>45°&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399259",
+      "question": "</p><p>An amount of \\u20b98,000 is invested at 10% compound interest. What will be the amount after 3 years?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>\\u20b9 10,480&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b9 10,542&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b910,648&lt;\\/p&gt;\\r\\n",
+        "</p><p>\\u20b910,800&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399260",
+      "question": "</p><p>A sum of \\u20b910,00,000 is invested in a bank at 11% interest per annum compounded annually. On maturity, the amount payable becomes \\u20b913,67,631. Find the time period of the investment.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>3.5 years&lt;\\/p&gt;\\r\\n",
+        "</p><p>2.5 years&lt;\\/p&gt;\\r\\n",
+        "</p><p>1 year&lt;\\/p&gt;\\r\\n",
+        "</p><p>3 years&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399261",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">Two trains of lengths 316 m and 349 m are running at speeds of 58 km\\/h and 68 km\\/h, respectively, on parallel tracks in opposite directions. In how many seconds will they cross each other?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>22 seconds&lt;\\/p&gt;\\r\\n",
+        "</p><p>27 seconds&lt;\\/p&gt;\\r\\n",
+        "</p><p>30 seconds&lt;\\/p&gt;\\r\\n",
+        "</p><p>19 seconds&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399262",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">An antique dealer sold three items, A, B&nbsp;and C, with their selling prices in the ratio 4:5:6. He suffered a loss of 10%&nbsp;on item A, made a profit of 50%&nbsp;on item B, and broke even (no profit, no loss) on item C. What was his approximate percentage gain or loss in the overall deal?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>loss of 8.88%&lt;\\/p&gt;\\r\\n",
+        "</p><p>profit of 8.88%&lt;\\/p&gt;\\r\\n",
+        "</p><p>profit of 10.88%&lt;\\/p&gt;\\r\\n",
+        "</p><p>loss of 10.88%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399263",
+      "question": "</p><p>The average of 7 numbers is 23. If each number is increased by 4, what will the new average be?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>31&lt;\\/p&gt;\\r\\n",
+        "</p><p>23&lt;\\/p&gt;\\r\\n",
+        "</p><p>27&lt;\\/p&gt;\\r\\n",
+        "</p><p>7&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399264",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">A shopkeeper sells an item for \\u20b9324.3 after giving two successive discounts of 60% and 31% on its marked price. Had he not given any discount, he would have earned a profit of 25%. What is the cost price (in \\u20b9) of the item?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>968&lt;\\/p&gt;\\r\\n",
+        "</p><p>947&lt;\\/p&gt;\\r\\n",
+        "</p><p>940&lt;\\/p&gt;\\r\\n",
+        "</p><p>917&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399266",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">The circumference of a circle is 132 cm. The radius of the given circle is equal to the radius of a cone having height 12 cm. Find the volume of the cone. (Take π = 22\\/7)&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>5044 cm<sup>3&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></p><p>5124 cm<sup>3&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></p><p>5784 cm<sup>3&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></p><p>5544 cm<sup>3&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399268",
+      "question": "</span></p><p>A boat goes 413 km upstream in 59 hours and a distance of 621 km downstream in 69 hours. Find the speed of the boat in still water. (In kmph)&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>8&lt;\\/p&gt;\\r\\n",
+        "</p><p>12&lt;\\/p&gt;\\r\\n",
+        "</p><p>10&lt;\\/p&gt;\\r\\n",
+        "</p><p>14&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399269",
+      "question": "</p><p style=\"\\&quot;text-align:justify\\&quot;\">The curved surface area and the volume of a cylindrical pipe is 565.2 m<sup>2&lt;\\/sup&gt;&nbsp;and 1,695.6 m<sup>3,&lt;\\/sup&gt; respectively. Find the total surface area of the pipe. (Use π = 3.14)&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</sup></sup></p><p>754.36 m<sup>2&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></p><p>791.28 m<sup>2&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></p><p>804.76 m<sup>2&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></p><p>787.29 m<sup>2&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399270",
+      "question": "</sup></p><p style=\"\\&quot;text-align:justify\\&quot;\">The area of a quadrilateral ABCD is 299 cm<sup>2&lt;\\/sup&gt;. The lengths of the perpendiculars from the vertices B and D to the diagonal AC are 11 cm and 12 cm, respectively. Determine the length (in cm) of the diagonal AC.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</sup></p><p>26&lt;\\/p&gt;\\r\\n",
+        "</p><p>21&lt;\\/p&gt;\\r\\n",
+        "</p><p>29&lt;\\/p&gt;\\r\\n",
+        "</p><p>24&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399272",
+      "question": "</p><p>X can finish a job in 147 days. He worked for 63 days alone and the remaining work is completed by Y, in 84 days. How many days would both together complete the work?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>73.5&lt;\\/p&gt;\\r\\n",
+        "</p><p>71.5&lt;\\/p&gt;\\r\\n",
+        "</p><p>67.5&lt;\\/p&gt;\\r\\n",
+        "</p><p>69.5&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399199",
+      "question": "</p><p><strong>Fill in the blanks with the most appropriate word:&lt;\\/strong&gt;<br \\=\"\">\\r\\nThe committee accepted her proposal because the data was well-researched and her explanation was sufficiently ______ to address all practical concerns raised during the discussion.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></p><p><strong><strong>precarious&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></p><p><strong><strong>cogent&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></p><p><strong><strong>insipid&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></p><p><strong><strong>nebulous&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399200",
+      "question": "</strong></strong></p><p><strong><strong><strong>Select the most appropriate option to fill in the blanks.&lt;\\/strong&gt;<br \\=\"\">\\r\\nThe rapid expansion of social media platforms has amplified public _____ and spread ______ narratives, making responsible regulation an urgent necessity for democratic societies.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></p><p><strong><strong><strong>awareness, authentic&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>opinions, misleading&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>neutrality, verified&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>silence, constructive&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399201",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Arrange the following sentences to form a coherent paragraph: Introduction sentence:&lt;\\/strong&gt;<br \\=\"\">\\r\\nHealth insurance has become an essential component of financial planning in India, particularly in light of rising medical costs and unpredictable health emergencies.<br \\=\"\">\\r\\n<strong>P.&lt;\\/strong&gt; consequently, individuals should carefully examine policy coverage, exclusions, waiting periods, and claim settlement records before finalising an insurance plan.<br \\=\"\">\\r\\n<strong>Q.&lt;\\/strong&gt; for example, opting for a policy solely on the basis of low premium may result in inadequate coverage during critical medical situations.<br \\=\"\">\\r\\n<strong>R&lt;\\/strong&gt;. nevertheless, many policyholders fail to read the fine print and assume that all medical expenses will be covered without limitations.<br \\=\"\">\\r\\n<strong>S&lt;\\/strong&gt;. such assumptions often lead to dissatisfaction and financial stress at the time of hospitalisation.<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></strong></strong></strong></strong></p><p><strong><strong><strong>PRQS&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>RSPQ&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>RQPS&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></p><p><strong><strong><strong>SRPQ&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399202",
+      "question": "</strong></strong></strong></p><p><strong><strong><strong><strong>Sentence Improvement&lt;\\/strong&gt;<br \\=\"\">\\r\\nShe was <u>ingenuous&lt;\\/u&gt; enough to accept the flattering remarks &nbsp;without suspicion, but she was also <u>ingenious&lt;\\/u&gt; enough to optimise the workflow and reduce delays in the project.<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</u></u></strong></u></u></strong></strong></strong></p><p><strong><strong><u><strong><u><u>ingenious; ingenuous&lt;\\/p&gt;\\r\\n",
+        "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>ingenious; ingenious&lt;\\/p&gt;\\r\\n",
+        "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>ingenuous; ingenuous&lt;\\/p&gt;\\r\\n",
+        "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>No improvement&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399203",
+      "question": "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>S1 : The definition of large farmers differs &nbsp;from state to state in India.<br \\=\"\">\\r\\nS6: This trend increased the income base of those who were already relatively well-off and better placed in society.&nbsp;<br \\=\"\">\\r\\nP : In the initial phase of the Green Revolution, the large farmers were able to adopt the High Yielding Varieties easily.<br \\=\"\">\\r\\nQ : The new varieties increased their savings, both to buy machinery that can displace labour and to purchase more land.<br \\=\"\">\\r\\nR : For example, a farmer having 10 acres &nbsp;in Kerala is a large farmer, while in &nbsp;Rajasthan, Punjab and Haryana he falls &nbsp;under the category of a small or medium farmer.<br \\=\"\">\\r\\nS : All the studies conducted in areas where Green Revolution is a success show that the large farmers have been the main gainers of the package programme.<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>QPRS&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>RSPQ&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>PQSR&lt;\\/p&gt;\\r\\n",
+        "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u>SQRP&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399204",
+      "question": "</u></u></strong></u></strong></strong></p><p><strong><strong><u><strong><u><u><strong>Select the most appropriate meaning of the given idiom.&lt;\\/strong&gt;<br \\=\"\">\\r\\nTo paddle one’s own canoe<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></u></u></strong></u></strong></p><p><u><strong><u><u><strong><strong>Compete aggressively without relying on others&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></u></u></strong></u></p><p><u><strong><u><u><strong><strong>Take initiative while still depending on guidance&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></u></u></strong></u></p><p><u><strong><u><u><strong><strong>Follow an individual path against advice&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></u></u></strong></u></p><p><u><strong><u><u><strong><strong>Manage independently without external assistance&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399205",
+      "question": "</strong></strong></u></u></strong></u></p><p><u><strong><u><u><strong><strong><strong>Choose the correct one-word substitute for:&lt;\\/strong&gt;<br \\=\"\">\\r\\n“Pertaining to sheep.”<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Caprine&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Bovine&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Cervine&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Ovine&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399206",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Find the part of the sentence that contains an error:&lt;\\/strong&gt;<br \\=\"\">\\r\\nThe committee’s recommendations, detailed in both scope and implication, (a)\\/ triggered reactions not only from senior management (b)\\/ but also from regulators who stated they (c)\\/ has not been adequately consulted before the policy was finalised. (d)<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>a&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>b&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>c&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>d&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399207",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Change into passive voice&lt;\\/strong&gt;<br \\=\"\">\\r\\nAn unexpected call disturbed Maria terribly which compelled her to stop the performance.<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Maria was disturbed terribly by an unexpected call which compelled her to stop the performance.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Maria could be disturbed terribly by an unexpected call which compelled her to stop the performance.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Maria disturbed terribly by an unexpected call which compelled her to stop the performance.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Maria had been disturbed terribly by an unexpected call which compelled her to stop the performance.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399208",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Select the most appropriate antonym of the given word:&nbsp;<br \\=\"\">\\r\\nContumacious&lt;\\/strong&gt;<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Compliant&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Recalcitrant&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Defiant&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Obstinate&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399209",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Select the most appropriate meaning of the given idiom.<br \\=\"\">\\r\\nTo meet one’s Waterloo&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>To suffer a final and decisive defeat&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>To face a sudden and unexpected challenge&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>To achieve victory after prolonged struggle&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>To withdraw quietly from a difficult situation&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399210",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Select the option that expresses the given sentence in indirect speech.&lt;\\/strong&gt;<br \\=\"\">\\r\\nHe said to her, “Why have you not submitted the report on time despite being reminded repeatedly by the management?”&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>He asked her why she has not submitted the report on time despite being reminded repeatedly by the management.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>He asked her why she had not submitted the report on time despite being reminded repeatedly by the management.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>He asked her why she had not submitted the report on time although she is reminded repeatedly by the management.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>He asked her why she would not submit the report on time despite being reminded repeatedly by the management.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399211",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Select the most appropriate synonym of the given word:&nbsp;<br \\=\"\">\\r\\nApodictic&lt;\\/strong&gt;<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Irrefutable&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Explicit&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Harsh&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Lucid&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399212",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Choose the correct one-word substitute for:&lt;\\/strong&gt;<br \\=\"\">\\r\\n“A story told to illustrate a moral or spiritual truth.”&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Parable&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Allegory&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Anecdote&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Fable&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399213",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Find the incorrect part of the sentence:&lt;\\/strong&gt;<br \\=\"\">\\r\\nShe could not abide up with (a)\\/ the constant changes in policy (b)\\/ despite having adequate experience (c)\\/ in handling similar situations earlier. (d)<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>a&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>b&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>c&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>d&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399214",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Choose the correct Active Voice form:&lt;\\/strong&gt;<br \\=\"\">\\r\\nIt was decided that the proposal would be reviewed thoroughly by the committee before being forwarded to the higher authorities.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>They decided that the committee would review the proposal thoroughly before forwarding it to the higher authorities.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>People decide that the proposal is reviewed thoroughly by the committee before being forwarded to the higher authorities.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Someone had decided that the proposal would have been reviewed thoroughly by the committee before being forwarded to the higher authorities.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>They had decided that the proposal would be reviewed thoroughly by the committee before being forwarded to the higher authorities.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399215",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.<br \\=\"\">\\r\\nP. &lt;\\/strong&gt;The authorities responded harshly to the movement by imposing severe restrictions on the workers and attempting to crush their resolve through intimidation and deprivation.<br \\=\"\">\\r\\n<strong>Q. &lt;\\/strong&gt;Gandhiji, upon assuming leadership of the struggle, carefully planned a peaceful yet determined march to challenge the unjust laws imposed on the labourers.<br \\=\"\">\\r\\n<strong>R.&lt;\\/strong&gt; Despite repeated arrests and continuous harassment by the administration, the march continued with unwavering discipline and moral courage.<br \\=\"\">\\r\\n<strong>S. &lt;\\/strong&gt;The workers, inspired by Gandhiji’s presence and guidance, remained united and resolute, even when faced with imprisonment and physical hardship.<br \\=\"\">\\r\\n<strong>T.&lt;\\/strong&gt; Eventually, many of them were jailed, subjected to inhuman treatment, and forced into hard labour, yet their spirit of resistance did not weaken.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>QPRST&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>QRPST&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>PQRST&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>QRSTP&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399216",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Spot the correct spelling related to advanced environmental engineering practices involving microbial and chemical processes for waste degradation.&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Bioremediation&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Bioremideation&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Bioremidiation&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Bioremedation&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399217",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Select the sentence containing the homonym of the highlighted word:&nbsp;&lt;\\/strong&gt;<br \\=\"\">\\r\\nThe legal scholar revised the digest of civil statutes.<br \\=\"\">\\r\\n&nbsp;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>He took a tablet to aid his digest after the meal.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The magazine's monthly digest reached a million readers.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The editor proofread the tax digest overnight.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The court referenced an old digest of maritime law.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399218",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Select the option that expresses the given sentence in indirect speech.<br \\=\"\">\\r\\nThe manager said to her, “Will you accept the revised salary?”&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The manager asked her whether she accepted the revised salary.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The manager asked her whether she would accept the revised salary.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The manager asked her whether she has accepted the revised salary.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The manager asked her whether she will accept the revised salary&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399219",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>What should come in the place of (a)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>view&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>viewing&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>viewed&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>views&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399220",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>What should come in the place of (b)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>complicates&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>obscures&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>illuminates&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>fabricates&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399221",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>What should come in the place of (c)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>what&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>which&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>who&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>whose&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399222",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>What should come in the place of (d)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>amalgamate&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>conflate&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>dissociate&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>integrate&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399223",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>What should come in the place of (e)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>persistent&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>persistently&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>persistence&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>persist&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399274",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>In a certain code language,&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>‘A + B’ means ‘A is the mother of B',&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>‘A - B’ means ‘A is the brother of B',&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>‘A × B’ means ‘A is the wife of B' and&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>‘A ÷ B’ means ‘A is the father of B’.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>How is M related to T if 'M - N ÷ P + S&nbsp;× T\"?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Wife's mother's father's brother&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Wife's mother's mother's father&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Wife's father's father's brother&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Wife's father's brother&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399275",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Complete the series.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>M88N, O44L, Q22J, ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>R24I&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>S11H&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>W17Q&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Z12A&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399276",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>In a queue of students facing north, Asha&nbsp;and Anisha are standing at the 10th and 8th positions from the left and right end, respectively. If another student, Ariva, who is 12th from the left end, is exactly in between Asha&nbsp;and Anisha, then find the position of Asha&nbsp;from the right end.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>12th&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>11th&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>9th&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>10th&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399277",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Select the set in which the numbers are related in the same way as the numbers of the following set.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>(12, 28, 14)&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>(3, 18, 9)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>(4, 14,&nbsp;6)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>(7, 18, 9)&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>(6, 20, 2)&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399278",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>If A means addition, B means multiplication, C means division and D means subtraction then find the value of&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>24 C 12 B 8 C 2 A 6&nbsp;D 3 = <strong>?&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>8&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>11&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>16&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>19&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399279",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Four options&nbsp;have been&nbsp;given out of which three are alike in some manner, while one is different. Select the odd option.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>3 : 32&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>1 : 13&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>5 : 130&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>2 : 13&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399280",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>A series is given with one term missing. Choose the correct alternative from the given ones that will complete the series.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>VT, RP, NL, ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>HJ&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>KL&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>IJ&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>JH&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399281",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows the given statements.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Statements:&lt;\\/strong&gt;<br \\=\"\">\\r\\nI. All chairs are pens.<br \\=\"\">\\r\\nII. Some pens are cups.<br \\=\"\">\\r\\nIII. All cups are pencils.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Conclusions:&lt;\\/strong&gt;<br \\=\"\">\\r\\nI. Some pencils are pens.<br \\=\"\">\\r\\nII. All pencils are chairs.<br \\=\"\">\\r\\nIII. All chairs are cups.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Both conclusions II and III follow&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Only conclusion I follows&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Both conclusions I and II follow&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Only conclusion II follows&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399282",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>T, X, Z, R, P, A, and Q are 7&nbsp;members of the family. X is the father&nbsp;of P and grandfather of Z. R is the brother-in-law of Q and the father of Z. T is the mother-in-law of A. T is the mother of Q and has only two&nbsp;daughters. X and T are married couples. How is P related to Q?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Sister&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Sister in law&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Brother&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Brother in law&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399283",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Select the combination of letter-cluster which when sequentially placed in the blank spaces of the given series will form a repeating pattern.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>_ ba _ _ abac _ _&nbsp;ba _ aa _ _&nbsp;ca&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>acbaacba&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>abaaacba&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>acaaacba&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>acabaaac&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399284",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Select the odd group of numbers. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as adding \\/subtracting \\/multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>18&nbsp;- 326&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>12&nbsp;- 146&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>16&nbsp;- 258&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>13&nbsp;- 170&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399285",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Select the option that is related to the fifth number in the same way as the second number is related to the first number, and the fourth number is related to the third number.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>17 : -204 :: -23 : 276 :: 27 : ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>- 334&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>- 324&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>- 336&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>- 226&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399286",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Select the sixth number which is related to the fifth number in the same way as the fourth number is related to the third and the second number is related to the first.&nbsp;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>24 : 288&nbsp;:: 18&nbsp;: 162&nbsp;:: 14&nbsp;: ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>88&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>98&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>43&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>72&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399287",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Which one of the following sentences is EXACTLY the same as the reference?&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Reference Sentence:&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The measure of intelligence is the ability to change, and those who embrace new ideas often shape the future.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The measure of intelligence is ability to change and those who embrace new ideas often shape the future.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>The measure of intelligence is the ability to change, and those whom embrace new ideas often shape the future.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>&nbsp;The measure of intelligence is the ability to change, and those who embrace new ideas often shape the future.&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>&nbsp;The measure of intelligence is the ability to change, and those who embraces new ideas often shape the future.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399288",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Find the wrong number in the series.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>6, 26, 38,&nbsp;42, 46&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>26&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>38&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>46&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>42&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399289",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Select the option that is related to the fifth-letter cluster in the same way as the second letter cluster is related to the first letter cluster and the fourth letter cluster is related to the third letter cluster.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>FCYGB : GEBKG :: RTVYU : SVYCZ :: LPDFE : ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>NRFHG&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>MQEGF&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>MRGJJ&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>NSGKL&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399290",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Words given on the left side of (::) are related to each other by some Logic\\/Rule \\/Relation. Select the missing word\\/word pair on the right side of (::) from the given alternatives based on the same Logic\\/Rule\\/Relation.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Foe : Enemy :: Friend : ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Stylish&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Craze&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Associate&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Evil&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399291",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>A girl pointing to a boy said, \"He is the son of the daughter-in-law of my mother's&nbsp; paternal&nbsp;uncle's only brother's mother.\" How is the boy&nbsp;related to&nbsp;that girl if the mother's uncle is not married?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Brother&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Nephew&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Cousin&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Uncle&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399292",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>In a row of 45 students, facing north, Kevin is 16th from the right end. If Luther is 10th to the left of Kevin, what is Luther's position from the left end of the row?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>21<sup>st&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>23<sup>rd&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>20<sup>th&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n",
+        "</sup></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>22<sup>nd&lt;\\/sup&gt;&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399293",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>In a certain code language,&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>\"413\" is coded as \"shyam is Boy\".&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>\"517\" is coded as \"Sita is Pretty\".&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>\"647\" is coded as \"Pretty shyam gone\".&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>What is the code for 'Pretty'?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>1&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>5&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>4&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>7&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399294",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Find the odd one out.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Article&nbsp;25&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Article 49&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Article 19&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Article 14&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399295",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>If the first and second letters in the word 'TELEPHONES' were interchanged, also the third and the fourth letters, fifth and the sixth letters and so on, which letter would be the seventh letter counting from your left?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>O&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>N&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>H&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>P&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399296",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Select the option that is related to the third word in the same way as the second word is related to the first word.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Effortless : Painless :: Smooth : ?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Rude&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Hard&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Soft&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Ugly&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399297",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>8 boys A, B, C, D, E, F, G and H are sitting around a circular table facing towards the centre (not necessarily in the same order). H is to the&nbsp; immediate right of A. H is not the immediate neighbour of E or D. F is to the immediate left of B. G is the immediate neighbour of E. C is the&nbsp; mmediate neighbour of E and F. Who is sitting second to the right of H?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>C&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>E&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>B&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>D&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399298",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Some conditional data is provided to you in form of statement you have to check which of the following statement are logically inference from given statement.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>Statement:&lt;\\/strong&gt;<br \\=\"\">\\r\\nOnly students with a GPA above 3.5 can join the honor society.<br \\=\"\">\\r\\nMichael joined the honor society.&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong><strong>What can we infer about Michael?&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Michael has exactly a 3.5 GPA&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Michael has a GPA above 3.5&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Michael is the smartest student&lt;\\/p&gt;\\r\\n",
+        "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Michael studies very hard&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399224",
+      "question": "</strong></strong></strong></u></u></u></p><p><u><u><u><strong><strong><strong>Consider the following statements regarding the Delhi Budget 2026–27:&lt;\\/p&gt;\\r\\n\\r\\n</strong></strong></strong></u></u></u></p><ol><u><u><u><strong><strong><strong>\\r\\n\\t<li>The total budget outlay is Rupees 1,03,700 crore.&lt;\\/li&gt;\\r\\n\\t</li><li>Education received the highest share in the budget.&lt;\\/li&gt;\\r\\n\\t</li><li>The transport sector received the highest allocation among all sectors.&lt;\\/li&gt;\\r\\n&lt;\\/ol&gt;\\r\\n\\r\\n<p>Which of the statements given above is\\/are correct?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>1 and 2 only&lt;\\/p&gt;\\r\\n",
+        "</p><p>2 and 3 only&lt;\\/p&gt;\\r\\n",
+        "</p><p>1 and 3 only&lt;\\/p&gt;\\r\\n",
+        "</p><p>1, 2 and 3&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399225",
+      "question": "</p><p>India’s first indoor athletics championships begin at Kalinga Stadium. Which of the following events is NOT typically part of indoor athletics?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Marathon&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>1500m race&lt;\\/p&gt;\\r\\n",
+        "</p><p>60m hurdle&lt;\\/p&gt;\\r\\n",
+        "</p><p>Shot put&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399226",
+      "question": "</p><p>Who has recently been appointed as the new Director-General of the BBC?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Tim Davie&lt;\\/p&gt;\\r\\n",
+        "</p><p>Matt Brittin&lt;\\/p&gt;\\r\\n",
+        "</p><p>Samir Shah&lt;\\/p&gt;\\r\\n",
+        "</p><p>Donald Trump&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399227",
+      "question": "</p><p>In March 2026 &nbsp;PM Narendra Modi became the longest serving head of government byserving 8,930 days in office. He broke the record of whom?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Former Odisha CM Naveen Patnaik&lt;\\/p&gt;\\r\\n",
+        "</p><p>Former West Bengal CM Jyoti Basu&lt;\\/p&gt;\\r\\n",
+        "</p><p>Former Sikkim CM Pawan Kumar Chamling&lt;\\/p&gt;\\r\\n",
+        "</p><p>Former West Bengal CM Buddhdeb Bhattacharya&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399228",
+      "question": "</p><p>According to the World Meteorological Organization 2026 report, what percentage of excess heat generated by global warming is being absorbed by the oceans?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>91%&lt;\\/p&gt;\\r\\n",
+        "</p><p>75%&lt;\\/p&gt;\\r\\n",
+        "</p><p>82%&lt;\\/p&gt;\\r\\n",
+        "</p><p>95%&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399229",
+      "question": "</p><p>Which state among the following is a major contributor to India's iron ore reserves?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Maharashtra&lt;\\/p&gt;\\r\\n",
+        "</p><p>Andhra Pradesh&lt;\\/p&gt;\\r\\n",
+        "</p><p>Karnataka&lt;\\/p&gt;\\r\\n",
+        "</p><p>Tamil Nadu&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399230",
+      "question": "</p><p>Which of the following is the highest Himalayan peak located in India (excluding POK)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Dhaulagiri&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>Nanga Parbat&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>Mount Everest&lt;\\/p&gt;\\r\\n",
+        "</p><p>Kanchenjunga&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399231",
+      "question": "</p><p>Match the following:&lt;\\/p&gt;\\r\\n\\r\\n\\r\\n\\t\\r\\n\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t\\r\\n\\t\\t\\t<table border=\"\\&quot;1\\&quot;\" cellpadding=\"\\&quot;1\\&quot;\" cellspacing=\"\\&quot;1\\&quot;\" style=\"\\&quot;width:300px\\&quot;\"><tbody><tr><td>\\r\\n\\t\\t\\t<p><strong>List-I (Major River)&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t\\t</strong></p></td><td>\\r\\n\\t\\t\\t<p><strong>List-II (Continent)&lt;\\/strong&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t&lt;\\/tr&gt;\\r\\n\\t\\t</strong></p></td></tr><tr><td>\\r\\n\\t\\t\\t<p>a) Congo river&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t\\t</p></td><td>\\r\\n\\t\\t\\t<p>i) Asia&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t&lt;\\/tr&gt;\\r\\n\\t\\t</p></td></tr><tr><td>\\r\\n\\t\\t\\t<p>b) Yellow river&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t\\t</p></td><td>\\r\\n\\t\\t\\t<p>ii) South America&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t&lt;\\/tr&gt;\\r\\n\\t\\t</p></td></tr><tr><td>\\r\\n\\t\\t\\t<p>c) Danube river&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t\\t</p></td><td>\\r\\n\\t\\t\\t<p>iii) Africa&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t&lt;\\/tr&gt;\\r\\n\\t\\t</p></td></tr><tr><td>\\r\\n\\t\\t\\t<p>d) Rio Parana&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t\\t</p></td><td>\\r\\n\\t\\t\\t<p>iv) Europe&lt;\\/p&gt;\\r\\n\\t\\t\\t&lt;\\/td&gt;\\r\\n\\t\\t&lt;\\/tr&gt;\\r\\n\\t&lt;\\/tbody&gt;\\r\\n&lt;\\/table&gt;\\r\\n\\r\\n</p><p>Choose the correct options given below.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>a-iii, b-i, c-iv, d-ii&lt;\\/p&gt;\\r\\n",
+        "</p><p>a-i, b-iii, c-ii, d-iv&lt;\\/p&gt;\\r\\n",
+        "</p><p>a-iv, b-i, c-ii, d-iii&lt;\\/p&gt;\\r\\n",
+        "</p><p>a-ii, b-iv, c-iii, d-i&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399232",
+      "question": "</p><p>Social life in the Vedic period was divided into how many ashramas?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Ten&lt;\\/p&gt;\\r\\n",
+        "</p><p>Six&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>Four&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>Three&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399233",
+      "question": "</p><p>Who was the founder of the Prarthana Samaj, which promoted social reform in Maharashtra?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Gopal Krishna Gokhale&lt;\\/p&gt;\\r\\n",
+        "</p><p>Atmaram Pandurang&lt;\\/p&gt;\\r\\n",
+        "</p><p>Keshub Chandra Sen&lt;\\/p&gt;\\r\\n",
+        "</p><p>Dadabhai Naoroji&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399234",
+      "question": "</p><p>During the Delhi Sultanate period, several new capitals were established by different rulers. Arrange the following capitals in the correct chronological order of their foundation:&lt;\\/p&gt;\\r\\n\\r\\n</p><ol>\\r\\n\\t<li>\\r\\n\\t<p>Tughlaqabad&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>Siri&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>Firozabad&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n\\t</p></li><li>\\r\\n\\t<p>Jahanpanah&lt;\\/p&gt;\\r\\n\\t&lt;\\/li&gt;\\r\\n&lt;\\/ol&gt;\\r\\n",
+      "options": [
+        "<p>2 – 1 – 4 – 3&lt;\\/p&gt;\\r\\n",
+        "</p><p>1 – 2 – 3 – 4&lt;\\/p&gt;\\r\\n",
+        "</p><p>2 – 4 – 1 – 3&lt;\\/p&gt;\\r\\n",
+        "</p><p>1 – 4 – 2 – 3&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399235",
+      "question": "</p><p>Compared to a soft sound, a louder sound wave of the same frequency is characterised by __________.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Larger amplitude&lt;\\/p&gt;\\r\\n",
+        "</p><p>Smaller speed&lt;\\/p&gt;\\r\\n",
+        "</p><p>Smaller wavelength&lt;\\/p&gt;\\r\\n",
+        "</p><p>Higher pitch&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399236",
+      "question": "</p><p>What is the exact location of the kidneys in human beings?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>In the abdomen, on either side of the intestine&lt;\\/p&gt;\\r\\n",
+        "</p><p>In the chest region, just below the heart&lt;\\/p&gt;\\r\\n",
+        "</p><p>In the chest region, on either side of the lungs&lt;\\/p&gt;\\r\\n",
+        "</p><p>In the abdomen, on either side of the back bone&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399237",
+      "question": "</p><p>Under which Article does the Supreme Court of India exercise original jurisdiction in cases involving the violation of Fundamental Rights?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>&nbsp;Article 32&lt;\\/p&gt;\\r\\n",
+        "</p><p>Article 136&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>&nbsp;Article 226&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>Article 131&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399238",
+      "question": "</p><p>The Eleventh Schedule of the Constitution was introduced through the 73rd&nbsp; Amendment. What is its significance in the context of Panchayati Raj?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>It specifies 44 functional subjects to be devolved to Panchayats by States.&lt;\\/p&gt;\\r\\n",
+        "</p><p>It lists subjects to be legislated by the Union government.&lt;\\/p&gt;\\r\\n",
+        "</p><p>It specifies 29 functional subjects to be devolved to Panchayats by States.&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>It outlines administrative powers of the Gram Sabha.&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399239",
+      "question": "</p><p>The office of the Registrar General and Census Commissioner of India falls under which ministry?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Ministry of Rural Development&lt;\\/p&gt;\\r\\n",
+        "</p><p>Ministry of Finance&lt;\\/p&gt;\\r\\n",
+        "</p><p>Ministry of Health and Family Welfare&lt;\\/p&gt;\\r\\n",
+        "</p><p>Ministry of Home Affairs&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399240",
+      "question": "</p><p>What was a unique feature of the Fifth Five Year Plan (1974-1979)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>It was the first plan to focus on the environment.&lt;\\/p&gt;\\r\\n",
+        "</p><p>It introduced economic liberalisation.&lt;\\/p&gt;\\r\\n",
+        "</p><p>Exclusive focus on the service sector.&lt;\\/p&gt;\\r\\n",
+        "</p><p>Emphasis on 'Garibi Hatao' (Eradicate Poverty).&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399241",
+      "question": "</p><p>Where will Prime Minister Narendra Modi attend the G7 Summit 2026?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Japan&lt;\\/p&gt;\\r\\n",
+        "</p><p>France&lt;\\/p&gt;\\r\\n",
+        "</p><p>Canada&lt;\\/p&gt;\\r\\n",
+        "</p><p>Germany&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399242",
+      "question": "</p><p>Which of the following is not a ground on which the State can impose reasonable restrictions on the right to freedom under Article 19?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Sovereignty and integrity of India&lt;\\/p&gt;\\r\\n",
+        "</p><p>Defamation&lt;\\/p&gt;\\r\\n",
+        "</p><p>Protection of cows&lt;\\/p&gt;\\r\\n",
+        "</p><p>Public order&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399243",
+      "question": "</p><p>What is the name of the festival celebrated simultaneously by unmarried tribal girls during the karam celebration in Jharkhand and eastern India?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Jawa&lt;\\/p&gt;\\r\\n",
+        "</p><p>Sohrai&lt;\\/p&gt;\\r\\n",
+        "</p><p>Karma&lt;\\/p&gt;\\r\\n",
+        "</p><p>Madai&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399244",
+      "question": "</p><p>The 'Dhamek Stupa', one of the most prominent Buddhist structures, is located in:&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Kushinagar&lt;\\/p&gt;\\r\\n",
+        "</p><p>Sarnath&lt;\\/p&gt;\\r\\n",
+        "</p><p>Kaushambi&lt;\\/p&gt;\\r\\n",
+        "</p><p>Shravasti&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399245",
+      "question": "</p><p>Shambhu Maharaj, awarded the Sangeet Natak Akademi Fellowship in 1967, was renowned for his contribution to which of the following Indian art forms?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Kathak dance&lt;\\/p&gt;\\r\\n",
+        "</p><p>Carnatic music&lt;\\/p&gt;\\r\\n",
+        "</p><p>Bharatanatyam dance&lt;\\/p&gt;\\r\\n",
+        "</p><p>Hindustani classical music&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399246",
+      "question": "</p><p>Which neighboring country is the only one to share a border with India that is also a member of the BIMSTEC organization but NOT a member of SAARC?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Bhutan&lt;\\/p&gt;\\r\\n",
+        "</p><p>Myanmar&lt;\\/p&gt;\\r\\n",
+        "</p><p>Thailand&lt;\\/p&gt;\\r\\n",
+        "</p><p>Afghanistan&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399247",
+      "question": "</p><p>Human development emphasises enlarging people’s choices by improving health, education, and income. Which global organisation publishes the Human Development Index (HDI)?&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>United Nations Development Programme&lt;\\/p&gt;\\r\\n",
+        "</p><p>International Monetary Fund&lt;\\/p&gt;\\r\\n",
+        "</p><p>World Economic Forum&lt;\\/p&gt;\\r\\n",
+        "</p><p>World Bank&lt;\\/p&gt;\\r\\n"
+      ]
+    },
+    {
+      "qid": "1399248",
+      "question": "</p><p>The ________ festival, in which the serpent goddess Mansa is worshipped, is celebrated in some parts of Bengal, Bihar and Jharkhand in India.&lt;\\/p&gt;\\r\\n",
+      "options": [
+        "</p><p>Kumbh&lt;\\/p&gt;\\r\\n",
+        "</p><p>Ambubachi&nbsp;&lt;\\/p&gt;\\r\\n",
+        "</p><p>Bihula&lt;\\/p&gt;\\r\\n",
+        "</p><p>None of the above&lt;\\/p&gt;\\r\\n"
+      ]
+    }
+  ]
+}
