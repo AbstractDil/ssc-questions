@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions and Solutions</title>
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        .theme-toggle {
+            margin-top: 10px;
+        }
+
+        .print-button {
+            margin-top: 10px;
+        }
+
+        /* Light Theme */
+        .light-theme {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        .light-theme .rightAns {
+            color: green;
+        }
+
+        .light-theme .qpnltbl td,
+        .light-theme .qrtbl td,
+        .light-theme .menu-tbl td {
+            border: 1px solid #ccc;
+        }
+
+        .light-theme .option img {
+            filter: invert(0);
+        }
+
+        /* Dark Theme */
+        .dark-theme {
+            background-color: #41403e;
+            color: #fff;
+        }
+
+        .dark-theme .rightAns {
+            color: rgb(8, 202, 8);
+        }
+
+        .dark-theme .qpnltbl td,
+        .dark-theme .qrtbl td,
+        .dark-theme .menu-tbl td {
+            border: 1px solid #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .correct {
+            background-color: #d4edda;
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+        }
+
+        .grp-cntr {
+            background-color: #696866;
+            margin: 10px;
+            padding: 10px 10px 4px;
+            box-sizing: border-box;
+        }
+
+        .question-pnl {
+            page-break-inside: avoid;
+        }
+
+        .qpnltbl,
+        .qrtbl,
+        .menu-tbl {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .qpnltbl td,
+        .qrtbl td,
+        .menu-tbl td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .rightAns {
+            color: rgb(8, 202, 8);
+        }
+
+        .wrngAns {
+            color: red;
+        }
+
+        .cross {
+            width: 22px;
+        }
+
+        .img-thumbnail {
+            margin-top: 10px;
+            max-width: 320px;
+            border: none !important;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .option img {
+            margin-left: 10px;
+        }
+
+        #preLoader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .watermark-container {
+            position: relative;
+            /* overflow: hidden; */
+        }
+
+        /* Watermark divs */
+        .watermark-layer {
+              position: absolute; 
+            pointer-events: none;
+            z-index: 0;
+            font-size: 24px;
+            font-weight: 700;
+            transform: rotate(-45deg);
+            opacity: 0.12;
+            white-space: nowrap;
+        }
+
+        /* Theme colors */
+        body.dark-theme .watermark-layer {
+            color: rgba(255, 255, 255, 0.445);
+        }
+
+        body.light-theme .watermark-layer {
+            color: rgba(0, 0, 0, 0.678);
+        }
+
+        /* Print adjustments */
+        @media print {
+            .hidden-print {
+                display: none !important;
+            }
+
+           .watermark-layer {
+    opacity: 0.15 !important;
+    position: fixed;   /* fixed repeats on EVERY printed page */
+  }
+        }
+    </style>
+
+
+    <script>
+
+        window.onload = function () {
+            document.getElementById('preLoader').style.transition = "all 2s ease-in-out";
+            document.getElementById('preLoader').style.opacity = "0";
+            document.getElementById('preLoader').style.visibility = "hidden";
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="spinner-grow spinner-grow-sm text-primary mx-1" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Print & Theme Buttons -->
+    <div class="container hidden-print">
+        <button class="btn btn-default btn-sm theme-toggle" id="toggleTheme">
+            <i class="glyphicon glyphicon-adjust"></i> Change Theme
+        </button>
+        <button class="btn btn-warning btn-sm print-button" onclick="generatePDF();">
+            <span class="glyphicon glyphicon-print"></span> Print
+        </button>
+        <button class="btn btn-success btn-sm print-button" onclick="downloadPDF();">
+            <span class="glyphicon glyphicon-download"></span> Download PDF
+        </button>
+        <button class="btn btn-primary btn-sm print-button" onclick="reAttempt();">
+            Reattempt Test
+        </button>
+    </div>
+
+    <div class="container watermark-container">
+        <!-- Watermarks will be injected here dynamically -->
+
+        <h3 class="text-center" id="title" style="margin-bottom:30px;">
+            Questions and Solutions
+        </h3>
+
+        <div id="content">
+            <div id="question-container">
+                <!-- Dynamic content will be injected here -->
+            </div>
+        </div>
+
+        <div id="ErrorMsg"></div>
+    </div>
+
+
+
+
+    <!-- jQuery -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <!-- Bootstrap 3 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <!-- Theme Toggle and Watermark Script and fetch data -->
+    <script>
+        let currentTheme = 'dark';
+        document.body.classList.add('dark-theme');
+
+        // Generate repeated diagonal watermarks
+        function generateWatermarks(id) {
+  $('.watermark-layer').remove();
+  const container = document.querySelector('.watermark-container');
+  // Get actual document height, not just viewport
+  const docHeight = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight
+  );
+  
+  const rows = Math.ceil(docHeight / 220) + 4;  // enough for full doc
+  const cols = 5;
+
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      const div = document.createElement('div');
+      div.className = 'watermark-layer';
+      div.innerText = id;
+      div.style.top = `${i * 220}px`;
+      div.style.left = `${j * 340 - 60}px`;
+      container.appendChild(div);
+    }
+  }
+}
+
+// Re-generate after questions load (DOM grows after fetch)
+// Add this AFTER questions are rendered in the $.getJSON callback:
+setTimeout(() => generateWatermarks(examID), 500);
+
+        // Fetch exam data
+        $.getJSON("data.json", function (data) {
+            const exam_data = Object.values(data);
+            const url = new URL(window.location.href);
+            const examID = url.searchParams.get("ExamID");
+
+            if (!examID || examID.length !== 10 || isNaN(examID)) {
+                showErrorPage();
+                return;
+            }
+
+            const exam_info = exam_data.find(x => x.exam_id === examID);
+            if (!exam_info) {
+                showErrorPage();
+                return;
+            }
+
+            const exam_name = exam_info.exam_name;
+            const exam_db = exam_info.exam_db;
+
+            $("#title").text(exam_name);
+            document.title = exam_name;
+
+            // ✅ Generate initial watermarks
+            generateWatermarks(examID);
+
+            // Fetch questions
+            $.getJSON(exam_db, function (data) {
+                const container = $("#question-container");
+
+                $.each(data, function (index, item) {
+                    const correctOption = parseInt(item.answer);
+                    const questionPanel = `
+                <table class="qpnltbl">
+                    <tbody>
+                        <tr>
+                            <td class="rw">
+                                <table class="qrtbl">
+                                    <tbody>
+                                        <tr>
+                                            <td width="7%" class="bold" valign="top">Q. ${index + 1}</td>
+                                            <td class="bold" valign="top" style="text-align: left;position:relative;">
+                                                <!-- Per-question ID stamp -->
+                  <div style="
+                    position:absolute; top:4px; right:6px;
+                    font-size:9px; font-weight:700; opacity:0.18;
+                    color:inherit; letter-spacing:0.08em;
+                    pointer-events:none; user-select:none;
+                    transform:rotate(-8deg);
+                  ">${examID}</div>
+                                                ${item.question}
+                                                ${[1, 2, 3, 4].map(opt => `
+                                                    <div class="option">
+                                                        <div style="margin-right:10px;display:flex;align-items:center;"
+                                                             class="${correctOption === opt ? 'rightAns' : 'wrngAns'}">
+                                                            <p><span style="margin-right:3px;">${String.fromCharCode(96 + opt)})</span> ${item['option_' + opt]}</p>
+                                                        </div>
+                                                        <img src="${correctOption === opt ? '../../assets/img/tick.png' : '../../assets/img/cross.png'}">
+                                                    </div>
+                                                `).join('')}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Explanation:</b></td>
+                                            <td style="padding-left:20px;">
+                                                <div class="solution">${item.solution_text}</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>`;
+                    container.append(questionPanel);
+                });
+
+                $('.solution img').addClass('img-thumbnail');
+            });
+
+            // Theme toggle
+            document.getElementById('toggleTheme').addEventListener('click', function () {
+                if (currentTheme === 'dark') {
+                    $('body').removeClass('dark-theme').addClass('light-theme');
+                    currentTheme = 'light';
+                } else {
+                    $('body').removeClass('light-theme').addClass('dark-theme');
+                    currentTheme = 'dark';
+                }
+            });
+
+            // Utility: show error
+            function showErrorPage() {
+                $("#title, #content").hide();
+                $("#ErrorMsg").html(`
+            <center><h1>Error 404: Page Not Found</h1>
+            <p>You have entered a wrong URL or the page is unavailable.<br><br>
+            Contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com</a><br><br>
+            <a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p></center>`);
+            }
+        });
+
+    </script>
+
+
+
+    <!-- Functional Scripts -->
+    <script>
+        // Function to generate PDF
+
+        function generatePDF() {
+            // Original title
+            const originalTitle = document.title;
+
+            // Desired title (replace spaces with dashes)
+            //const newTitle = originalTitle.replace(/\s+/g, '-');
+            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+
+            // Temporarily change the title
+            document.title = newTitle;
+
+            // Wait a bit for title to update, then print
+            setTimeout(() => {
+                window.print();
+
+                // Restore the original title
+                document.title = originalTitle;
+            }, 100);
+        }
+
+        // Function to download PDF
+
+        function downloadPDF() {
+
+            // Original title
+            const originalTitle = document.title;
+
+            // Desired title (replace spaces with dashes)
+            //const newTitle = originalTitle.replace(/\s+/g, '-');
+            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+
+            // Construct the PDF file path
+            const pdfUrl = `pdf/${newTitle}.pdf`;
+
+            // Open the generated URL in a new tab
+            window.open(pdfUrl, '_blank');
+
+        }
+
+
+        function reAttempt() {
+            // get exam ID from url
+            var url = new URL(window.location.href);
+            var examID = url.searchParams.get("ExamID");
+            var assessmentUrl = `../../OnlineAssessment/index.html?ExamId=${examID}`;
+            // Open the assessment URL in a new tab
+            window.open(assessmentUrl, '_blank');
+        }
+
+    </script>
+
+</body>
+
+</html>
