@@ -1,5 +1,9 @@
 [
 
+    {
+          "exam_id": "2605102254",
+         "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
+   },
    {
           "exam_id": "2605031946",
          "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
