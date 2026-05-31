@@ -1,5 +1,17 @@
 [
   {
+    "exam_id": "2605311404",
+    "exam_name": "RBE SSC CGL Tier-1 Live Mock 19, May 31, 2026",
+    "exam_date": "31-05-2026",
+    "exam_db": "assets/db/RBE-CGL-Live-Mock-2025/31052026.json"
+  },
+   {
+    "exam_id": "2605311403",
+    "exam_name": "MathsMania SSC CGL Tier-1 Live Mock 2, May 31, 2026",
+    "exam_date": "31-05-2026",
+    "exam_db": "assets/db/MathsMania-Live-Mock/31052026.json"
+  },
+  {
     "exam_id": "2605242142",
     "exam_name": "MathsMania SSC CGL Tier-1 Live Mock 1, May 24, 2026",
     "exam_date": "24-05-2026",
