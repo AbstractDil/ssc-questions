@@ -6,212 +6,303 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="../assets/js/checkUrl.js"></script>
-    <title>
-        Live Mock Test Analysis
-    </title>
+    <title>Live Mock Test Analysis</title>
     <style>
-        #preLoader {
-       
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-       background-color: #fff;
-       z-index: 9999;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-     }
+        body {
+            background-color: #0f1117;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-     
+        .page-header h4 {
+            font-weight: 500;
+            color: #e2e8f0;
+            margin: 0;
+        }
 
-.card {
-    transition: all .3s ease;
-}
+        .page-header p {
+            font-size: 13px;
+            color: #4b5563;
+            margin: 0;
+        }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+        .search-wrapper {
+            position: relative;
+            max-width: 480px;
+        }
 
-.pagination .page-link {
-    background: #212529;
-    color: #ffc107;
-    border-color: #495057;
-}
+        .search-wrapper .search-icon {
+            position: absolute;
+            left: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #4b5563;
+            font-size: 16px;
+            pointer-events: none;
+        }
 
-.pagination .active .page-link {
-    background: #ffc107;
-    color: #000;
-    border-color: #ffc107;
-}
+        #searchInput {
+            background: #1a1d27;
+            border: 1.5px solid #2e3247;
+            color: #e2e8f0;
+            border-radius: 10px;
+            padding: 10px 16px 10px 40px;
+            font-size: 14px;
+            width: 100%;
+            transition: border-color .2s;
+        }
 
-#searchInput {
-    border: 2px solid #ffc107;
-}
+        #searchInput:focus {
+            outline: none;
+            border-color: #fbbf24;
+            box-shadow: none;
+        }
 
-</style>
-  
-   
-   <script>
-       window.onload = function () {
-         document.getElementById('preLoader').style.transition = "all 2s ease-in-out";
-         document.getElementById('preLoader').style.opacity = "0";
-         document.getElementById('preLoader').style.visibility = "hidden";
-       }
-     </script>
+        #searchInput::placeholder {
+            color: #4b5563;
+        }
+
+        .exam-card {
+            background: #1a1d27;
+            border: 1px solid #2e3247;
+            border-radius: 12px;
+            padding: 1.1rem 1.2rem;
+            height: 100%;
+            transition: transform .2s, border-color .2s;
+        }
+
+        .exam-card:hover {
+            transform: translateY(-4px);
+            border-color: #fbbf24;
+        }
+
+        .badge-num {
+            background: rgba(251, 191, 36, 0.12);
+            color: #fbbf24;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 9px;
+            display: inline-block;
+            margin-bottom: 10px;
+            letter-spacing: .3px;
+        }
+
+        .exam-card .card-title {
+            font-size: 14.5px;
+            font-weight: 500;
+            color: #e2e8f0;
+            margin: 0 0 6px;
+            line-height: 1.4;
+        }
+
+        .exam-card .card-meta {
+            font-size: 12px;
+            color: #6c757d;
+            margin: 0 0 14px;
+        }
+
+        .exam-card .card-meta span {
+            color: #94a3b8;
+            font-weight: 500;
+        }
+
+        .btn-view {
+            background: #fbbf24;
+            color: #0f1117;
+            border: none;
+            border-radius: 7px;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: background .2s, opacity .2s;
+        }
+
+        .btn-view:hover {
+            background: #f59e0b;
+            color: #0f1117;
+        }
+
+        .btn-view svg {
+            width: 13px;
+            height: 13px;
+        }
+
+        /* Pagination */
+        .pagination .page-link {
+            background: #1a1d27;
+            color: #94a3b8;
+            border: 1px solid #2e3247;
+            border-radius: 7px !important;
+            padding: 6px 13px;
+            font-size: 13px;
+            margin: 0 2px;
+            transition: all .18s;
+        }
+
+        .pagination .page-link:hover {
+            border-color: #fbbf24;
+            color: #fbbf24;
+            background: #1a1d27;
+        }
+
+        .pagination .active .page-link {
+            background: #fbbf24;
+            color: #0f1117;
+            border-color: #fbbf24;
+            font-weight: 600;
+        }
+
+        .pagination .disabled .page-link {
+            opacity: .35;
+            pointer-events: none;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #4b5563;
+            padding: 3rem 0;
+        }
+
+        .empty-state svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+            opacity: .4;
+        }
+    </style>
 </head>
 <body class="text-light">
 
 <div class="container py-4">
 
-    <div class="row mb-4">
-        <div class="col-md-6 mx-auto">
-            <input type="text"
-                   id="searchInput"
-                   class="form-control"
-                   placeholder="Search Exam...">
-        </div>
+    <!-- Header -->
+    <div class="page-header mb-4">
+        <h4>Mock Test Analysis</h4>
+        <p id="resultCount">Loading exams...</p>
     </div>
 
+    <!-- Search -->
+    <div class="search-wrapper mb-4">
+        
+        <input type="text" id="searchInput" placeholder="Search exam name...">
+    </div>
+
+    <!-- Cards -->
     <div id="cardContainer" class="row g-3"></div>
 
+    <!-- Pagination -->
     <nav class="mt-4">
-        <ul class="pagination justify-content-center" id="pagination"></ul>
+        <ul class="pagination justify-content-center flex-wrap" id="pagination"></ul>
     </nav>
 
 </div>
 
 <script>
-const itemsPerPage = 10;
-
+const itemsPerPage = 15;
 let currentPage = 1;
 let allData = [];
 let filteredData = [];
 
 async function getData() {
-    const response = await fetch("../QuestionPapers/qp-generator/data.json");
-    return await response.json();
+    try {
+        const response = await fetch("../QuestionPapers/qp-generator/data.json");
+        allData = await response.json();
+        filteredData = [...allData];
+        renderCards();
+    } catch (error) {
+        console.error("Error loading data:", error);
+        document.getElementById("cardContainer").innerHTML = `
+            <div class="col-12">
+                <div class="alert alert-danger">Failed to load data. Please try again.</div>
+            </div>`;
+    }
 }
 
 function renderCards() {
-
     const container = document.getElementById("cardContainer");
-
     const start = (currentPage - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
+    const pageData = filteredData.slice(start, start + itemsPerPage);
 
-    const pageData = filteredData.slice(start, end);
+    document.getElementById("resultCount").textContent =
+        `${filteredData.length} exam${filteredData.length !== 1 ? "s" : ""} found`;
 
-    let html = "";
+    if (!pageData.length) {
+        container.innerHTML = `
+            <div class="col-12 empty-state">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <p>No exams match your search.</p>
+            </div>`;
+        document.getElementById("pagination").innerHTML = "";
+        return;
+    }
 
-    pageData.forEach((item, index) => {
-
-        html += `
-            <div class="col-md-6 col-lg-4">
-                <div class="card bg-secondary-subtle border-warning h-100 shadow-sm">
-                    <div class="card-body">
-
-                        <span class="badge bg-warning text-dark mb-2">
-                            #${start + index + 1}
-                        </span>
-
-                        <h5 class="card-title text-dark">
-                            ${item.exam_name}
-                        </h5>
-
-                        <a href="mock-test-analysis.html?OrgID=MHBC&PoweredBy=nandysagar.in&ExamID=${item.exam_id}"
-                           class="btn btn-warning btn-sm mt-2">
-                            View Analysis
-                        </a>
-
-                    </div>
-                </div>
+    container.innerHTML = pageData.map((item, i) => `
+        <div class="col-md-6 col-lg-4">
+            <div class="exam-card">
+                <span class="badge-num">#${start + i + 1}</span>
+                <h5 class="card-title">${item.exam_name}</h5>
+                <p class="card-meta">Exam ID: <span>${item.exam_id}</span></p>
+                <a href="mock-test-analysis.html?OrgID=MHBC&PoweredBy=nandysagar.in&ExamID=${item.exam_id}" class="btn-view">
+                    View Analysis
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
             </div>
-        `;
-    });
-
-    container.innerHTML = html;
+        </div>
+    `).join("");
 
     renderPagination();
 }
 
 function renderPagination() {
-
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+    if (totalPages <= 1) { document.getElementById("pagination").innerHTML = ""; return; }
 
-    let html = "";
-
-    html += `
+    let html = `
         <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
-            <a class="page-link" href="#" onclick="changePage(${currentPage - 1})">
-                Previous
-            </a>
-        </li>
-    `;
+            <a class="page-link" href="#" onclick="changePage(${currentPage - 1}); return false;">← Prev</a>
+        </li>`;
 
-    for(let i = 1; i <= totalPages; i++) {
-
+    for (let i = 1; i <= totalPages; i++) {
         html += `
-            <li class="page-item ${currentPage === i ? 'active' : ''}">
-                <a class="page-link" href="#" onclick="changePage(${i})">
-                    ${i}
-                </a>
-            </li>
-        `;
+        <li class="page-item ${currentPage === i ? 'active' : ''}">
+            <a class="page-link" href="javascript:void(0)" onclick="changePage(${i}); return false;">${i}</a>
+        </li>`;
     }
 
     html += `
         <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
-            <a class="page-link" href="#" onclick="changePage(${currentPage + 1})">
-                Next
-            </a>
-        </li>
-    `;
+            <a class="page-link" href="javascript:void(0)" onclick="changePage(${currentPage + 1}); return false;">Next →</a>
+        </li>`;
 
     document.getElementById("pagination").innerHTML = html;
 }
 
 function changePage(page) {
-
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-
-    if(page < 1 || page > totalPages) return;
-
+    if (page < 1 || page > totalPages) return;
     currentPage = page;
-
     renderCards();
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-document.addEventListener("input", function(e){
-
-    if(e.target.id === "searchInput") {
-
-        const keyword = e.target.value.toLowerCase();
-
-        filteredData = allData.filter(item =>
-            item.exam_name.toLowerCase().includes(keyword)
-        );
-
-        currentPage = 1;
-
-        renderCards();
-    }
-});
-
-getData().then(data => {
-
-    allData = data.reverse();
-
-    filteredData = [...allData];
-
+document.getElementById("searchInput").addEventListener("input", function () {
+    const keyword = this.value.toLowerCase().trim();
+    // fileter data using exam_name and exam_id fields
+    filteredData = allData.filter(item => item.exam_name.toLowerCase().includes(keyword) || item.exam_id.toLowerCase().includes(keyword));
+    currentPage = 1;
     renderCards();
 });
+
+getData();
 </script>
 
 </body>

@@ -386,25 +386,41 @@
         // Function to generate PDF
 
         function generatePDF() {
-            // Original title
+
             const originalTitle = document.title;
 
-            // Desired title (replace spaces with dashes)
-            //const newTitle = originalTitle.replace(/\s+/g, '-');
-            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+            const newTitle = originalTitle
+                .replace(/,/g, '-')
+                .replace(/\s+/g, '-');
 
-            // Temporarily change the title
-            document.title = newTitle;
+            const examId = new URLSearchParams(window.location.search).get('ExamID');
 
-            // Wait a bit for title to update, then print
-            setTimeout(() => {
-                window.print();
+            const iframe = document.createElement('iframe');
 
-                // Restore the original title
-                document.title = originalTitle;
-            }, 100);
+            iframe.style.display = 'none';
+            iframe.src = `printView.html?ExamID=${examId}`;
+
+            document.body.appendChild(iframe);
+
+            iframe.onload = function () {
+
+                try {
+                    iframe.contentWindow.document.title = newTitle;
+                } catch (e) {
+                    console.log('Unable to set print page title');
+                }
+
+                iframe.contentWindow.focus();
+
+                setTimeout(() => {
+                    iframe.contentWindow.print();
+                }, 500);
+
+                setTimeout(() => {
+                    document.body.removeChild(iframe);
+                }, 2000);
+            };
         }
-
         // Function to download PDF
 
         function downloadPDF() {
