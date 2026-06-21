@@ -15,7 +15,90 @@
   
     -khtml-user-select: none;
   }
-  
+
+  /* ==========================================================================
+   Dark Mode Toggles & Variables (Bootstrap 3 Overrides)
+   ========================================================================== */
+
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Layout Containers */
+body.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+  border-color: #333 !important;
+}
+
+body.dark-mode .navbar .navbar-header a,
+body.dark-mode .navbar .navbar-header a:hover {
+  color: #ffffff !important;
+}
+
+body.dark-mode .actual-exam-ui .sidenav,
+body.dark-mode .actual-exam-ui .u-mob-sidebar {
+  background: #1f1f1f !important;
+  border-left: 1px solid #333 !important;
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f !important;
+  border-top: 1px solid #333 !important;
+}
+
+/* Component Overrides */
+body.dark-mode .panel {
+  background-color: #242424 !important;
+  border-color: #333 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode hr {
+  border-bottom: 2px solid #333 !important;
+}
+
+body.dark-mode .spinner-container {
+  background-color: #242424 !important;
+}
+
+body.dark-mode .spinner-text {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .switch-label-text {
+  color: #b0b0b0 !important;
+}
+
+/* Text & Form Inputs */
+body.dark-mode textarea, 
+body.dark-mode textarea:disabled {
+  background-color: #2d2d2d !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+body.dark-mode textarea:focus {
+  border-color: #5bc0de !important; /* highlight focus color */
+}
+
+/* Exam Buttons & Question States */
+body.dark-mode .col-1-5 .qbtn {
+  border: 1px solid #555 !important;
+}
+
+body.dark-mode .not-visited {
+  color: #bbb !important;
+  background-color: #2d2d2d !important;
+}
+
+body.dark-mode .btn-default {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: #444 !important;
+}
+
+/* Overlay Styles */
  
   .overlay {
     position: fixed;
