@@ -2,13 +2,23 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Questions and Solutions</title>
-    <!-- Bootstrap 3 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!-- Bootstrap 3 -->
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 
     <style>
+
         .theme-toggle {
             margin-top: 10px;
         }
@@ -17,7 +27,9 @@
             margin-top: 10px;
         }
 
+
         /* Light Theme */
+
         .light-theme {
             background-color: #ffffff;
             color: #000;
@@ -37,7 +49,9 @@
             filter: invert(0);
         }
 
+
         /* Dark Theme */
+
         .dark-theme {
             background-color: #41403e;
             color: #fff;
@@ -52,6 +66,9 @@
         .dark-theme .menu-tbl td {
             border: 1px solid #ccc;
         }
+
+
+        /* Tables */
 
         table {
             width: 100%;
@@ -74,6 +91,9 @@
             background-color: #f2f2f2;
         }
 
+
+        /* Question */
+
         .correct {
             background-color: #d4edda;
         }
@@ -93,6 +113,7 @@
             page-break-inside: avoid;
         }
 
+
         .qpnltbl,
         .qrtbl,
         .menu-tbl {
@@ -100,12 +121,14 @@
             border-collapse: collapse;
         }
 
+
         .qpnltbl td,
         .qrtbl td,
         .menu-tbl td {
             padding: 8px;
             border: 1px solid #ccc;
         }
+
 
         .bold {
             font-weight: bold;
@@ -119,6 +142,9 @@
             color: red;
         }
 
+
+        /* Option */
+
         .cross {
             width: 22px;
         }
@@ -129,6 +155,7 @@
             border: none !important;
         }
 
+
         .option {
             display: flex;
             align-items: center;
@@ -138,6 +165,9 @@
         .option img {
             margin-left: 10px;
         }
+
+
+        /* Preloader */
 
         #preLoader {
             position: fixed;
@@ -152,14 +182,16 @@
             align-items: center;
         }
 
+
+        /* Watermark */
+
         .watermark-container {
             position: relative;
-            /* overflow: hidden; */
         }
 
-        /* Watermark divs */
+
         .watermark-layer {
-              position: absolute; 
+            position: absolute;
             pointer-events: none;
             z-index: 0;
             font-size: 24px;
@@ -169,304 +201,1165 @@
             white-space: nowrap;
         }
 
-        /* Theme colors */
+
         body.dark-theme .watermark-layer {
             color: rgba(255, 255, 255, 0.445);
         }
+
 
         body.light-theme .watermark-layer {
             color: rgba(0, 0, 0, 0.678);
         }
 
-        /* Print adjustments */
+
+        /* Print */
+
         @media print {
+
             .hidden-print {
                 display: none !important;
             }
 
-           .watermark-layer {
+
+            .watermark-layer {
                 opacity: 0.15 !important;
-                position: fixed;   /* fixed repeats on EVERY printed page */
+                position: fixed;
             }
+
         }
+
     </style>
 
 
     <script>
+
         window.onload = function () {
-            document.getElementById('preLoader').style.transition = "all 2s ease-in-out";
-            document.getElementById('preLoader').style.opacity = "0";
-            document.getElementById('preLoader').style.visibility = "hidden";
-        }
+
+            const loader =
+                document.getElementById(
+                    'preLoader'
+                );
+
+            if (!loader) {
+                return;
+            }
+
+            loader.style.transition =
+                "all 2s ease-in-out";
+
+            loader.style.opacity =
+                "0";
+
+            loader.style.visibility =
+                "hidden";
+
+        };
+
     </script>
 
 </head>
 
+
 <body>
 
-    <!-- Preloader start -->
-    <div id="preLoader">
-        <div class="spinner-grow spinner-grow-sm text-primary mx-1" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </div>
-    <!-- Preloader end -->
 
-    <!-- Print & Theme Buttons -->
-    <div class="container hidden-print">
-        <button class="btn btn-default btn-sm theme-toggle" id="toggleTheme">
-            <i class="glyphicon glyphicon-adjust"></i> Change Theme
-        </button>
-        <button class="btn btn-warning btn-sm print-button" onclick="generatePDF();">
-            <span class="glyphicon glyphicon-print"></span> Print
-        </button>
-        <button class="btn btn-success btn-sm print-button" onclick="downloadPDF();">
-            <span class="glyphicon glyphicon-download"></span> Download PDF
-        </button>
-        <button class="btn btn-primary btn-sm print-button" onclick="reAttempt();">
-            Reattempt Test
-        </button>
+    <!-- ============================================================
+         PRELOADER
+         ============================================================ -->
+
+    <div id="preLoader">
+
+        <div class="spinner-grow spinner-grow-sm text-primary mx-1"
+             role="status">
+
+            <span class="visually-hidden">
+                Loading...
+            </span>
+
+        </div>
+
     </div>
+
+
+    <!-- ============================================================
+         BUTTONS
+         ============================================================ -->
+
+    <div class="container hidden-print">
+
+        <button class="btn btn-default btn-sm theme-toggle"
+                id="toggleTheme">
+
+            <i class="glyphicon glyphicon-adjust"></i>
+            Change Theme
+
+        </button>
+
+
+        <button class="btn btn-warning btn-sm print-button"
+                onclick="generatePDF();">
+
+            <span class="glyphicon glyphicon-print"></span>
+            Print
+
+        </button>
+
+
+        <button class="btn btn-success btn-sm print-button"
+                onclick="downloadPDF();">
+
+            <span class="glyphicon glyphicon-download"></span>
+            Download PDF
+
+        </button>
+
+
+        <button class="btn btn-primary btn-sm print-button"
+                onclick="reAttempt();">
+
+            Reattempt Test
+
+        </button>
+
+    </div>
+
+
+    <!-- ============================================================
+         CONTENT
+         ============================================================ -->
 
     <div class="container watermark-container">
-        <!-- Watermarks will be injected here dynamically -->
 
-        <h3 class="text-center" id="title" style="margin-bottom:30px;">
+
+        <h3 class="text-center"
+            id="title"
+            style="margin-bottom:30px;">
+
             Questions and Solutions
+
         </h3>
 
+
         <div id="content">
+
             <div id="question-container">
-                <!-- Dynamic content will be injected here -->
+
+                <!-- Dynamic questions -->
+
             </div>
+
         </div>
 
+
         <div id="ErrorMsg"></div>
+
     </div>
+
+
+    <!-- MathJax -->
+
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
+    </script>
 
 
     <!-- jQuery -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Bootstrap 3 JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
 
 
-    <!-- Theme Toggle and Watermark Script and fetch data -->
+    <!-- Bootstrap -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+
     <script>
-        let currentTheme = 'dark';
-        document.body.classList.add('dark-theme');
 
-        // Generate repeated diagonal watermarks
+        /*
+         * ============================================================
+         * THEME
+         * ============================================================
+         */
+
+        let currentTheme = 'dark';
+
+        document.body.classList.add(
+            'dark-theme'
+        );
+
+
+        /*
+         * ============================================================
+         * WATERMARK
+         * ============================================================
+         */
+
         function generateWatermarks(id) {
+
             $('.watermark-layer').remove();
-            const container = document.querySelector('.watermark-container');
-            // Get actual document height, not just viewport
-            const docHeight = Math.max(
-                document.body.scrollHeight,
-                document.documentElement.scrollHeight
-            );
-            
-            const rows = Math.ceil(docHeight / 220) + 4;  // enough for full doc
+
+
+            const container =
+                document.querySelector(
+                    '.watermark-container'
+                );
+
+
+            if (!container) {
+                return;
+            }
+
+
+            const docHeight =
+                Math.max(
+                    document.body.scrollHeight,
+                    document.documentElement.scrollHeight
+                );
+
+
+            const rows =
+                Math.ceil(
+                    docHeight / 220
+                ) + 4;
+
+
             const cols = 5;
 
-            for (let i = 0; i < rows; i++) {
-                for (let j = 0; j < cols; j++) {
-                    const div = document.createElement('div');
-                    div.className = 'watermark-layer';
-                    div.innerText = id;
-                    div.style.top = `${i * 220}px`;
-                    div.style.left = `${j * 340 - 60}px`;
-                    container.appendChild(div);
+
+            for (
+                let i = 0;
+                i < rows;
+                i++
+            ) {
+
+                for (
+                    let j = 0;
+                    j < cols;
+                    j++
+                ) {
+
+                    const div =
+                        document.createElement(
+                            'div'
+                        );
+
+
+                    div.className =
+                        'watermark-layer';
+
+
+                    div.innerText =
+                        id;
+
+
+                    div.style.top =
+                        `${i * 220}px`;
+
+
+                    div.style.left =
+                        `${j * 340 - 60}px`;
+
+
+                    container.appendChild(
+                        div
+                    );
+
                 }
+
             }
+
         }
 
-        // Fetch exam data
-        $.getJSON("banking-data.json", function (data) {
-            const exam_data = Object.values(data);
-            const url = new URL(window.location.href);
-            const examID = url.searchParams.get("ExamID") || "2608110905"; // fallback for testing
 
-            if (!examID || examID.length !== 10 || isNaN(examID)) {
-                showErrorPage();
-                return;
-            }
+        /*
+         * ============================================================
+         * NORMALIZE BOTH JSON FORMATS
+         * ============================================================
+         */
 
-            const exam_info = exam_data.find(x => x.exam_id === examID);
-            if (!exam_info) {
-                showErrorPage();
-                return;
-            }
+        function normalizeExamData(data) {
 
-            const exam_name = exam_info.exam_name;
-            const exam_db = exam_info.exam_db;
 
-            $("#title").text(exam_name);
-            document.title = exam_name;
+            /*
+             * --------------------------------------------------------
+             * FORMAT 1 
+             *
+             * data.section[]
+             * section.name
+             * section.mock_questions.english[]
+             * --------------------------------------------------------
+             */
 
-            // Generate initial watermarks
-            generateWatermarks(examID);
+            if (Array.isArray(data.section)) {
 
-            // Fetch questions using the new JSON structure
-            $.getJSON(exam_db, function (data) {
-                const container = $("#question-container");
-                let globalQNum = 1;
+                return data.section.map(
+                    function (section) {
 
-                if (!data || !data.section) {
-                    showErrorPage();
-                    return;
-                }
+                        return {
 
-                // Loop through the sections
-                $.each(data.section, function (secIndex, section) {
-                    container.append(`<h4 style="margin-top: 20px; font-weight: bold; border-bottom: 2px solid #ccc; padding-bottom: 5px;">${section.name}</h4>`);
+                            name:
+                                section.name || '',
 
-                    // Access the english questions array directly
-                    if (section.mock_questions && section.mock_questions.english) {
-                        $.each(section.mock_questions.english, function (qIndex, item) {
-                            
-                            const correctOption = parseInt(item.answer);
-                            let optionsHtml = '';
-                            
-                            if(item.options) {
-                                $.each(item.options, function(optIndex, optHTML) {
-                                    let isCorrect = (correctOption === optIndex);
-                                    let cleanOpt = optHTML.replace(/^<p>/, '').replace(/<\/p>$/, '');
-                                    let iconSrc = isCorrect ? '../../assets/img/tick.png' : '../../assets/img/cross.png';
-                                    
-                                    optionsHtml += `
-                                        <div class="option">
-                                            <div style="margin-right:10px;display:flex;align-items:center;"
-                                                 class="${isCorrect ? 'rightAns' : 'wrngAns'}">
-                                                <p><span style="margin-right:3px;">${String.fromCharCode(65 + optIndex)})</span> ${cleanOpt}</p>
-                                            </div>
-                                            <img src="${iconSrc}">
-                                        </div>`;
-                                });
-                            }
+                            questions:
+                                section.mock_questions &&
+                                Array.isArray(
+                                    section.mock_questions.english
+                                )
+                                    ? section.mock_questions.english
+                                    : []
 
-                            const questionPanel = `
-                            <table class="qpnltbl">
-                                <tbody>
-                                    <tr>
-                                        <td class="rw">
-                                            <table class="qrtbl">
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="7%" class="bold" valign="top">Q. ${globalQNum++}</td>
-                                                        <td class="bold" valign="top" style="text-align: left;position:relative;">
-                                                            <!-- Per-question ID stamp -->
-                                                            <div style="
-                                                                position:absolute; top:4px; right:6px;
-                                                                font-size:9px; font-weight:700; opacity:0.18;
-                                                                color:inherit; letter-spacing:0.08em;
-                                                                pointer-events:none; user-select:none;
-                                                                transform:rotate(-8deg);
-                                                            ">${examID}</div>
-                                                            <div style="margin-bottom:10px; font-weight:normal;">${item.common_data || ''}</div>
-                                                            ${item.question}
-                                                            ${optionsHtml}
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Explanation:</b></td>
-                                                        <td style="padding-left:20px;">
-                                                            <div class="solution">${item.explanation || ''}</div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>`;
-                            container.append(questionPanel);
-                        });
+                        };
+
                     }
-                });
+                );
 
-                $('.solution img').addClass('img-thumbnail');
-
-                // Re-generate after questions load (DOM grows after fetch)
-                setTimeout(() => generateWatermarks(examID), 500);
-
-            }).fail(function() {
-                $("#ErrorMsg").html(`<center><h1>Error: Could not load DB file at ${exam_info.exam_db}</h1></center>`);
-            });
-            
-            // Theme toggle
-            document.getElementById('toggleTheme').addEventListener('click', function () {
-                if (currentTheme === 'dark') {
-                    $('body').removeClass('dark-theme').addClass('light-theme');
-                    currentTheme = 'light';
-                } else {
-                    $('body').removeClass('light-theme').addClass('dark-theme');
-                    currentTheme = 'dark';
-                }
-            });
-
-            // Utility: show error
-            function showErrorPage() {
-                $("#title, #content").hide();
-                $("#ErrorMsg").html(`
-            <center><h1>Error 404: Page Not Found</h1>
-            <p>You have entered a wrong URL or the page is unavailable.<br><br>
-            Contact the administrator at <a href="mailto:nandysagar@yahoo.com">nandysagar@yahoo.com</a><br><br>
-            <a href="https://nandysagar.in">Go to NANDYSAGAR.IN</a></p></center>`);
             }
-        });
+
+
+            /*
+             * --------------------------------------------------------
+             * FORMAT 2 
+             *
+             * data.sections[]
+             * section.section_name
+             * section.questions.english[]
+             * --------------------------------------------------------
+             */
+
+            if (Array.isArray(data.sections)) {
+
+                return data.sections.map(
+                    function (section) {
+
+                        return {
+
+                            name:
+                                section.section_name || '',
+
+                            questions:
+                                section.questions &&
+                                Array.isArray(
+                                    section.questions.english
+                                )
+                                    ? section.questions.english
+                                    : []
+
+                        };
+
+                    }
+                );
+
+            }
+
+
+            /*
+             * Unknown format
+             */
+
+            return null;
+
+        }
+
+
+        /*
+         * ============================================================
+         * CLEAN OPTION
+         * ============================================================
+         */
+
+        function cleanOptionHTML(html) {
+
+            if (!html) {
+                return '';
+            }
+
+            return String(html)
+                .replace(/^<p>/, '')
+                .replace(/<\/p>$/, '');
+
+        }
+
+
+        /*
+         * ============================================================
+         * LOAD BANKING DATA
+         * ============================================================
+         */
+
+        $.getJSON(
+            "banking-data.json",
+            function (data) {
+
+
+                /*
+                 * Your banking-data.json is an array,
+                 * so don't use Object.values() here.
+                 */
+
+                const exam_data =
+                    Array.isArray(data)
+                        ? data
+                        : Object.values(data);
+
+
+                /*
+                 * Exam ID
+                 */
+
+                const url =
+                    new URL(
+                        window.location.href
+                    );
+
+
+                const examID =
+                    url.searchParams.get(
+                        "ExamID"
+                    );
+
+
+                /*
+                 * Validate Exam ID
+                 */
+
+                if (
+                    !examID ||
+                    examID.length !== 10 ||
+                    isNaN(examID)
+                ) {
+
+                    showErrorPage();
+
+                    return;
+
+                }
+
+
+                /*
+                 * Find exam
+                 */
+
+                const exam_info =
+                    exam_data.find(
+                        function (x) {
+
+                            return x.exam_id === examID;
+
+                        }
+                    );
+
+
+                if (!exam_info) {
+
+                    showErrorPage();
+
+                    return;
+
+                }
+
+
+                /*
+                 * Exam metadata
+                 */
+
+                const exam_name =
+                    exam_info.exam_name;
+
+
+                const exam_db =
+                    exam_info.exam_db;
+
+
+                $("#title").text(
+                    exam_name
+                );
+
+
+                document.title =
+                    exam_name;
+
+
+                /*
+                 * Initial watermark
+                 */
+
+                generateWatermarks(
+                    examID
+                );
+
+
+                /*
+                 * ========================================================
+                 * LOAD QUESTION JSON
+                 * ========================================================
+                 */
+
+                $.getJSON(
+                    exam_db,
+                    function (data) {
+
+
+                        const container =
+                            $("#question-container");
+
+
+                        let globalQNum = 1;
+
+
+                        /*
+                         * Normalize
+                         */
+
+                        const normalizedSections =
+                            normalizeExamData(
+                                data
+                            );
+
+
+                        /*
+                         * Invalid format
+                         */
+
+                        if (!normalizedSections) {
+
+                            showErrorPage();
+
+                            return;
+
+                        }
+
+
+                        /*
+                         * =================================================
+                         * LOOP THROUGH SECTIONS
+                         * =================================================
+                         */
+
+                        $.each(
+                            normalizedSections,
+                            function (
+                                secIndex,
+                                section
+                            ) {
+
+
+                                /*
+                                 * Skip empty sections
+                                 */
+
+                                if (
+                                    !section.questions ||
+                                    !section.questions.length
+                                ) {
+
+                                    return;
+
+                                }
+
+
+                                /*
+                                 * Section title
+                                 */
+
+                                container.append(`
+
+                                    <h4
+                                        style="
+                                            margin-top:20px;
+                                            font-weight:bold;
+                                            border-bottom:2px solid #ccc;
+                                            padding-bottom:5px;
+                                        "
+                                    >
+                                        ${section.name}
+                                    </h4>
+
+                                `);
+
+
+                                /*
+                                 * =================================================
+                                 * QUESTIONS
+                                 * =================================================
+                                 */
+
+                                $.each(
+                                    section.questions,
+                                    function (
+                                        qIndex,
+                                        item
+                                    ) {
+
+
+                                        /*
+                                         * Answer
+                                         */
+
+                                        const correctOption =
+                                            parseInt(
+                                                item.answer,
+                                                10
+                                            );
+
+
+                                        let optionsHtml =
+                                            '';
+
+
+                                        /*
+                                         * =================================================
+                                         * OPTIONS
+                                         * =================================================
+                                         */
+
+                                        if (
+                                            Array.isArray(
+                                                item.options
+                                            )
+                                        ) {
+
+                                            $.each(
+                                                item.options,
+                                                function (
+                                                    optIndex,
+                                                    optHTML
+                                                ) {
+
+
+                                                    const isCorrect =
+                                                        correctOption ===
+                                                        optIndex;
+
+
+                                                    const cleanOpt =
+                                                        cleanOptionHTML(
+                                                            optHTML
+                                                        );
+
+
+                                                    const iconSrc =
+                                                        isCorrect
+                                                            ? '../../assets/img/tick.png'
+                                                            : '../../assets/img/cross.png';
+
+
+                                                    optionsHtml += `
+
+                                                        <div
+                                                            class="option"
+                                                        >
+
+                                                            <div
+                                                                style="
+                                                                    margin-right:10px;
+                                                                    display:flex;
+                                                                    align-items:center;
+                                                                "
+                                                                class="${
+                                                                    isCorrect
+                                                                        ? 'rightAns'
+                                                                        : 'wrngAns'
+                                                                }"
+                                                            >
+
+                                                                <p>
+
+                                                                    <span
+                                                                        style="
+                                                                            margin-right:3px;
+                                                                        "
+                                                                    >
+                                                                        ${
+                                                                            String.fromCharCode(
+                                                                                65 +
+                                                                                optIndex
+                                                                            )
+                                                                        })
+                                                                    </span>
+
+                                                                    ${cleanOpt}
+
+                                                                </p>
+
+                                                            </div>
+
+
+                                                            <img
+                                                                src="${iconSrc}"
+                                                            >
+
+                                                        </div>
+
+                                                    `;
+
+                                                }
+                                            );
+
+                                        }
+
+
+                                        /*
+                                         * =================================================
+                                         * QUESTION PANEL
+                                         * =================================================
+                                         */
+
+                                        const questionPanel = `
+
+                                            <table
+                                                class="qpnltbl"
+                                            >
+
+                                                <tbody>
+
+                                                    <tr>
+
+                                                        <td
+                                                            class="rw"
+                                                        >
+
+                                                            <table
+                                                                class="qrtbl"
+                                                            >
+
+                                                                <tbody>
+
+                                                                    <tr>
+
+                                                                        <td
+                                                                            width="7%"
+                                                                            class="bold"
+                                                                            valign="top"
+                                                                        >
+                                                                            Q.
+                                                                            ${globalQNum++}
+                                                                        </td>
+
+
+                                                                        <td
+                                                                            class="bold"
+                                                                            valign="top"
+                                                                            style="
+                                                                                text-align:left;
+                                                                                position:relative;
+                                                                            "
+                                                                        >
+
+
+                                                                            <!--
+                                                                                Question ID
+                                                                            -->
+
+                                                                            <div
+                                                                                style="
+                                                                                    position:absolute;
+                                                                                    top:4px;
+                                                                                    right:6px;
+                                                                                    font-size:9px;
+                                                                                    font-weight:700;
+                                                                                    opacity:0.18;
+                                                                                    color:inherit;
+                                                                                    letter-spacing:0.08em;
+                                                                                    pointer-events:none;
+                                                                                    user-select:none;
+                                                                                    transform:rotate(-8deg);
+                                                                                "
+                                                                            >
+                                                                                ${examID}
+                                                                            </div>
+
+
+                                                                            <!--
+                                                                                Common data
+                                                                            -->
+
+                                                                            <div
+                                                                                style="
+                                                                                    margin-bottom:10px;
+                                                                                    font-weight:normal;
+                                                                                "
+                                                                            >
+                                                                                ${
+                                                                                    item.common_data ||
+                                                                                    ''
+                                                                                }
+                                                                            </div>
+
+
+                                                                            <!--
+                                                                                Question
+                                                                            -->
+
+                                                                            ${
+                                                                                item.question ||
+                                                                                ''
+                                                                            }
+
+
+                                                                            <!--
+                                                                                Options
+                                                                            -->
+
+                                                                            ${optionsHtml}
+
+                                                                        </td>
+
+                                                                    </tr>
+
+
+                                                                    <!--
+                                                                        Explanation
+                                                                    -->
+
+                                                                    <tr>
+
+                                                                        <td>
+                                                                            <b>
+                                                                                Explanation:
+                                                                            </b>
+                                                                        </td>
+
+
+                                                                        <td
+                                                                            style="
+                                                                                padding-left:20px;
+                                                                            "
+                                                                        >
+
+                                                                            <div
+                                                                                class="solution"
+                                                                            >
+                                                                                ${
+                                                                                    item.explanation ||
+                                                                                    ''
+                                                                                }
+                                                                            </div>
+
+                                                                        </td>
+
+                                                                    </tr>
+
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </td>
+
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </table>
+
+                                        `;
+
+
+                                        container.append(
+                                            questionPanel
+                                        );
+
+                                    }
+                                );
+
+                            }
+                        );
+
+
+                        /*
+                         * Style images inside explanations
+                         */
+
+                        $('.solution img')
+                            .addClass(
+                                'img-thumbnail'
+                            );
+
+
+                        /*
+                         * MathJax typesetting
+                         */
+
+                        if (
+                            window.MathJax &&
+                            window.MathJax.typesetPromise
+                        ) {
+
+                            window.MathJax
+                                .typesetPromise();
+
+                        }
+
+
+                        /*
+                         * Regenerate watermark
+                         */
+
+                        setTimeout(
+                            function () {
+
+                                generateWatermarks(
+                                    examID
+                                );
+
+                            },
+                            500
+                        );
+
+                    }
+                ).fail(
+                    function () {
+
+                        $("#title, #content")
+                            .hide();
+
+
+                        $("#ErrorMsg").html(`
+
+                            <center>
+
+                                <h1>
+                                    Error: Could not load DB file
+                                </h1>
+
+                                <p>
+                                    ${exam_db}
+                                </p>
+
+                            </center>
+
+                        `);
+
+                    }
+                );
+
+
+            }
+        ).fail(
+            function () {
+
+                showErrorPage();
+
+            }
+        );
+
+
+        /*
+         * ============================================================
+         * THEME TOGGLE
+         * ============================================================
+         */
+
+        document
+            .getElementById(
+                'toggleTheme'
+            )
+            .addEventListener(
+                'click',
+                function () {
+
+                    if (
+                        currentTheme ===
+                        'dark'
+                    ) {
+
+                        $('body')
+                            .removeClass(
+                                'dark-theme'
+                            )
+                            .addClass(
+                                'light-theme'
+                            );
+
+
+                        currentTheme =
+                            'light';
+
+                    } else {
+
+                        $('body')
+                            .removeClass(
+                                'light-theme'
+                            )
+                            .addClass(
+                                'dark-theme'
+                            );
+
+
+                        currentTheme =
+                            'dark';
+
+                    }
+
+                }
+            );
+
+
+        /*
+         * ============================================================
+         * ERROR PAGE
+         * ============================================================
+         */
+
+        function showErrorPage() {
+
+            $("#title, #content")
+                .hide();
+
+
+            $("#ErrorMsg").html(`
+
+                <center>
+
+                    <h1>
+                        Error 404: Page Not Found
+                    </h1>
+
+
+                    <p>
+
+                        You have entered a wrong URL
+                        or the page is unavailable.
+
+                        <br>
+                        <br>
+
+                        Contact the administrator at
+
+                        <a href="mailto:nandysagar@yahoo.com">
+                            nandysagar@yahoo.com
+                        </a>
+
+                        <br>
+                        <br>
+
+                        <a href="https://nandysagar.in">
+                            Go to NANDYSAGAR.IN
+                        </a>
+
+                    </p>
+
+                </center>
+
+            `);
+
+        }
 
     </script>
 
-    <!-- Functional Scripts -->
+
+    <!-- ============================================================
+         FUNCTIONAL SCRIPTS
+         ============================================================ -->
+
     <script>
-         function generatePDF() {
-            // Original title
-            const originalTitle = document.title;
 
-            // Desired title (replace spaces with dashes)
-            //const newTitle = originalTitle.replace(/\s+/g, '-');
-            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
 
-            // Temporarily change the title
-            document.title = newTitle;
+        /*
+         * ============================================================
+         * PRINT
+         * ============================================================
+         */
 
-            // Wait a bit for title to update, then print
-            setTimeout(() => {
-                window.print();
+        function generatePDF() {
 
-                // Restore the original title
-                document.title = originalTitle;
-            }, 100);
+            const originalTitle =
+                document.title;
+
+
+            const newTitle =
+                originalTitle
+                    .replace(/,/g, '-')
+                    .replace(/\s+/g, '-');
+
+
+            document.title =
+                newTitle;
+
+
+            setTimeout(
+                function () {
+
+                    window.print();
+
+
+                    document.title =
+                        originalTitle;
+
+                },
+                100
+            );
+
         }
-        // Function to download PDF
+
+
+        /*
+         * ============================================================
+         * DOWNLOAD PDF
+         * ============================================================
+         */
+
         function downloadPDF() {
 
-            // Original title
-            const originalTitle = document.title;
+            const originalTitle =
+                document.title;
 
-            // Desired title (replace spaces with dashes)
-            //const newTitle = originalTitle.replace(/\s+/g, '-');
-            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
 
-            // Construct the PDF file path
-            const pdfUrl = `pdf/${newTitle}.pdf`;
+            const newTitle =
+                originalTitle
+                    .replace(/,/g, '-')
+                    .replace(/\s+/g, '-');
 
-            // Open the generated URL in a new tab
-            window.open(pdfUrl, '_blank');
+
+            const pdfUrl =
+                `pdf/${newTitle}.pdf`;
+
+
+            window.open(
+                pdfUrl,
+                '_blank'
+            );
 
         }
 
+
+        /*
+         * ============================================================
+         * REATTEMPT
+         * ============================================================
+         */
+
         function reAttempt() {
-            // get exam ID from url
-            var url = new URL(window.location.href);
-            var examID = url.searchParams.get("ExamID");
-            var assessmentUrl = `../../OnlineAssessment/index.html?ExamId=${examID}`;
-            // Open the assessment URL in a new tab
-            window.open(assessmentUrl, '_blank');
+
+            const url =
+                new URL(
+                    window.location.href
+                );
+
+
+            const examID =
+                url.searchParams.get(
+                    "ExamID"
+                );
+
+
+            const assessmentUrl =
+                `../../OnlineAssessment/index.html?ExamId=${examID}`;
+
+
+            window.open(
+                assessmentUrl,
+                '_blank'
+            );
+
         }
 
     </script>
+
+
 </body>
+
 </html>
+

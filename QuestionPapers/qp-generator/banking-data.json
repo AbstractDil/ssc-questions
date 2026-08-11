@@ -1,4 +1,10 @@
 [
+  {
+    "exam_id": "2608111903",
+    "exam_name": "Guidely SBI PO Mock 2, August 11, 2026",
+    "exam_date": "11082026",
+    "exam_db": "assets/db/Banking-Mock-Test/SBI-PO-Mock-2-2026.json"
+  },
  {
     "exam_id": "2608110905",
     "exam_name": "Guidely IBPS PO Mock 1, August 11, 2026",

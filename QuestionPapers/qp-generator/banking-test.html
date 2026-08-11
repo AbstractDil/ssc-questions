@@ -1,44 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Banking Mock Test</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <style>
-        body { font-family: Arial, sans-serif; }
-        .theme-toggle, .print-button { margin-top: 10px; }
-        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .theme-toggle,
+        .print-button {
+            margin-top: 10px;
+        }
+
         /* Simple, Official Look (Light/Dark themes) */
-        .light-theme { background-color: #ffffff; color: #000; }
-        .light-theme .rightAns { color: green; font-weight: bold; }
-        .light-theme .qpnltbl td, .light-theme .qrtbl td { border: 1px solid #ccc; }
-        
-        .dark-theme { background-color: #333333; color: #f5f5f5; }
-        .dark-theme .rightAns { color: #4caf50; font-weight: bold; }
-        .dark-theme .qpnltbl td, .dark-theme .qrtbl td { border: 1px solid #555; }
-        .dark-theme th { background-color: #444; color: #fff; }
-        
-        table { width: 100%; border-collapse: collapse; }
-        table, th, td { border: 1px solid black; }
-        th, td { padding: 10px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        .qpnltbl, .qrtbl { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-        .qpnltbl td, .qrtbl td { padding: 15px 8px; }
-        
-        .bold { font-weight: bold; }
-        .wrngAns { color: #d9534f; }
-        .img-thumbnail { margin-top: 10px; max-width: 320px; border: 1px solid #ddd; }
-        
-        .option { display: flex; align-items: center; margin-bottom: 10px; }
-        .option p { margin: 0; }
-        
+
+        .light-theme {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        .light-theme .rightAns {
+            color: green;
+            font-weight: bold;
+        }
+
+        .light-theme .qpnltbl td,
+        .light-theme .qrtbl td {
+            border: 1px solid #ccc;
+        }
+
+        .dark-theme {
+            background-color: #333333;
+            color: #f5f5f5;
+        }
+
+        .dark-theme .rightAns {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .dark-theme .qpnltbl td,
+        .dark-theme .qrtbl td {
+            border: 1px solid #555;
+        }
+
+        .dark-theme th {
+            background-color: #444;
+            color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .qpnltbl,
+        .qrtbl {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .qpnltbl td,
+        .qrtbl td {
+            padding: 15px 8px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .wrngAns {
+            color: #d9534f;
+        }
+
+        .img-thumbnail {
+            margin-top: 10px;
+            max-width: 320px;
+            border: 1px solid #ddd;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .option p {
+            margin: 0;
+        }
+
         .watermark-container {
             position: relative;
             overflow: hidden;
         }
 
-        /* Watermark divs */
+        /* Watermark */
+
         .watermark-layer {
             position: fixed;
             pointer-events: none;
@@ -49,239 +131,999 @@
             opacity: 0.12;
             white-space: nowrap;
         }
-        
-        .section-header { margin-top: 30px; margin-bottom: 15px; font-weight: bold; text-decoration: underline; }
-        
+
+        .section-header {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
         #preLoader {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: #fff; z-index: 9999; display: flex;
-            justify-content: center; align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
+
     <script>
         window.onload = function () {
-            document.getElementById('preLoader').style.transition = "all 0.5s ease-in-out";
-            document.getElementById('preLoader').style.opacity = "0";
-            setTimeout(() => { document.getElementById('preLoader').style.visibility = "hidden"; }, 500);
-        }
+
+            const loader = document.getElementById('preLoader');
+
+            if (!loader) {
+                return;
+            }
+
+            loader.style.transition = "all 0.5s ease-in-out";
+            loader.style.opacity = "0";
+
+            setTimeout(() => {
+                loader.style.visibility = "hidden";
+            }, 500);
+        };
     </script>
+
 </head>
+
+
 <body>
+
+    <!-- Preloader -->
+
     <div id="preLoader">
-        <div class="spinner-grow spinner-grow-sm text-primary mx-1" role="status">
-            <span class="visually-hidden">Loading...</span>
+
+        <div class="spinner-grow spinner-grow-sm text-primary mx-1"
+             role="status">
+
+            <span class="visually-hidden">
+                Loading...
+            </span>
+
         </div>
+
     </div>
+
+
+    <!-- Buttons -->
 
     <div class="container hidden-print">
-        <button class="btn btn-default btn-sm theme-toggle" id="toggleTheme">
-            <i class="glyphicon glyphicon-adjust"></i> Change Theme
+
+        <button class="btn btn-default btn-sm theme-toggle"
+                id="toggleTheme">
+
+            <i class="glyphicon glyphicon-adjust"></i>
+            Change Theme
+
         </button>
-        <button class="btn btn-warning btn-sm print-button" onclick="generatePDF();">
-            <span class="glyphicon glyphicon-print"></span> Print
+
+
+        <button class="btn btn-warning btn-sm print-button"
+                onclick="generatePDF();">
+
+            <span class="glyphicon glyphicon-print"></span>
+            Print
+
         </button>
-        <button class="btn btn-success btn-sm print-button" onclick="downloadPDF();">
-            <span class="glyphicon glyphicon-download"></span> Download PDF
-        </button> 
-        <button class="btn btn-primary btn-sm print-button" onclick="reAttempt();">
+
+
+        <button class="btn btn-success btn-sm print-button"
+                onclick="downloadPDF();">
+
+            <span class="glyphicon glyphicon-download"></span>
+            Download PDF
+
+        </button>
+
+
+        <button class="btn btn-primary btn-sm print-button"
+                onclick="reAttempt();">
+
             Reattempt Test
+
         </button>
+
     </div>
+
+
+    <!-- Main Container -->
 
     <div class="container watermark-container">
-        <h3 class="text-center" id="title" style="margin-bottom:30px;">Loading Test...</h3>
+
+        <h3 class="text-center"
+            id="title"
+            style="margin-bottom:30px;">
+
+            Loading Test...
+
+        </h3>
+
+
         <div id="content">
+
             <div id="question-container"></div>
+
         </div>
+
+
         <div id="ErrorMsg"></div>
+
     </div>
 
+
+    <!-- jQuery -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
     <script>
+
+        /*
+         * ============================================================
+         * THEME
+         * ============================================================
+         */
+
         let currentTheme = 'dark';
+
         document.body.classList.add('dark-theme');
 
+
+        /*
+         * ============================================================
+         * WATERMARK
+         * ============================================================
+         */
+
         function generateWatermarks(id) {
+
             $('.watermark-layer').remove();
-            const container = document.querySelector('.watermark-container');
-            const docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-            const rows = Math.ceil(docHeight / 220) + 2;  
+
+            const container =
+                document.querySelector('.watermark-container');
+
+            if (!container) {
+                return;
+            }
+
+            const docHeight = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+
+            const rows =
+                Math.ceil(docHeight / 220) + 2;
+
             const cols = 5;
 
+
             for (let i = 0; i < rows; i++) {
+
                 for (let j = 0; j < cols; j++) {
-                    const div = document.createElement('div');
-                    div.className = 'watermark-layer';
+
+                    const div =
+                        document.createElement('div');
+
+                    div.className =
+                        'watermark-layer';
+
                     div.innerText = id;
-                    div.style.top = `${i * 220}px`;
-                    div.style.left = `${j * 340 - 60}px`;
+
+                    div.style.top =
+                        `${i * 220}px`;
+
+                    div.style.left =
+                        `${j * 340 - 60}px`;
+
                     container.appendChild(div);
                 }
             }
         }
 
-        // Fetch the metadata array
-        $.getJSON("banking-data.json", function (metadata) {
-            const urlParams = new URLSearchParams(window.location.search);
-            const examID = urlParams.get("ExamID");
 
-            const exam_info = metadata.find(x => x.exam_id === examID);
-            
+        /*
+         * ============================================================
+         * NORMALIZE BOTH JSON FORMATS
+         * ============================================================
+         *
+         * FORMAT 1
+         *
+         * {
+         *     "section": [
+         *         {
+         *             "name": "English Language",
+         *             "mock_questions": {
+         *                 "english": [...]
+         *             }
+         *         }
+         *     ]
+         * }
+         *
+         *
+         * FORMAT 2
+         *
+         * {
+         *     "sections": [
+         *         {
+         *             "section_name": "English Language",
+         *             "questions": {
+         *                 "english": [...]
+         *             }
+         *         }
+         *     ]
+         * }
+         *
+         *
+         * Both are converted to:
+         *
+         * [
+         *     {
+         *         name: "...",
+         *         questions: [...]
+         *     }
+         * ]
+         *
+         * ============================================================
+         */
+
+        function normalizeExamData(data) {
+
+            /*
+             * --------------------------------------------------------
+             * FORMAT 1 
+             * --------------------------------------------------------
+             */
+
+            if (Array.isArray(data.section)) {
+
+                return data.section.map(function (section) {
+
+                    return {
+
+                        name:
+                            section.name || '',
+
+                        questions:
+                            section.mock_questions &&
+                            Array.isArray(
+                                section.mock_questions.english
+                            )
+                                ? section.mock_questions.english
+                                : []
+
+                    };
+
+                });
+
+            }
+
+
+            /*
+             * --------------------------------------------------------
+             * FORMAT 2 
+             * --------------------------------------------------------
+             */
+
+            if (Array.isArray(data.sections)) {
+
+                return data.sections.map(function (section) {
+
+                    return {
+
+                        name:
+                            section.section_name || '',
+
+                        questions:
+                            section.questions &&
+                            Array.isArray(
+                                section.questions.english
+                            )
+                                ? section.questions.english
+                                : []
+
+                    };
+
+                });
+
+            }
+
+
+            /*
+             * --------------------------------------------------------
+             * UNKNOWN FORMAT
+             * --------------------------------------------------------
+             */
+
+            return null;
+        }
+
+
+        /*
+         * ============================================================
+         * CLEAN OPTION HTML
+         * ============================================================
+         */
+
+        function cleanOptionHTML(html) {
+
+            if (!html) {
+                return '';
+            }
+
+            return String(html)
+                .replace(/^<p>/, '')
+                .replace(/<\/p>$/, '');
+        }
+
+
+        /*
+         * ============================================================
+         * LOAD EXAM METADATA
+         * ============================================================
+         */
+
+        $.getJSON("banking-data.json", function (metadata) {
+
+            const urlParams =
+                new URLSearchParams(
+                    window.location.search
+                );
+
+            const examID =
+                urlParams.get("ExamID");
+
+
+            /*
+             * Find exam configuration
+             */
+
+            const exam_info =
+                metadata.find(function (x) {
+
+                    return x.exam_id === examID;
+
+                });
+
+
+            /*
+             * Exam not found
+             */
+
             if (!exam_info) {
+
                 $("#title, #content").hide();
-                $("#ErrorMsg").html(`<center><h1>Error: Exam ID not found</h1></center>`);
+
+                $("#ErrorMsg").html(`
+                    <center>
+                        <h1>
+                            Error: Exam ID not found
+                        </h1>
+                    </center>
+                `);
+
                 return;
             }
 
-            $("#title").text(exam_info.exam_name);
-            document.title = exam_info.exam_name;
 
-            // Fetch the actual exam content using the mapped DB path
-            $.getJSON(exam_info.exam_db, function (data) {
-                if (!data || !data.section) {
-                    $("#ErrorMsg").html(`<center><h1>Error: Invalid Questions Data Format</h1></center>`);
-                    return;
-                }
+            /*
+             * Set title
+             */
 
-                const container = $("#question-container");
-                let globalQNum = 1;
+            $("#title").text(
+                exam_info.exam_name
+            );
 
-                // Loop through the sections
-                $.each(data.section, function (secIndex, section) {
-                    container.append(`<h4 class="section-header">${section.name}</h4>`);
+            document.title =
+                exam_info.exam_name;
 
-                    // Access the english questions array directly
-                    if(section.mock_questions && section.mock_questions.english) {
-                        $.each(section.mock_questions.english, function (qIndex, item) {
-                            
-                            const correctOption = parseInt(item.answer);
-                            let optionsHtml = '';
-                            
-                            // Check if options exist
-                            if(item.options) {
-                                $.each(item.options, function(optIndex, optHTML) {
-                                    let isCorrect = (correctOption === optIndex);
-                                    let cleanOpt = optHTML.replace(/^<p>/, '').replace(/<\/p>$/, '');
-                                    
-                                    optionsHtml += `
-                                        <div class="option">
-                                            <div style="margin-right:10px;display:flex;align-items:center;" class="${isCorrect ? 'rightAns' : ''}">
-                                                <p><span style="margin-right:5px;">${String.fromCharCode(65 + optIndex)})</span> ${cleanOpt}</p>
-                                            </div>
-                                        </div>`;
-                                });
+
+            /*
+             * ========================================================
+             * LOAD QUESTION JSON
+             * ========================================================
+             */
+
+            $.getJSON(
+                exam_info.exam_db,
+                function (data) {
+
+
+                    /*
+                     * Normalize JSON
+                     */
+
+                    const normalizedSections =
+                        normalizeExamData(data);
+
+
+                    /*
+                     * Invalid JSON structure
+                     */
+
+                    if (!normalizedSections) {
+
+                        $("#title, #content").hide();
+
+                        $("#ErrorMsg").html(`
+                            <center>
+
+                                <h1>
+                                    Error: Invalid Questions Data Format
+                                </h1>
+
+                                <p>
+                                    Supported formats:
+                                    IBPS and SBI
+                                </p>
+
+                            </center>
+                        `);
+
+                        return;
+                    }
+
+
+                    /*
+                     * Container
+                     */
+
+                    const container =
+                        $("#question-container");
+
+
+                    let globalQNum = 1;
+
+
+                    /*
+                     * =================================================
+                     * LOOP THROUGH NORMALIZED SECTIONS
+                     * =================================================
+                     */
+
+                    $.each(
+                        normalizedSections,
+                        function (secIndex, section) {
+
+
+                            /*
+                             * Skip empty sections
+                             */
+
+                            if (
+                                !section.questions ||
+                                !section.questions.length
+                            ) {
+                                return;
                             }
 
-                            const questionPanel = `
-                            <table class="qpnltbl">
-                                <tbody>
-                                    <tr>
-                                        <td class="rw">
-                                            <table class="qrtbl">
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="7%" class="bold" valign="top">Q. ${globalQNum++}</td>
-                                                        <td class="bold" valign="top" style="text-align: left;position:relative;">
-                                                            <div style="position:absolute; top:4px; right:6px; font-size:10px; font-weight:700; opacity:0.3; transform:rotate(-8deg);">${examID}</div>
-                                                            <div style="margin-bottom: 15px;">${item.common_data || ''} ${item.question}</div>
-                                                            ${optionsHtml}
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td valign="top"><b>Explanation:</b></td>
-                                                        <td style="padding-left:20px;">
-                                                            <div class="solution">${item.explanation || 'No explanation provided.'}</div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>`;
-                            container.append(questionPanel);
-                        });
-                    }
-                });
 
-                setTimeout(() => generateWatermarks(examID), 500);
-            }).fail(function() {
-                $("#ErrorMsg").html(`<center><h1>Error: Could not load DB file at ${exam_info.exam_db}</h1></center>`);
+                            /*
+                             * Section heading
+                             */
+
+                            container.append(`
+                                <h4 class="section-header">
+                                    ${section.name}
+                                </h4>
+                            `);
+
+
+                            /*
+                             * =================================================
+                             * QUESTIONS
+                             * =================================================
+                             */
+
+                            $.each(
+                                section.questions,
+                                function (qIndex, item) {
+
+
+                                    /*
+                                     * Correct answer
+                                     *
+                                     * Both supplied JSON formats use
+                                     * zero-based answer indexes.
+                                     */
+
+                                    const correctOption =
+                                        parseInt(
+                                            item.answer,
+                                            10
+                                        );
+
+
+                                    let optionsHtml = '';
+
+
+                                    /*
+                                     * =================================================
+                                     * OPTIONS
+                                     * =================================================
+                                     */
+
+                                    if (
+                                        Array.isArray(
+                                            item.options
+                                        )
+                                    ) {
+
+                                        $.each(
+                                            item.options,
+                                            function (
+                                                optIndex,
+                                                optHTML
+                                            ) {
+
+                                                const isCorrect =
+                                                    correctOption ===
+                                                    optIndex;
+
+
+                                                const cleanOpt =
+                                                    cleanOptionHTML(
+                                                        optHTML
+                                                    );
+
+
+                                                optionsHtml += `
+                                                    <div class="option">
+
+                                                        <div
+                                                            style="
+                                                                margin-right:10px;
+                                                                display:flex;
+                                                                align-items:center;
+                                                            "
+                                                            class="${
+                                                                isCorrect
+                                                                    ? 'rightAns'
+                                                                    : ''
+                                                            }"
+                                                        >
+
+                                                            <p>
+
+                                                                <span
+                                                                    style="
+                                                                        margin-right:5px;
+                                                                    "
+                                                                >
+                                                                    ${
+                                                                        String.fromCharCode(
+                                                                            65 +
+                                                                            optIndex
+                                                                        )
+                                                                    })
+                                                                </span>
+
+                                                                ${cleanOpt}
+
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+                                                `;
+                                            }
+                                        );
+                                    }
+
+
+                                    /*
+                                     * =================================================
+                                     * QUESTION PANEL
+                                     * =================================================
+                                     */
+
+                                    const questionPanel = `
+
+                                        <table class="qpnltbl">
+
+                                            <tbody>
+
+                                                <tr>
+
+                                                    <td class="rw">
+
+                                                        <table class="qrtbl">
+
+                                                            <tbody>
+
+                                                                <tr>
+
+                                                                    <td
+                                                                        width="7%"
+                                                                        class="bold"
+                                                                        valign="top"
+                                                                    >
+                                                                        Q.
+                                                                        ${globalQNum++}
+                                                                    </td>
+
+
+                                                                    <td
+                                                                        class="bold"
+                                                                        valign="top"
+                                                                        style="
+                                                                            text-align:left;
+                                                                            position:relative;
+                                                                        "
+                                                                    >
+
+                                                                        <!--
+                                                                            Question ID
+                                                                        -->
+
+                                                                        <div
+                                                                            style="
+                                                                                position:absolute;
+                                                                                top:4px;
+                                                                                right:6px;
+                                                                                font-size:10px;
+                                                                                font-weight:700;
+                                                                                opacity:0.3;
+                                                                                transform:rotate(-8deg);
+                                                                            "
+                                                                        >
+                                                                            ${examID}
+                                                                        </div>
+
+
+                                                                        <!--
+                                                                            Common data /
+                                                                            Passage
+                                                                        -->
+
+                                                                        <div
+                                                                            style="
+                                                                                margin-bottom:15px;
+                                                                            "
+                                                                        >
+                                                                            ${
+                                                                                item.common_data ||
+                                                                                ''
+                                                                            }
+
+                                                                            ${
+                                                                                item.question ||
+                                                                                ''
+                                                                            }
+                                                                        </div>
+
+
+                                                                        <!--
+                                                                            Options
+                                                                        -->
+
+                                                                        ${optionsHtml}
+
+                                                                    </td>
+
+                                                                </tr>
+
+
+                                                                <!--
+                                                                    Explanation
+                                                                -->
+
+                                                                <tr>
+
+                                                                    <td
+                                                                        valign="top"
+                                                                    >
+                                                                        <b>
+                                                                            Explanation:
+                                                                        </b>
+                                                                    </td>
+
+
+                                                                    <td
+                                                                        style="
+                                                                            padding-left:20px;
+                                                                        "
+                                                                    >
+
+                                                                        <div
+                                                                            class="solution"
+                                                                        >
+                                                                            ${
+                                                                                item.explanation ||
+                                                                                'No explanation provided.'
+                                                                            }
+                                                                        </div>
+
+                                                                    </td>
+
+                                                                </tr>
+
+                                                            </tbody>
+
+                                                        </table>
+
+                                                    </td>
+
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+
+                                    `;
+
+
+                                    container.append(
+                                        questionPanel
+                                    );
+
+                                }
+                            );
+
+                        }
+                    );
+
+
+                    /*
+                     * Generate watermark after content loads
+                     */
+
+                    setTimeout(function () {
+
+                        generateWatermarks(
+                            examID
+                        );
+
+                    }, 500);
+
+                }
+            ).fail(function () {
+
+                $("#title, #content").hide();
+
+                $("#ErrorMsg").html(`
+                    <center>
+
+                        <h1>
+                            Error: Could not load DB file
+                        </h1>
+
+                        <p>
+                            ${exam_info.exam_db}
+                        </p>
+
+                    </center>
+                `);
+
             });
+
+        }).fail(function () {
+
+            $("#title, #content").hide();
+
+            $("#ErrorMsg").html(`
+                <center>
+
+                    <h1>
+                        Error: Could not load banking-data.json
+                    </h1>
+
+                </center>
+            `);
+
         });
 
-        document.getElementById('toggleTheme').addEventListener('click', function () {
-            if (currentTheme === 'dark') {
-                $('body').removeClass('dark-theme').addClass('light-theme');
-                currentTheme = 'light';
-            } else {
-                $('body').removeClass('light-theme').addClass('dark-theme');
-                currentTheme = 'dark';
-            }
-        });
+
+        /*
+         * ============================================================
+         * THEME TOGGLE
+         * ============================================================
+         */
+
+        document
+            .getElementById('toggleTheme')
+            .addEventListener(
+                'click',
+                function () {
+
+                    if (currentTheme === 'dark') {
+
+                        $('body')
+                            .removeClass('dark-theme')
+                            .addClass('light-theme');
+
+                        currentTheme = 'light';
+
+                    } else {
+
+                        $('body')
+                            .removeClass('light-theme')
+                            .addClass('dark-theme');
+
+                        currentTheme = 'dark';
+
+                    }
+
+                }
+            );
+
     </script>
+
 
     <!-- Functional Scripts -->
+
     <script>
-        // Function to generate PDF
+
+        /*
+         * ============================================================
+         * GENERATE PDF / PRINT
+         * ============================================================
+         */
+
         function generatePDF() {
-            const originalTitle = document.title;
-            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
 
-            const examId = new URLSearchParams(window.location.search).get('ExamID');
+            const originalTitle =
+                document.title;
 
-            const iframe = document.createElement('iframe');
-            iframe.style.display = 'none';
-            iframe.src = `banking-test-printview.html?ExamID=${examId}`;
 
-            document.body.appendChild(iframe);
+            const newTitle =
+                originalTitle
+                    .replace(/,/g, '-')
+                    .replace(/\s+/g, '-');
 
-            iframe.onload = function () {
-                try {
-                    iframe.contentWindow.document.title = newTitle;
-                } catch (e) {
-                    console.log('Unable to set print page title');
-                }
 
-                iframe.contentWindow.focus();
-                document.title = newTitle;
+            const examId =
+                new URLSearchParams(
+                    window.location.search
+                ).get('ExamID');
 
-                setTimeout(() => {
-                    iframe.contentWindow.print();
-                }, 500);
 
-                setTimeout(() => {
-                    document.body.removeChild(iframe);
+            /*
+             * Open print view in hidden iframe
+             */
 
-                }, 2000);
-            };
+            const iframe =
+                document.createElement('iframe');
+
+
+            iframe.style.display =
+                'none';
+
+
+            iframe.src =
+                `banking-test-printview.html?ExamID=${examId}`;
+
+
+            document.body.appendChild(
+                iframe
+            );
+
+
+            iframe.onload =
+                function () {
+
+                    try {
+
+                        iframe.contentWindow
+                            .document
+                            .title =
+                            newTitle;
+
+                    } catch (e) {
+
+                        console.log(
+                            'Unable to set print page title'
+                        );
+
+                    }
+
+
+                    iframe.contentWindow.focus();
+
+                    document.title =
+                        newTitle;
+
+
+                    setTimeout(
+                        function () {
+
+                            iframe.contentWindow.print();
+
+                        },
+                        500
+                    );
+
+
+                    setTimeout(
+                        function () {
+
+                            document.body.removeChild(
+                                iframe
+                            );
+
+                        },
+                        2000
+                    );
+
+                };
+
         }
 
-        // Function to download PDF
+
+        /*
+         * ============================================================
+         * DOWNLOAD PDF
+         * ============================================================
+         */
+
         function downloadPDF() {
-            // Original title
-            const originalTitle = document.title;
 
-            // Desired title (replace spaces with dashes)
-            const newTitle = originalTitle.replace(/,/g, '-').replace(/\s+/g, '-');
+            const originalTitle =
+                document.title;
 
-            // Construct the PDF file path
-            const pdfUrl = `pdf/${newTitle}.pdf`;
 
-            // Open the generated URL in a new tab
-            window.open(pdfUrl, '_blank');
+            const newTitle =
+                originalTitle
+                    .replace(/,/g, '-')
+                    .replace(/\s+/g, '-');
+
+
+            const pdfUrl =
+                `pdf/${newTitle}.pdf`;
+
+
+            window.open(
+                pdfUrl,
+                '_blank'
+            );
+
         }
+
+
+        /*
+         * ============================================================
+         * REATTEMPT
+         * ============================================================
+         */
 
         function reAttempt() {
-            // get exam ID from url
-            var url = new URL(window.location.href);
-            var examID = url.searchParams.get("ExamID");
-            var assessmentUrl = `../../OnlineAssessment/index.html?ExamId=${examID}`;
-            // Open the assessment URL in a new tab
-            window.open(assessmentUrl, '_blank');
+
+            const url =
+                new URL(
+                    window.location.href
+                );
+
+
+            const examID =
+                url.searchParams.get(
+                    "ExamID"
+                );
+
+
+            const assessmentUrl =
+                `../../OnlineAssessment/index.html?ExamId=${examID}`;
+
+
+            window.open(
+                assessmentUrl,
+                '_blank'
+            );
+
         }
+
     </script>
+
 </body>
+
 </html>
+
