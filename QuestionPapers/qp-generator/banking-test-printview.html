@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print View</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body { background-color: #ffffff; color: #000; font-family: Arial, sans-serif; }
+        .rightAns { color: black; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; page-break-inside: auto; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 10px; text-align: left; }
+        tr { page-break-inside: avoid; page-break-after: auto; }
+        .bold { font-weight: bold; }
+        .option { display: flex; align-items: center; margin-bottom: 5px; }
+        .watermark-container {
+            position: relative;
+        }
+
+        /* Watermark divs */
+        .watermark-layer {
+              position: absolute; 
+            pointer-events: none;
+            z-index: 0;
+            font-size: 24px;
+            font-weight: 700;
+            transform: rotate(-45deg);
+            opacity: 0.12;
+            white-space: nowrap;
+        }
+        .section-header { margin-top: 20px; margin-bottom: 10px; border-bottom: 2px solid #000; padding-bottom: 5px; }
+        .explanation-block { background-color: #f9f9f9; }
+        @media print {
+            .hidden-print { display: none !important; }
+            .watermark-layer { opacity: 0.15 !important; position: fixed; }
+            @page { size: A4; margin: 15mm; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container watermark-container">
+        <h3 class="text-center bold" id="title" style="margin-bottom:20px;">Loading Print View...</h3>
+        <div id="content">
+            <div id="question-container"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function generateWatermarks(id) {
+            $('.watermark-layer').remove();
+            const container = document.querySelector('.watermark-container');
+            const rows = 10;  
+            const cols = 4;
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < cols; j++) {
+                    const div = document.createElement('div');
+                    div.className = 'watermark-layer';
+                    div.innerText = id;
+                    div.style.top = `${i * 250}px`;
+                    div.style.left = `${j * 300 - 50}px`;
+                    container.appendChild(div);
+                }
+            }
+        }
+
+        // 1. Fetch the metadata array
+        $.getJSON("banking-data.json", function (metadata) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const examID = urlParams.get("ExamID");
+
+            const exam_info = metadata.find(x => x.exam_id === examID);
+            
+            if (!exam_info) {
+                $("#title").text("Error: Exam ID not found");
+                return;
+            }
+
+            $("#title").text(exam_info.exam_name);
+            document.title = exam_info.exam_name;
+
+            // 2. Fetch the actual exam content using the mapped DB path
+            $.getJSON(exam_info.exam_db, function (data) {
+                if (!data || !data.section) {
+                    $("#title").text("Error: Invalid Questions Data Format");
+                    return;
+                }
+                
+                const container = $("#question-container");
+                let globalQNum = 1;
+
+                // Loop through the sections
+                $.each(data.section, function (secIndex, section) {
+                    container.append(`<h4 class="section-header">${section.name}</h4>`);
+
+                    // Access the english questions array directly
+                    if (section.mock_questions && section.mock_questions.english) {
+                        $.each(section.mock_questions.english, function (qIndex, item) {
+                            const correctOption = parseInt(item.answer);
+                            let optionsHtml = '';
+                            
+                            // Process options if they exist
+                            if(item.options) {
+                                $.each(item.options, function(optIndex, optHTML) {
+                                    let isCorrect = (correctOption === optIndex);
+                                    let cleanOpt = optHTML.replace(/^<p>/, '').replace(/<\/p>$/, '');
+                                    let indicator = isCorrect ? ' <strong>(Correct)</strong>' : '';
+                                    
+                                    optionsHtml += `
+                                        <div class="option ${isCorrect ? 'rightAns' : ''}">
+                                            <span>${String.fromCharCode(65 + optIndex)}) ${cleanOpt} ${indicator}</span>
+                                        </div>`;
+                                });
+                            }
+
+                            const questionPanel = `
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="7%" class="bold" valign="top">Q. ${globalQNum++}</td>
+                                        <td valign="top">
+                                            <div style="margin-bottom: 10px;"><b>${item.common_data || ''}</b><br>${item.question}</div>
+                                            ${optionsHtml}
+                                        </td>
+                                    </tr>
+                                    <tr class="explanation-block">
+                                        <td class="bold" valign="top">Exp:</td>
+                                        <td valign="top">${item.explanation || 'No explanation provided.'}</td>
+                                    </tr>
+                                </tbody>
+                            </table>`;
+                            container.append(questionPanel);
+                        });
+                    }
+                });
+
+                setTimeout(() => generateWatermarks(examID), 500);
+            }).fail(function() {
+                $("#title").text(`Error: Could not load DB file at ${exam_info.exam_db}`);
+            });
+        });
+    </script>
+</body>
+</html>
