@@ -1,5 +1,11 @@
 [
 
+
+   {
+    "exam_id": "2608242027",
+    "exam_settings": "settings/RBE-SBI-Clerk-Live-Mock/rbe.json"
+  },
+
    {
     "exam_id": "2608092005",
     "exam_settings": "settings/RBE-CGL-Live-Mock-2025/rbe.json"
