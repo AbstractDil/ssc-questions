@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test Viewer</title>
+  <style>
+    :root {
+      --primary-color: #1a73e8;
+      --border-color: #dadce0;
+      --bg-light: #f8f9fa;
+      --text-dark: #202124;
+      --text-muted: #5f6368;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text-dark); background: #fff; line-height: 1.5; }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 { font-size: 1.15rem; font-weight: 600; }
+    .file-input-wrapper input { font-size: 0.85rem; }
+
+    /* Section Tabs */
+    .section-nav {
+      display: flex;
+      background: var(--bg-light);
+      border-bottom: 1px solid var(--border-color);
+      overflow-x: auto;
+    }
+
+    .section-tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      border-bottom: 3px solid transparent;
+      white-space: nowrap;
+    }
+
+    .section-tab.active {
+      color: var(--primary-color);
+      border-bottom-color: var(--primary-color);
+      background: #fff;
+    }
+
+    /* Main Container */
+    .main-container {
+      display: flex;
+      height: calc(100vh - 105px);
+    }
+
+    /* Left Column Wrapper (Question Content + Bottom Bar) */
+    .content-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-width: 0;
+    }
+
+    /* Question View Area */
+    .question-view {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px 32px;
+    }
+
+    .instructions-card {
+      background: #e8f0fe;
+      border-left: 4px solid var(--primary-color);
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.9rem;
+    }
+
+    .instructions-card h4 { margin-bottom: 6px; color: #174ea6; }
+
+    .comp-box {
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    .comp-box img, .question-text img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .question-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .question-text {
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .option-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .option-item:hover { background: var(--bg-light); }
+    .option-item input[type="radio"] { margin-top: 4px; }
+    .option-label { flex: 1; }
+
+    /* Bottom Action Bar */
+    .bottom-nav {
+      border-top: 1px solid var(--border-color);
+      padding: 12px 32px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-btn {
+      padding: 9px 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      background: #fff;
+      color: var(--text-dark);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+      background: var(--bg-light);
+    }
+
+    .nav-btn-primary {
+      background: var(--primary-color);
+      color: #fff;
+      border-color: var(--primary-color);
+    }
+
+    .nav-btn-primary:hover:not(:disabled) {
+      background: #1557b0;
+      border-color: #1557b0;
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    /* Palette Sidebar */
+    .palette-sidebar {
+      width: 320px;
+      border-left: 1px solid var(--border-color);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .palette-header {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: var(--bg-light);
+    }
+
+    .palette-grid {
+      padding: 16px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .palette-btn {
+      width: 100%;
+      aspect-ratio: 1;
+      border: 1px solid var(--border-color);
+      background: #fff;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .palette-btn:hover { background: #e8eaed; }
+    .palette-btn.active {
+      background: var(--primary-color);
+      color: #fff;
+      border-color: var(--primary-color);
+    }
+
+    /* Table styling inside comprehension / questions */
+    table { border-collapse: collapse; margin: 12px 0; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+    th { background: #f1f3f4; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="test-title">Mock Test Viewer</h1>
+    <div class="file-input-wrapper">
+      <input type="file" id="json-file-input" accept=".json">
+    </div>
+  </header>
+
+  <!-- Section Tabs (Dynamically Generated) -->
+  <nav class="section-nav" id="section-tabs"></nav>
+
+  <div class="main-container">
+    <!-- Left Column: Question Area & Bottom Navigation -->
+    <div class="content-column">
+      <main class="question-view" id="question-container">
+        <div style="color: var(--text-muted); margin-top: 40px; text-align: center;">
+          Select or upload a test JSON file to view the sections and questions.
+        </div>
+      </main>
+
+      <footer class="bottom-nav">
+        <button class="nav-btn" id="prev-btn" onclick="goToPrevQuestion()" disabled>&larr; Previous Question</button>
+        <button class="nav-btn nav-btn-primary" id="next-btn" onclick="goToNextQuestion()" disabled>Next Question &rarr;</button>
+      </footer>
+    </div>
+
+    <!-- Right Column: Question Palette -->
+    <aside class="palette-sidebar">
+      <div class="palette-header" id="palette-title">Question Palette</div>
+      <div class="palette-grid" id="palette-grid"></div>
+    </aside>
+  </div>
+
+  <script>
+    let testData = null;
+    let activeSectionIdx = 0;
+    let activeQuestionIdx = 0;
+
+    // Helper to decode HTML entities (e.g. &lt;p&gt; -> <p>)
+    function decodeHtml(html) {
+      if (!html) return "";
+      const txt = document.createElement("textarea");
+      txt.innerHTML = html;
+      return txt.value;
+    }
+
+    // Handle JSON Upload
+    document.getElementById("json-file-input").addEventListener("change", function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        try {
+          const parsed = JSON.parse(evt.target.result);
+          loadTestData(parsed.data || parsed);
+        } catch (err) {
+          alert("Invalid JSON file format.");
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    function loadTestData(data) {
+      testData = data;
+      document.getElementById("test-title").innerText = testData.title || "Assessment Test";
+      activeSectionIdx = 0;
+      activeQuestionIdx = 0;
+      renderSectionTabs();
+      loadSection(0);
+    }
+
+    // Render Dynamic Section Tabs
+    function renderSectionTabs() {
+      const tabsContainer = document.getElementById("section-tabs");
+      tabsContainer.innerHTML = "";
+
+      if (!testData.sections || !testData.sections.length) return;
+
+      testData.sections.forEach((section, idx) => {
+        const btn = document.createElement("button");
+        btn.className = `section-tab ${idx === activeSectionIdx ? "active" : ""}`;
+        btn.innerText = section.title || `Section ${idx + 1}`;
+        btn.onclick = () => {
+          activeSectionIdx = idx;
+          activeQuestionIdx = 0;
+          updateTabState();
+          loadSection(idx);
+        };
+        tabsContainer.appendChild(btn);
+      });
+    }
+
+    function updateTabState() {
+      const tabs = document.querySelectorAll(".section-tab");
+      tabs.forEach((tab, idx) => {
+        tab.classList.toggle("active", idx === activeSectionIdx);
+      });
+    }
+
+    // Load Given Section
+    function loadSection(sectionIdx) {
+      const section = testData.sections[sectionIdx];
+      renderPalette(section);
+      renderQuestion(section, activeQuestionIdx);
+      updateNavButtons(section);
+    }
+
+    // Render Right-Hand Question Palette
+    function renderPalette(section) {
+      const paletteGrid = document.getElementById("palette-grid");
+      const paletteTitle = document.getElementById("palette-title");
+      paletteGrid.innerHTML = "";
+
+      paletteTitle.innerText = `${section.title} (${section.questions.length} Qs)`;
+
+      section.questions.forEach((q, idx) => {
+        const btn = document.createElement("button");
+        btn.className = `palette-btn ${idx === activeQuestionIdx ? "active" : ""}`;
+        btn.innerText = idx + 1;
+        btn.onclick = () => {
+          activeQuestionIdx = idx;
+          updatePaletteState();
+          renderQuestion(section, idx);
+          updateNavButtons(section);
+        };
+        paletteGrid.appendChild(btn);
+      });
+    }
+
+    function updatePaletteState() {
+      const btns = document.querySelectorAll(".palette-btn");
+      btns.forEach((btn, idx) => {
+        btn.classList.toggle("active", idx === activeQuestionIdx);
+      });
+    }
+
+    // Bottom Navigation Logic
+    function updateNavButtons(section) {
+      const prevBtn = document.getElementById("prev-btn");
+      const nextBtn = document.getElementById("next-btn");
+
+      if (!section || !section.questions || section.questions.length === 0) {
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        return;
+      }
+
+      // Check boundary conditions within current section
+      const hasPrev = activeQuestionIdx > 0;
+      const hasNext = activeQuestionIdx < section.questions.length - 1;
+
+      prevBtn.disabled = !hasPrev;
+      nextBtn.disabled = !hasNext;
+    }
+
+    function goToPrevQuestion() {
+      if (!testData) return;
+      const currentSection = testData.sections[activeSectionIdx];
+      if (activeQuestionIdx > 0) {
+        activeQuestionIdx--;
+        renderQuestion(currentSection, activeQuestionIdx);
+        updatePaletteState();
+        updateNavButtons(currentSection);
+      }
+    }
+
+    function goToNextQuestion() {
+      if (!testData) return;
+      const currentSection = testData.sections[activeSectionIdx];
+      if (activeQuestionIdx < currentSection.questions.length - 1) {
+        activeQuestionIdx++;
+        renderQuestion(currentSection, activeQuestionIdx);
+        updatePaletteState();
+        updateNavButtons(currentSection);
+      }
+    }
+
+    // Render Question Area with Instructions, Context, and Options
+    function renderQuestion(section, qIdx) {
+      const container = document.getElementById("question-container");
+      const qData = section.questions[qIdx];
+      if (!qData) return;
+
+      const enData = qData.en || {};
+      const instructions = section.instructions && section.instructions.filter(i => i.trim() !== "");
+
+      let html = "";
+
+      // 1. Section-wise Instructions (if present)
+      if (instructions && instructions.length > 0) {
+        html += `
+          <div class="instructions-card">
+            <h4>Instructions</h4>
+            ${instructions.map(inst => `<div>${decodeHtml(inst)}</div>`).join("")}
+          </div>`;
+      }
+
+      // 2. Question Meta
+      html += `
+        <div class="question-header">
+          <span>Question ${qIdx + 1} of ${section.questions.length}</span>
+          <span>Marks: +${qData.posMarks || 1} / -${qData.negMarks || 0}</span>
+        </div>`;
+
+      // 3. Comprehension / Passage (if present)
+      const compText = decodeHtml(enData.comp || qData.comp || "");
+      if (compText.trim()) {
+        html += `<div class="comp-box">${compText}</div>`;
+      }
+
+      // 4. Question Stem
+      const questionText = decodeHtml(enData.value || qData.value || "");
+      html += `<div class="question-text">${questionText}</div>`;
+
+      // 5. Options
+      const options = enData.options || qData.options || [];
+      if (options.length > 0) {
+        html += `<div class="options-list">`;
+        options.forEach((opt, oIdx) => {
+          const optionValue = decodeHtml(opt.value || "");
+          html += `
+            <label class="option-item">
+              <input type="radio" name="q_opt_${qData._id}" value="${opt.prompt || oIdx + 1}">
+              <div class="option-label">
+                <strong>(${opt.prompt || oIdx + 1})</strong> ${optionValue}
+              </div>
+            </label>`;
+        });
+        html += `</div>`;
+      }
+
+      container.innerHTML = html;
+      container.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>
