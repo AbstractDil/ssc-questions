@@ -1,4 +1,12 @@
 [
+
+   {
+    "exam_id": "2609221822",
+    "exam_name": "SBI Clerk Mock 1, September 22, 2026",
+    "exam_date": "22092026",
+    "exam_db": "assets/db/Banking-Mock-Test/sbi-clerk-Mock-1-2026.json"
+  },
+
   {
     "exam_id": "2608171437",
     "exam_name": "Guidely IBPS PO Selection Mock 1, August 17, 2026",
